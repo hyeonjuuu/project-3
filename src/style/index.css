@@ -333,6 +333,16 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
@@ -367,6 +377,36 @@ legend {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.MainBanner {
+  width: 1920px;
+  height: 370px;
+  position: relative;
+}
+
+.button {
+  position: absolute;
+}
+
+.button button {
+  width: 52px;
+  height: 52px;
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.button :nth-child(1) {
+  background: url(/src/images/Icon/Arrow.png);
+}
+
+.button :nth-child(2) {
+  background: url(/src/images/Icon/Arrow.png);
 }
 
 /*# sourceMappingURL=index.css.map */
