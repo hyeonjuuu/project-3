@@ -9,7 +9,7 @@
 
   <body>
     <!--  -->
-    <h1 class="login">로그인</h1>
+    <h2 class="login">로그인</h2>
 
     <form action="URL" class="loginForm" method="POST">
       <fieldset>
@@ -30,7 +30,11 @@
 
           <div class="loginForgot">
             <input type="checkbox" class="login-state-checkbox" id="loginState" name="state" />
-            <label for="loginState" class="login-state-label"> <span class="icon-check"></span>아이디찾기</label>
+            <label for="loginState" class="login-state-label">
+              <span>아이디찾기</span>
+              <span aria-hidden="true">ㅣ</span>
+              <span>비밀번호 찾기</span>
+            </label>
           </div>
 
           <button type="submit" class="buttonLogin">로그인</button>
