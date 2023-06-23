@@ -14,58 +14,59 @@
     <header class="header">
       <h1 class="a11yHidden">Karly</h1>
       <!-- 맨 위 보라색 안내바 1. 보라색 배경 설정 및 크기 / 2. 글자 흰색, 크기 조절 / 3.(가능할까?)X누르면 사라지게 -->
-      <div>
-        <span>지금 가입하고 인기상품 100원에 받아가세요!</span>
-        <span>X</span>
+      <div class="topBar">
+        <span class="topBar__word">지금 가입하고 인기상품 100원에 받아가세요!</span>
+        <span class="topBar__X">X</span>
       </div>
 
       <!-- 상단 우측 회원가입 | 로그인 | 고객센터 창 -->
       <!-- 1. 우측 상단 배치 / 2. a11yhidden속성 설정 및 글자 색깔 크기 설정 / 3. 링크 간단하게 연결 -->
-      <ul>
-        <li>
-          <a href="">회원가입</a>
+      <ul class="ulType memberSystem">
+        <li class="first__memberSystem">
+          <a href="" >회원가입</a>
         </li>
-        <li>
-          <a href="">로그인</a>
+        <li class="second__memberSystem">
+          <span class="divider" aria-hidden="true">ㅣ</span><a href="">로그인</a>
         </li>
-        <li>
-          <span>고객센터▼</span>
+        <li class="third__memberSystem">
+          <span class="divider" aria-hidden="true">ㅣ</span><span>고객센터▼</span>
         </li>
       </ul>
 
       <!-- 헤더부분 좌측 중앙  -->
       <!-- 1. 좌측 중앙 배치 / 2. 로고 넣기 / 3. 중앙선 a11yhiddne속성 부여 / 4. 글자 속성 변경-->
-      <ul>
-        <li>
+      <ul class="ulType logo">
+        <li class="logo__image">
           <img src="" alt="" />
         </li>
-        <li>
+        <li class="logo_market">
           <span>마켓칼리</span>
         </li>
-        <li>
+        <li class="logo_beauty">
           <span>뷰티칼리</span>
         </li>
       </ul>
 
       <!-- 헤더부분 중앙 검색창 -->
       <!-- 1. 박스 배치 / 2. 박스 속성 및 글자 속성 / 3(선택). focus시 바뀌도록 설정 -->
-      <fieldset>
+      <fieldset class="searchBox">
         <legend>검색창</legend>
         <div>
           <label for="search" class="a11yHidden">검색어</label>
-          <input type="search" id="search" name="search" required class="" placeholder="검색어를 입력해주세요" />
-          <a href="">
+          <input type="search" id="search" name="search" required class="searchBox_word" placeholder="검색어를 입력해주세요" />
+          <div class="searchBox_image">
             <img src="" alt="" />
-          </a>
+          </div>
+          
         </div>
       </fieldset>
 
       <!-- 헤더부분 우측중앙 이모티콘 3개 -->
       <!-- 1. 우측중앙 배치 / 2. 장바구니 이모티콘에 링크 부여  -->
-      <ul>
-        <li><img src="" alt="" /></li>
-        <li><img src="" alt="" /></li>
-        <li>
+      <ul class="ulType imoji">
+        <li class="imoji__location"><img src="" alt="" /></li>
+        <li class="iomji__heart"><img src="" alt="" /></li>
+        <li class="imoju__shopping">
           <a href="">
             <img src="" alt="" />
           </a>
@@ -79,32 +80,115 @@
       <!-- 카테고리 -->
       <!-- 1. 좌측 배치 / 2. hover시 카테고리 뜨도록 / 3. 카테고리 내부 품목 hover 시 색깔 바뀌게
         4(선택). 시안에서는 hover->카테고리->unhover->안사라짐 인데 구현해야되나? -->
-      <div>
-        <img src="" alt="" />
-        <span>카테고리</span>
+      <div class="category">
+        <img src="" alt="" class="category__image"/>
+        <span class="category__word">카테고리</span>
       </div>
 
       <!-- 웹카페 transfer한거처럼 위치 설정을 해서 뜨는거처럼?111 -->
-      <div>
-        <div>
+      <div class="categoryHover">
+        <div class="present">
           <img src="" alt="" />
           <span>선물하기</span>
         </div>
-        <div></div>
+        <div class="vegetable">
+          <img src="" alt="" />
+          <span>채소</span>
+        </div>
+        <div class="fruit">
+          <img src="" alt="" />
+          <span>과일ㆍ견과ㆍ쌀</span>
+        </div>
+        <div class="fish">
+          <img src="" alt="" />
+          <span>수산ㆍ해산ㆍ건어물</span>
+        </div>
+        <div class="meat">
+          <img src="" alt="" />
+          <span>정육ㆍ계란</span>
+        </div>
+        <div class="soup">
+          <img src="" alt="" />
+          <span>국ㆍ반찬ㆍ메인요리</span>
+        </div>
+        <div class="salad">
+          <img src="" alt="" />
+          <span>샐러드ㆍ간편식</span>
+        </div>
+        <div class="noodle">
+          <img src="" alt="" />
+          <span>면ㆍ양념ㆍ오일</span>
+        </div>
+        <div class="water">
+          <img src="" alt="" />
+          <span>생수ㆍ음료ㆍ우유ㆍ커피</span>
+        </div>
+        <div class="snack">
+          <img src="" alt="" />
+          <span>간식ㆍ과자ㆍ떡</span>
+        </div>
+        <div class="bread">
+          <img src="" alt="" />
+          <span>베이커리ㆍ치즈ㆍ델리</span>
+        </div>
+        <div class="healthFood">
+          <img src="" alt="" />
+          <span>건강식품</span>
+        </div>
+        <div class="wine">
+          <img src="" alt="" />
+          <span>와인</span>
+        </div>
+        <div class="koreanAlcohol">
+          <img src="" alt="" />
+          <span>전통주</span>
+        </div>
+        <div class="living">
+          <img src="" alt="" />
+          <span>생활용품ㆍ리빙ㆍ캠핑</span>
+        </div>
+        <div class="skinCare">
+          <img src="" alt="" />
+          <span>스킨케어ㆍ메이크업</span>
+        </div>
+        <div class="hair">
+          <img src="" alt="" />
+          <span>헤어ㆍ바디ㆍ구강</span>
+        </div>
+        <div class="kitchen">
+          <img src="" alt="" />
+          <span>주방용품</span>
+        </div>
+        <div class="homeApplience">
+          <img src="" alt="" />
+          <span>가전제품</span>
+        </div>
+        <div class="pet">
+          <img src="" alt="" />
+          <span>반려동물</span>
+        </div>
+        <div class="baby">
+          <img src="" alt="" />
+          <span>베이비ㆍ키즈ㆍ완구</span>
+        </div>
+        <div class="travel">
+          <img src="" alt="" />
+          <span>여행ㆍ티켓</span>
+        </div>
       </div>
 
       <!-- 네비게이션 중앙 바 -->
       <!-- 1. 중앙 배치 / 2. 글자 속성 / 3. 링크 설정 -->
-      <div>
-        <a href="">신상품</a>
-        <a href="">베스트</a>
-        <a href="">알뜰쇼핑</a>
-        <a href="">특가/혜택</a>
+      <div class="category">
+        <a href="" class="new">신상품</a>
+        <a href="" class="best">베스트</a>
+        <a href="" class="hotdeal">알뜰쇼핑</a>
+        <a href="" class="special">특가/혜택</a>
       </div>
 
       <!-- 네비게이션 우측 박스 -->
       <!-- 1. 우측 배치 / 2. 글자 및 박스 속성 설정  -->
-      <div>샛별ㆍ낮 배송안내</div>
+      <div class="morningDelivery">샛별ㆍ낮 배송안내</div>
     </nav>
 
     <!-- MAIN -->
