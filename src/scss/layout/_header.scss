@@ -1,1 +1,6 @@
-// header.scss
+/* // header.scss */
+@use './../utils' as *;
+
+.topBar{
+    background: $primary-color;
+}
