@@ -1,1 +1,78 @@
-// header.scss
+/* // header.scss */
+@use './../utils' as *;
+
+.topBar{
+    background: $primary-color;
+    height : rem(50px);
+
+    
+    
+
+    &__div{
+        height : rem(42px);
+        width : 1050px;
+        // background: green;
+        margin-left : auto;
+        margin-right: auto;
+        // margin-top : 0px;
+        // margin-top : 4px;
+        display : flex;
+        flex-direction : row;
+        align-items: center;
+
+        justify-content: center;
+        // text-align: center;
+        
+    }
+
+    &__word{
+        margin-top : 4px;
+        color : $white;
+    }
+
+    &__X{
+        color : $white;
+        position : absolute;
+        right : 100px;
+        top : 8px;
+    }
+}
+
+.memberSystem{
+    // background: yellow;
+    height : 31px;
+    padding : 10px;
+
+    font-size : 12px;
+
+    display : flex;
+    flex-flow : row nowrap;
+    justify-content: flex-end;
+
+    &__first{
+        color : $primary-color;
+        font-weight: 600;
+    }
+}
+
+.logo{
+    display : flex;
+    flex-flow : row nowrap;
+    align-items : center;
+    width : 287px;
+
+    &__image{
+        width : 82px;
+        height: 42px;
+    }
+
+    &__market{
+        font-size : 21.3px;
+        padding-left : 12px; 
+        color : $primary-color;
+        font-weight: 700;
+    }
+    &__beauty{
+        font-size : 21.3px;
+    }
+}

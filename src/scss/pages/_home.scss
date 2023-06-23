@@ -1,32 +1,32 @@
 @use './../utils' as *;
 @use './../base/' as *;
 
-.MainBanner{
+.MainBanner {
   width: 1920px;
   height: 370px;
   position: relative;
 }
 
-.button{
+.button {
   position: absolute;
 }
 
-.button button{
+.button button {
   width: 52px;
   height: 52px;
-  background: inherit ;
-  border:none;
-  box-shadow:none;
-  border-radius:0;
-  padding:0;
-  overflow:visible;
-  cursor:pointer
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
 }
 
-.button :nth-child(1){
+.button :nth-child(1) {
   background: url(/src/images/Icon/Arrow.png);
 }
 
-.button :nth-child(2){
+.button :nth-child(2) {
   background: url(/src/images/Icon/Arrow.png);
 }

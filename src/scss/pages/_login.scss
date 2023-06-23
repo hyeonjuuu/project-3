@@ -1,2 +1,27 @@
 @use './../utils' as *;
 @use './../components' as *;
+
+.login {
+  background: pink;
+  font-size: rem(21.3px);
+  color: black;
+  text-align: center;
+  margin-top: rem(80px);
+}
+
+.loginForm {
+  margin-top: rem(44px);
+  &__container {
+    background: tan;
+    width: 340px;
+
+    @include autoMargin;
+  }
+}
+
+.userId {
+  &__input {
+    width: rem(340px);
+    height: rem(50px);
+  }
+}
