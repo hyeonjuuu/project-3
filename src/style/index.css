@@ -381,6 +381,65 @@ legend {
 }
 
 <<<<<<< HEAD
+/* // header.scss */
+.topBar {
+  background: #5f0080;
+  height: 3.125rem;
+}
+.topBar__div {
+  height: 2.625rem;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.topBar__word {
+  margin-top: 4px;
+  color: #ffffff;
+}
+.topBar__X {
+  color: #ffffff;
+  position: absolute;
+  right: 100px;
+  top: 8px;
+}
+
+.memberSystem {
+  height: 31px;
+  padding: 10px;
+  font-size: 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.memberSystem__first {
+  color: #5f0080;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 287px;
+}
+.logo__image {
+  width: 82px;
+  height: 42px;
+}
+.logo__market {
+  font-size: 21.3px;
+  padding-left: 12px;
+  color: #5f0080;
+  font-weight: 700;
+}
+.logo__beauty {
+  font-size: 21.3px;
+=======
+<<<<<<< HEAD
 .customerCenter .customerCenter__title {
   font-size: 1.33125rem;
   font-weight: bold;
@@ -448,6 +507,7 @@ legend {
   background: url(/src/images/Icon/Arrow.png);
 >>>>>>> 70a0e723c7fe3a1cdb51db3b2998d2f9efb4ae5b
 >>>>>>> fe60ae8209351cc3de186c239b9d03a6e018eb3b
+>>>>>>> 98642ffec4f090b93180310294b9ab204d3a6bd9
 }
 
 /*# sourceMappingURL=index.css.map */
