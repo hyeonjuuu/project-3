@@ -1,1 +1,52 @@
-// sprite.scss
+@use 'color' as var; //var 붙혀줘야해
+@use 'unit' as *;
+@use 'flexbox' as *;
+
+//맵 key:value
+$colors: (
+  'Book': var.$green,
+  'News': var.$yellow,
+  'Board': var.$brown,
+  'Favorite': var.$orange,
+  'Twitter': var.$blue,
+);
+
+//지금 정의하는것 . in colors 안에서  섹션에 담겨있는 색상값 (색션이름 , 컬러 )(맵데이터 안에서 순환해)
+// 반복해서 내보내서 찍어줘
+//map 아이템의 갯수만큼 반복해주는것 foreach랑 비슷 .....
+
+@each $section, $color in $colors {
+  .accent#{$section} {
+    // 보간처리한거야
+    color: $color;
+  }
+}
+
+// 스프라이트 배경이미지
+.sprite {
+  min-height: rem(60px);
+  background-image: url(./../assets/images/sprite_main.png);
+  background-repeat: no-repeat;
+  padding-left: rem(64px);
+  font-size: rem(18px);
+  font-weight: 700;
+  @include flexbox(column, center); //center 세로 변경
+
+  [class*='enTitle'] {
+    font-weight: 400;
+    font-size: rem(16px);
+  }
+
+  //리스트 타입으로 변수만들어줬어
+  $sprites: Book, Board, News, Favorite, Twitter;
+  //지역변수 만들어즀어
+  $x: 0;
+  $y: 0;
+  @each $sprite in $sprites {
+    &#{$sprite} {
+      background-position: $x $y;
+    }
+    //순환하게 만들어줌
+    $y: $y - 115px;
+  }
+}
