@@ -381,6 +381,21 @@ legend {
 }
 
 <<<<<<< HEAD
+.customerCenter .customerCenter__title {
+  font-size: 1.33125rem;
+  font-weight: bold;
+  color: #101010;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.customerCenter .customerCenter__number {
+  font-size: 2.36875rem;
+}
+.customerCenter .customerCenter__time {
+  font-size: 1rem;
+  font-weight: 500;
+=======
+<<<<<<< HEAD
 .login {
   background: pink;
   font-size: 1.33125rem;
@@ -432,6 +447,7 @@ legend {
 .button :nth-child(2) {
   background: url(/src/images/Icon/Arrow.png);
 >>>>>>> 70a0e723c7fe3a1cdb51db3b2998d2f9efb4ae5b
+>>>>>>> fe60ae8209351cc3de186c239b9d03a6e018eb3b
 }
 
 /*# sourceMappingURL=index.css.map */
