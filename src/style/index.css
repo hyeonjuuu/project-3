@@ -373,6 +373,7 @@ legend {
   font-size: 1.33125rem;
   font-weight: bold;
   color: #101010;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .customerCenter .customerCenter__number {

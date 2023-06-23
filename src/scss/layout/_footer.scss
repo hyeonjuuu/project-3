@@ -4,7 +4,7 @@
     font-size: rem(21.3px);
     font-weight: bold;
     color: $black;
-    margin-bottom: rem(16px);
+    @include marginY(16px);
   }
   .customerCenter__number {
     font-size: rem(37.9px);
