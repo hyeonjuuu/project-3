@@ -17,24 +17,27 @@ h2 {
 }
 
 .cart {
-  @include flexbox;
+  background: yellow;
+  @include flexbox($justify: flex-between);
   @include autoMargin;
+  gap: rem(1050-742-284px);
 
-  // background: pink;
   &__left {
-    width: 742px;
-    // background: yellowgreen;
+    width: rem(742px);
+    background: yellowgreen;
   }
   &__right {
+    width: rem(284px);
     background: violet;
   }
 }
 
 .cartSelectAll {
+  // padding-top: auto;
+  // padding-bottom: auto;
+  height: 56px;
   width: inherit;
   line-height: 150%;
-  // display: block;
-  // padding: 16px, 16px;
   background-image: url(./../../images/Input/Check3.png);
   background-color: palegoldenrod;
   background-size: 24px;
@@ -44,4 +47,18 @@ h2 {
 }
 .cartButton {
   @include buttonNone;
+}
+
+// 펼치기
+#toggle {
+  display: none; /* 체크박스 숨김 */
+}
+.c-label {
+  cursor: pointer;
+}
+.content {
+  display: none; /* 초기에는 숨겨진 상태 */
+}
+#toggle:checked ~ .content {
+  display: block; /* 체크된 경우 .content가 표시됨 */
 }

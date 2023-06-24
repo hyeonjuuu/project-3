@@ -21,33 +21,25 @@
               전체선택
             </label>
             <span>(3/3)</span>
+
             <button type="submit" class="cartButton">선택삭제</button>
           </div>
 
           <form action="URL" method="POST">
-            <fieldset>
-              <legend>냉장 식품</legend>
-              <ul>
-                <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                <li>[풀무원] 탱탱쫄면 (4개입)</li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>냉장 식품</legend>
-              <ul>
-                <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                <li>[풀무원] 탱탱쫄면 (4개입)</li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>냉장 식품</legend>
-              <ul>
-                <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                <li>[풀무원] 탱탱쫄면 (4개입)</li>
-              </ul>
-            </fieldset>
+            <h4>냉장 식품</h4>
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="c-label">
+              <img src="./../images/Icon/Arrow2.png" alt="냉장식품 펼치기" />
+            </label>
+            <div class="content">
+              <fieldset>
+                <legend class="a11yHidden">냉장 식품 펼치기</legend>
+                <ul>
+                  <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                  <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                </ul>
+              </fieldset>
+            </div>
           </form>
 
           <div class="cartSelectAll">
@@ -60,7 +52,7 @@
           </div>
         </div>
         <!-- 오른쪽 영역 -->
-        <div class="cart__rigth">
+        <div class="cart__right">
           <div class="cartAddress">
             <h3>배송지</h3>
             <address>서울 중랑구 면목로 42길 11 (행운빌딩) 603호</address>
