@@ -377,8 +377,7 @@ iframe {
 /* Accessibility Styles */
 /* // 숨김 제목 및 콘텐츠 --------------------------------------------------------------- / */
 /* // 숨김 콘텐츠 -------------------------------------------------------------------- / */
-.a11yHidden,
-legend {
+.a11yHidden {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -475,7 +474,7 @@ h2 {
   height: 32px;
   line-height: 150%;
   margin-top: 5rem;
-  margin-bottom: 2.75rem;
+  margin-bottom: 3.125rem;
 }
 
 .cart {
@@ -485,18 +484,23 @@ h2 {
   align-items: stretch;
   margin-left: auto;
   margin-right: auto;
-  background: pink;
 }
 .cart__left {
   width: 742px;
-  background: yellowgreen;
 }
 .cart__right {
   background: violet;
 }
 
 .cartSelectAll {
-  background: thistle url(./../../images/Input/Check.png) no-repeat;
+  width: inherit;
+  line-height: 150%;
+  background-image: url(./../../images/Input/Check3.png);
+  background-color: palegoldenrod;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0px -1.875rem;
+  padding-left: 1.5rem;
 }
 
 .cartButton {

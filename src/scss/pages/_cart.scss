@@ -13,17 +13,17 @@ h2 {
   height: 32px;
   line-height: 150%;
   margin-top: rem(80px);
-  margin-bottom: rem(44px);
+  margin-bottom: rem(50px);
 }
 
 .cart {
   @include flexbox;
   @include autoMargin;
-  // width: rem(1050px);
-  background: pink;
+
+  // background: pink;
   &__left {
     width: 742px;
-    background: yellowgreen;
+    // background: yellowgreen;
   }
   &__right {
     background: violet;
@@ -31,7 +31,16 @@ h2 {
 }
 
 .cartSelectAll {
-  background: thistle url(./../../images/Input/Check.png) no-repeat;
+  width: inherit;
+  line-height: 150%;
+  // display: block;
+  // padding: 16px, 16px;
+  background-image: url(./../../images/Input/Check3.png);
+  background-color: palegoldenrod;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0px rem(-30px);
+  padding-left: rem(24px);
 }
 .cartButton {
   @include buttonNone;
