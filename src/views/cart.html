@@ -18,36 +18,42 @@
           <div class="cartSelectAll">
             <label for="cartCheckbox1">
               <input type="checkbox" id="cartCheckbox1" />
-              전체선택
+              전체선택 (3/3)
             </label>
-            <span>(3/3)</span>
+            <span aria-hidden="true">ㅣ</span>
 
             <button type="submit" class="cartButton">선택삭제</button>
           </div>
 
-          <form action="URL" method="POST">
-            <h4>냉장 식품</h4>
-            <input type="checkbox" id="toggle" />
-            <label for="toggle" class="c-label">
-              <img src="./../images/Icon/Arrow2.png" alt="냉장식품 펼치기" />
-            </label>
-            <div class="content">
-              <fieldset>
-                <legend class="a11yHidden">냉장 식품 펼치기</legend>
-                <ul>
-                  <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                  <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                </ul>
-              </fieldset>
+          <form action="URL" method="POST" class="cartForm">
+            <h4 class="cartForm__h">냉장 식품</h4>
+            <div class="cartForm__container">
+              <input type="checkbox" id="toggle" />
+              <label for="toggle" class="foodLabel">
+                <img src="./../images/Icon/Arrow2.png" alt="냉장식품 펼치기" class="foodImg" />
+              </label>
+              <div class="content">
+                <fieldset>
+                  <legend class="a11yHidden">냉장 식품 펼치기</legend>
+                  <ul>
+                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
           </form>
 
           <div class="cartSelectAll">
             <label for="cartCheckbox2">
               <input type="checkbox" id="cartCheckbox2" />
-              전체선택
+              전체선택 (3/3)
             </label>
-            <span>(3/3)</span>
+            <span aria-hidden="true">ㅣ</span>
             <button type="submit" class="cartButton">선택삭제</button>
           </div>
         </div>
