@@ -1,0 +1,19 @@
+@use './../utils' as *;
+@use './../components' as *;
+
+h2 {
+  background: tan;
+}
+
+.cart {
+  @include autoMargin;
+  background: pink;
+  &__left {
+  }
+  &__right {
+  }
+}
+
+.cartButton {
+  @include buttonNone;
+}

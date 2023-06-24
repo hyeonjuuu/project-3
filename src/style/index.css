@@ -442,6 +442,23 @@ legend {
   font-weight: 500;
 }
 
+h2 {
+  background: tan;
+}
+
+.cart {
+  margin-left: auto;
+  margin-right: auto;
+  background: pink;
+}
+.cartButton {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .MainBanner {
   width: 1920px;
   height: 370px;

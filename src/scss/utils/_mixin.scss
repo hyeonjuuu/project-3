@@ -115,6 +115,14 @@
   font-size: rem(16px);
 }
 
+@mixin buttonNone {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 // 공통 input
 
 @mixin input($w: 340px, $h: 50px) {
