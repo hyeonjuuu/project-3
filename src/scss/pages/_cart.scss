@@ -1,19 +1,38 @@
 @use './../utils' as *;
 @use './../components' as *;
 
+.karlyCart {
+  width: 1050px;
+  height: 709px;
+  @include autoMargin;
+}
+
 h2 {
-  background: tan;
+  text-align: center;
+  font-size: rem(21.3px);
+  height: 32px;
+  line-height: 150%;
+  margin-top: rem(80px);
+  margin-bottom: rem(44px);
 }
 
 .cart {
+  @include flexbox;
   @include autoMargin;
+  // width: rem(1050px);
   background: pink;
   &__left {
+    width: 742px;
+    background: yellowgreen;
   }
   &__right {
+    background: violet;
   }
 }
 
+.cartSelectAll {
+  background: thistle url(./../../images/Input/Check.png) no-repeat;
+}
 .cartButton {
   @include buttonNone;
 }
