@@ -2,7 +2,6 @@
 @use './../components' as *;
 
 .login {
-  background: pink;
   font-size: rem(21.3px);
   color: black;
   text-align: center;
@@ -12,16 +11,31 @@
 .loginForm {
   margin-top: rem(44px);
   &__container {
-    background: tan;
     width: 340px;
-
     @include autoMargin;
   }
 }
 
-.userId {
+.userId,
+.userPassword {
   &__input {
-    width: rem(340px);
-    height: rem(50px);
+    @include input;
+    margin-bottom: rem(12px);
   }
+}
+
+.userForgot {
+  height: 19px;
+  font-size: 12px;
+  text-align: right;
+  line-height: 150%;
+}
+
+.buttonLogin {
+  @include button;
+  margin-top: rem(28px);
+  margin-bottom: rem(12px);
+}
+.buttonJoin {
+  @include button($bgColor: white, $color: $primary-color);
 }
