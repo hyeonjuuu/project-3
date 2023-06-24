@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("http://fonts.googleapis.com/css?family=Nanum Gothic, Dotum, Sans-Serief");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -334,16 +333,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  background: inherit;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-  overflow: visible;
-  cursor: pointer;
-}
-
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
@@ -380,7 +369,6 @@ legend {
   margin: -1px;
 }
 
-<<<<<<< HEAD
 /* // header.scss */
 .topBar {
   background: #5f0080;
@@ -438,45 +426,146 @@ legend {
 }
 .logo__beauty {
   font-size: 21.3px;
-=======
-<<<<<<< HEAD
-.customerCenter .customerCenter__title {
+}
+
+.footer {
+  font-family: pretendard, sans-serif;
+  border-top: 1px solid #E1E1E1;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0rem;
+  width: 65.625rem;
+}
+
+.customerCenter {
+  position: relative;
+}
+
+.customerCenter__title {
   font-size: 1.33125rem;
   font-weight: bold;
   color: #101010;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.customerCenter .customerCenter__number {
+
+.customerCenter__number {
   font-size: 2.36875rem;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-items: center;
 }
-.customerCenter .customerCenter__time {
+.customerCenter__number .customerCenter__time {
   font-size: 1rem;
-  font-weight: 500;
-=======
-<<<<<<< HEAD
-.login {
-  background: pink;
-  font-size: 1.33125rem;
-  color: black;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #333333;
+}
+
+.customerCenter__kakao {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.customerCenter__kakao span {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.kakao__link {
+  border: 1px solid #c4c4c4;
+  padding: 0.25rem;
+  width: 8.75rem;
+  height: 2.5rem;
   text-align: center;
-  margin-top: 5rem;
+  align-self: center;
+  line-height: 180%;
 }
 
-.loginForm {
-  margin-top: 2.75rem;
-}
-.loginForm__container {
-  background: tan;
-  width: 340px;
-  margin-left: auto;
-  margin-right: auto;
+.kakaoInfo {
+  margin-left: 1rem;
+  line-height: 160%;
 }
 
-.userId__input {
-  width: 21.25rem;
-  height: 3.125rem;
-=======
+.customerCenter__ask {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.ask__link {
+  border: 1px solid #c4c4c4;
+  padding: 0.25rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  text-align: center;
+  align-self: center;
+  line-height: 180%;
+}
+
+.askInfo {
+  margin-left: 1rem;
+  line-height: 160%;
+}
+
+.customerCenter__order {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.customerCenter__order span {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.order__link {
+  border: 1px solid #c4c4c4;
+  padding: 0.25rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  text-align: center;
+  align-self: center;
+  line-height: 180%;
+}
+
+.orderInfo {
+  margin-left: 1rem;
+  line-height: 160%;
+}
+
+.nonMember {
+  background: teal;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: absolute;
+  bottom: 0;
+  color: #333333;
+  font-size: 0.75rem;
+}
+.nonMember dd {
+  color: #5f0080;
+}
+
 .MainBanner {
   width: 1920px;
   height: 370px;
@@ -505,9 +594,29 @@ legend {
 
 .button :nth-child(2) {
   background: url(/src/images/Icon/Arrow.png);
->>>>>>> 70a0e723c7fe3a1cdb51db3b2998d2f9efb4ae5b
->>>>>>> fe60ae8209351cc3de186c239b9d03a6e018eb3b
->>>>>>> 98642ffec4f090b93180310294b9ab204d3a6bd9
+}
+
+.login {
+  background: pink;
+  font-size: 1.33125rem;
+  color: black;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.loginForm {
+  margin-top: 2.75rem;
+}
+.loginForm__container {
+  background: tan;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.userId__input {
+  width: 21.25rem;
+  height: 3.125rem;
 }
 
 /*# sourceMappingURL=index.css.map */
