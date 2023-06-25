@@ -1,32 +1,104 @@
 @use './../utils' as *;
 @use './../base/' as *;
 
-.MainBanner {
-  width: 1920px;
-  height: 370px;
+// @media (min-width: 1920px) {
+//   .main {
+//     margin: 0 auto;
+//     margin-right: auto;
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//     grid-template-rows: auto;
+//     grid-column-gap: 1.25rem;
+//     grid-row-gap: 1rem;
+//     grid-template-areas:
+//     "main main main main main main"
+//     ". product product product product ."
+//     "banner banner banner banner banner banner"
+//     ;
+//   }
+// }
+
+// @media (min-width: 1920px) {
+//   .mainBanner {
+//     grid-area: main;
+//   }
+//   .product__list {
+//     grid-area: product;
+//   }
+//   .lineBanner {
+//     grid-area: banner;
+//   }
+// }
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBanner {
   position: relative;
+}
+
+.product__title {
+  font-size: rem(28px);
+  font-weight: 600;
+  text-align: center;
+  padding: 30px;
+}
+
+.product {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.product__list {
+  float: left;
+}
+
+.product__list img{
+  width: 60%;
 }
 
 .button {
   position: absolute;
+  top: 160px;
+  margin: 0 3%;
 }
 
 .button button {
-  width: 52px;
+  width: 1800px;
   height: 52px;
-  background: inherit;
   border: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-  overflow: visible;
   cursor: pointer;
+  display: block;
 }
 
 .button :nth-child(1) {
-  background: url(/src/images/Icon/Arrow.png);
+  background: url(/images/Icon/Arrow.png) no-repeat;
 }
 
 .button :nth-child(2) {
-  background: url(/src/images/Icon/Arrow.png);
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  transform : rotate(180deg);
+}
+
+.mainBanner span {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: rgba(64, 64, 64, 0.30);
+  right: 30px;
+  bottom: 30px;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
 }
