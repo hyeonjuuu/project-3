@@ -125,3 +125,8 @@
   object-fit: $fit;
   object-position: $posX $posY;
 }
+
+@mixin bgImages {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

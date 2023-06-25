@@ -90,7 +90,7 @@
 
 // 칼리 info
 .karlyInfo {
-  background: yellow;
+  @include marginY(16px);
   margin-bottom: rem(28px);
 }
 
@@ -119,4 +119,32 @@
 }
 .company__highlight {
   color: $purple;
+}
+
+// SNS
+.SNS {
+  @include flexbox;
+}
+
+[class*="SNS__"] {
+  width: rem(30px);
+  height: rem(30px);
+  @include bgImages;
+  margin-right: rem(20px);
+}
+
+.SNS__naver_b {
+  background-image: url(./../images/Icon/Blog.png);
+}
+.SNS__fb {
+  background-image: url(./../images/Icon/Facebook.png);
+}
+.SNS__ig {
+  background-image: url(./../images/Icon/Instagram.png);
+}
+.SNS__naver_p {
+  background-image: url(./../images/Icon/NaverPost.png);
+}
+.SNS__youtube {
+  background-image: url(./../images/Icon/Youtube.png);
 }
