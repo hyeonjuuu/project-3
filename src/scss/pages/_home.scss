@@ -1,35 +1,6 @@
 @use './../utils' as *;
 @use './../base/' as *;
 
-// @media (min-width: 1920px) {
-//   .main {
-//     margin: 0 auto;
-//     margin-right: auto;
-//     display: grid;
-//     grid-template-columns: repeat(6, 1fr);
-//     grid-template-rows: auto;
-//     grid-column-gap: 1.25rem;
-//     grid-row-gap: 1rem;
-//     grid-template-areas:
-//     "main main main main main main"
-//     ". product product product product ."
-//     "banner banner banner banner banner banner"
-//     ;
-//   }
-// }
-
-// @media (min-width: 1920px) {
-//   .mainBanner {
-//     grid-area: main;
-//   }
-//   .product__list {
-//     grid-area: product;
-//   }
-//   .lineBanner {
-//     grid-area: banner;
-//   }
-// }
-
 .main {
   margin-left: auto;
   margin-right: auto;
