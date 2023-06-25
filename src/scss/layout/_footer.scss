@@ -81,7 +81,8 @@
   font-size: rem(12px);
   font-weight: 400;
   line-height: 160%;
-  .nonMember__askmail, .nonMember__ordermail {
+
+  [class*="mail"] {
     color: $purple;
     padding-left: rem(4px);
   }
@@ -105,14 +106,17 @@
   gap: rem(13.6px);
   line-height: 160%;
   color: $base-text;
+  font-weight: 500;
 }
 
 .karlyCompany {
   font-size: rem(12px);
   line-height: 160%;
+}
 
-
-  .company__highlight {
-    color: $purple;
-  }
+.karly__address {
+  display: inline;
+}
+.company__highlight {
+  color: $purple;
 }

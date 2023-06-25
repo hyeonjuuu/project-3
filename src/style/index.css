@@ -523,7 +523,7 @@ legend {
   font-weight: 400;
   line-height: 160%;
 }
-.nonMember .nonMember__askmail, .nonMember .nonMember__ordermail {
+.nonMember [class*=mail] {
   color: #5f0080;
   padding-left: 0.25rem;
 }
@@ -547,13 +547,19 @@ legend {
   gap: 0.85rem;
   line-height: 160%;
   color: #333333;
+  font-weight: 500;
 }
 
 .karlyCompany {
   font-size: 0.75rem;
   line-height: 160%;
 }
-.karlyCompany .company__highlight {
+
+.karly__address {
+  display: inline;
+}
+
+.company__highlight {
   color: #5f0080;
 }
 
