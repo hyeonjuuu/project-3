@@ -1,6 +1,7 @@
 @use './../utils' as *;
 @use './../base/' as *;
 
+// 메인배너
 .main {
   margin-left: auto;
   margin-right: auto;
@@ -21,21 +22,22 @@
   padding: 30px;
 }
 
-.product {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
+// 메인배너 슬라이드 넘버
+.mainBanner span {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: rgba(64, 64, 64, 0.30);
+  right: 30px;
+  bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
 }
 
-.product__list {
-  float: left;
-}
-
-.product__list img{
-  width: 60%;
-}
-
+// 메인배너 화살표 버튼
 .button {
   position: absolute;
   width: 1800px;
@@ -59,16 +61,19 @@
   transform : rotate(180deg);
 }
 
-.mainBanner span {
-  position: absolute;
-  width: 50px;
-  height: 20px;
-  padding: 0 12px;
-  border-radius: 12px;
-  background: rgba(64, 64, 64, 0.30);
-  right: 30px;
-  bottom: 30px;
-  font-size: 14px;
-  text-align: center;
-  color: #fff;
+
+// 상품 리스트
+.product {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.product__list {
+  float: left;
+}
+
+.product__list img{
+  width: 60%;
 }
