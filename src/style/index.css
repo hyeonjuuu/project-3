@@ -434,7 +434,7 @@ legend {
 }
 
 .footerTop {
-  max-width: 64rem;
+  max-width: 65.625rem;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -444,17 +444,11 @@ legend {
   grid-row-gap: 0rem;
   margin-top: 1.75rem;
   margin-bottom: 2rem;
+  line-height: 160%;
 }
 .footerTop span[aria-hidden] {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
-}
-
-.customerCenter__kakao,
-.customerCenter__ask,
-.customerCenter__order {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .customerCenter__title {
@@ -476,6 +470,7 @@ legend {
   justify-content: flex-start;
   align-items: stretch;
   align-items: center;
+  line-height: 140%;
 }
 .customerCenter__number .customerCenter__time {
   font-size: 1rem;
@@ -494,6 +489,13 @@ legend {
   align-items: stretch;
 }
 
+.customerCenter__kakao,
+.customerCenter__ask,
+.customerCenter__order {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 [class*=link] {
   border: 1px solid #c4c4c4;
   padding: 0.25rem;
@@ -506,7 +508,6 @@ legend {
 
 [class*=Info] {
   margin-left: 1rem;
-  line-height: 160%;
 }
 
 .nonMember {
@@ -597,6 +598,44 @@ legend {
 
 .SNS__youtube {
   background-image: url(./../images/Icon/Youtube.png);
+}
+
+.karlyCertify {
+  border-top: 1px solid #E1E1E1;
+  max-width: 65.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  flex: none;
+  font-size: 0.625rem;
+}
+.karlyCertify img {
+  width: 2.125rem;
+  height: 2.125rem;
+}
+.karlyCertify .karlyCertify__toss img {
+  width: 6.375rem;
+  height: 2rem;
+}
+.karlyCertify [class*=__] {
+  display: flex;
+}
+.karlyCertify [class*=__about] {
+  color: #333333;
+  line-height: 160%;
+  margin-left: 0.5rem;
+}
+
+[class*=karlyCertify__] {
+  margin-left: 1.229375rem;
+}
+
+.karlyCertify__isms {
+  margin-left: 0;
 }
 
 .MainBanner {

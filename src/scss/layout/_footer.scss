@@ -13,25 +13,22 @@
   @include gridbox(2, 1fr, 0, 16px);
   margin-top: rem(28px);
   margin-bottom: rem(32px);
-
+  line-height: 160%;
+  
   span[aria-hidden] {
     @include marginX(4px);
   }
 }
 
-.customerCenter__kakao,
-.customerCenter__ask,
-.customerCenter__order {
-  @include marginY(16px);
-}
 
-// *고객행복센터
+// 고객행복센터
 .customerCenter__title {
   font-size: rem(21.3px);
   font-weight: bold;
   color: $black;
   @include marginY(16px);
 }
+
 .customerCenter__number {
   font-size: rem(37.9px);
   font-weight: 700;
@@ -39,6 +36,7 @@
   @include marginY(16px);
   @include flexbox;
   align-items: center;
+  line-height: 140%;
   
   .customerCenter__time {
     font-size: rem(16px);
@@ -55,6 +53,13 @@
   @include flexbox;
 }
 
+
+.customerCenter__kakao,
+.customerCenter__ask,
+.customerCenter__order {
+  @include marginY(16px);
+}
+
 [class*="link"] {
   border: 1px solid #c4c4c4;
   @include padding(4px);
@@ -67,7 +72,7 @@
 
 [class*="Info"] {
   margin-left: rem(16px);
-  line-height: 160%;
+  // line-height: 160%;
 }
 
 // 비회원 문의
@@ -147,4 +152,44 @@
 }
 .SNS__youtube {
   background-image: url(./../images/Icon/Youtube.png);
+}
+
+// 인증범위
+.karlyCertify {
+  border-top: 1px solid #E1E1E1;
+  @include containerMax;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  flex: none;
+  font-size: rem(10px);
+  
+  img {
+    width: rem(34px);
+    height: rem(34px);
+  }
+  
+  .karlyCertify__toss img {
+    width: rem(102px);
+    height: rem(32px);
+  }
+  [class*="__"] {
+    display: flex;
+  }
+  [class*="__about"] {
+    color: $base-text;
+    line-height: 160%;
+    margin-left: rem(8px);
+  }
+}
+
+[class*="karlyCertify__"] {
+  margin-left: rem(19.67px);
+}
+
+.karlyCertify__isms {
+  margin-left: 0;
 }

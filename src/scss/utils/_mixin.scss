@@ -45,7 +45,7 @@
 
 //최대 화면 크기
 
-@mixin containerMax($max-width: 1024px) {
+@mixin containerMax($max-width: 1050px) {
   max-width: rem($max-width);
   @include autoMargin;
 }
