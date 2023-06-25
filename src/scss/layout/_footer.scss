@@ -13,8 +13,11 @@
   @include gridbox(2, 1fr, 0, 16px);
   margin-top: rem(28px);
   margin-bottom: rem(32px);
-}
 
+  span[aria-hidden] {
+    @include marginX(4px);
+  }
+}
 
 .customerCenter__kakao,
 .customerCenter__ask,
@@ -22,7 +25,7 @@
   @include marginY(16px);
 }
 
-// 고객행복센터
+// *고객행복센터
 .customerCenter__title {
   font-size: rem(21.3px);
   font-weight: bold;
@@ -45,15 +48,14 @@
   }
 }
 
-// 카카오 문의
-.customerCenter__kakao {
+// 고객행복센터 > 문의 3종
+.customerCenter__kakao,
+.customerCenter__ask,
+.customerCenter__order{
   @include flexbox;
-
-  span {
-    @include marginX(4px);
-  }
 }
-.kakao__link {
+
+[class*="link"] {
   border: 1px solid #c4c4c4;
   @include padding(4px);
   width: rem(140px);
@@ -62,47 +64,8 @@
   align-self: center;
   line-height: 180%;
 }
-.kakaoInfo {
-  margin-left: rem(16px);
-  line-height: 160%;
-}
 
-// 1:1 문의
-.customerCenter__ask {
-  @include flexbox;
-}
-.ask__link {
-  border: 1px solid #c4c4c4;
-  @include padding(4px);
-  width: rem(140px);
-  height: rem(40px);
-  text-align: center;
-  align-self: center;
-  line-height: 180%;
-}
-.askInfo {
-  margin-left: rem(16px);
-  line-height: 160%;
-}
-
-// 대량 주문
-.customerCenter__order {
-  @include flexbox;
-
-  span {
-    @include marginX(4px);
-  }
-}
-.order__link {
-  border: 1px solid #c4c4c4;
-  @include padding(4px);
-  width: rem(140px);
-  height: rem(40px);
-  text-align: center;
-  align-self: center;
-  line-height: 180%;
-}
-.orderInfo {
+[class*="Info"] {
   margin-left: rem(16px);
   line-height: 160%;
 }
@@ -121,5 +84,35 @@
   .nonMember__askmail, .nonMember__ordermail {
     color: $purple;
     padding-left: rem(4px);
+  }
+}
+
+// 칼리 info
+.karlyInfo {
+  background: yellow;
+  margin-bottom: rem(28px);
+}
+
+.infoMenu,
+.karlyCompany,
+.SNS {
+  margin-bottom: rem(28px);
+}
+
+
+.infoMenu {
+  @include flexbox;
+  gap: rem(13.6px);
+  line-height: 160%;
+  color: $base-text;
+}
+
+.karlyCompany {
+  font-size: rem(12px);
+  line-height: 160%;
+
+
+  .company__highlight {
+    color: $purple;
   }
 }

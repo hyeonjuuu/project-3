@@ -445,6 +445,10 @@ legend {
   margin-top: 1.75rem;
   margin-bottom: 2rem;
 }
+.footerTop span[aria-hidden] {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
 
 .customerCenter__kakao,
 .customerCenter__ask,
@@ -481,66 +485,16 @@ legend {
   color: #333333;
 }
 
-.customerCenter__kakao {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-.customerCenter__kakao span {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.kakao__link {
-  border: 1px solid #c4c4c4;
-  padding: 0.25rem;
-  width: 8.75rem;
-  height: 2.5rem;
-  text-align: center;
-  align-self: center;
-  line-height: 180%;
-}
-
-.kakaoInfo {
-  margin-left: 1rem;
-  line-height: 160%;
-}
-
-.customerCenter__ask {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.ask__link {
-  border: 1px solid #c4c4c4;
-  padding: 0.25rem;
-  width: 8.75rem;
-  height: 2.5rem;
-  text-align: center;
-  align-self: center;
-  line-height: 180%;
-}
-
-.askInfo {
-  margin-left: 1rem;
-  line-height: 160%;
-}
-
+.customerCenter__kakao,
+.customerCenter__ask,
 .customerCenter__order {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
 }
-.customerCenter__order span {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
 
-.order__link {
+[class*=link] {
   border: 1px solid #c4c4c4;
   padding: 0.25rem;
   width: 8.75rem;
@@ -550,7 +504,7 @@ legend {
   line-height: 180%;
 }
 
-.orderInfo {
+[class*=Info] {
   margin-left: 1rem;
   line-height: 160%;
 }
@@ -572,6 +526,35 @@ legend {
 .nonMember .nonMember__askmail, .nonMember .nonMember__ordermail {
   color: #5f0080;
   padding-left: 0.25rem;
+}
+
+.karlyInfo {
+  background: yellow;
+  margin-bottom: 1.75rem;
+}
+
+.infoMenu,
+.karlyCompany,
+.SNS {
+  margin-bottom: 1.75rem;
+}
+
+.infoMenu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.85rem;
+  line-height: 160%;
+  color: #333333;
+}
+
+.karlyCompany {
+  font-size: 0.75rem;
+  line-height: 160%;
+}
+.karlyCompany .company__highlight {
+  color: #5f0080;
 }
 
 .MainBanner {
