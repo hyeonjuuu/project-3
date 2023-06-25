@@ -431,22 +431,26 @@ legend {
 .footer {
   font-family: pretendard, sans-serif;
   border-top: 1px solid #E1E1E1;
-  max-width: 64rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footerTop {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-column-gap: 1rem;
   grid-row-gap: 0rem;
-  width: 65.625rem;
+  margin-top: 1.75rem;
+  margin-bottom: 2rem;
 }
 
-.customerCenter {
-  position: relative;
+.customerCenter__kakao,
+.customerCenter__ask,
+.customerCenter__order {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .customerCenter__title {
@@ -552,18 +556,22 @@ legend {
 }
 
 .nonMember {
-  background: teal;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  position: absolute;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 13.9375rem;
   bottom: 0;
   color: #333333;
   font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 160%;
 }
-.nonMember dd {
+.nonMember .nonMember__askmail, .nonMember .nonMember__ordermail {
   color: #5f0080;
+  padding-left: 0.25rem;
 }
 
 .MainBanner {

@@ -5,17 +5,21 @@
 .footer {
   font-family: pretendard, sans-serif;
   border-top: 1px solid #E1E1E1;
-  @include containerMax;
 }
 
 // 고객센터 + 칼리소개
 .footerTop {
+  @include containerMax;
   @include gridbox(2, 1fr, 0, 16px);
-  width: rem(1050px);
+  margin-top: rem(28px);
+  margin-bottom: rem(32px);
 }
 
-.customerCenter {
-  position: relative;
+
+.customerCenter__kakao,
+.customerCenter__ask,
+.customerCenter__order {
+  @include marginY(16px);
 }
 
 // 고객행복센터
@@ -105,16 +109,17 @@
 
 // 비회원 문의
 .nonMember {
-  background: teal;
   @include flexbox;
-  @include pos;
+  flex-wrap: wrap;
+  margin-top: rem(16px);
+  width: rem(223px);
   bottom: 0;
   color: $base-text;
   font-size: rem(12px);
-  
-  dd {
+  font-weight: 400;
+  line-height: 160%;
+  .nonMember__askmail, .nonMember__ordermail {
     color: $purple;
+    padding-left: rem(4px);
   }
-
-  
 }
