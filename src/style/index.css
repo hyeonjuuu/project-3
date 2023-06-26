@@ -730,6 +730,7 @@ input[type=search] {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .karlyCart {
   width: 1050px;
@@ -803,29 +804,53 @@ h2 {
 }
 
 >>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
+=======
+>>>>>>> c2fd9a860b5430cfe4544d7489d5a85bf609edd6
 .MainBanner {
   width: 1920px;
   height: 370px;
   position: relative;
 }
 
+.product__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px;
+}
+
+.mainBanner span {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: rgba(64, 64, 64, 0.3);
+  right: 30px;
+  bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 150%;
+  color: #fff;
+}
+
 .button {
   position: absolute;
+  width: 62%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .button button {
   width: 52px;
   height: 52px;
-  background: inherit;
   border: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-  overflow: visible;
   cursor: pointer;
 }
 
 .button :nth-child(1) {
+<<<<<<< HEAD
   background-image: url(./../../images/Icon/Arrow.png);
 }
 
@@ -839,6 +864,31 @@ h2 {
   background: pink;
 =======
   background: url(/src/images/Icon/Arrow.png);
+=======
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  float: left;
+}
+
+.button :nth-child(2) {
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  transform: rotate(180deg);
+  float: right;
+}
+
+.product {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.product__list {
+  float: left;
+}
+
+.product__list img {
+  width: 60%;
+>>>>>>> c2fd9a860b5430cfe4544d7489d5a85bf609edd6
 }
 
 .login {
