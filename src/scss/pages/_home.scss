@@ -1,6 +1,11 @@
 @use './../utils' as *;
 @use './../base/' as *;
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 // 메인배너
 .main {
   margin-left: auto;
@@ -50,8 +55,6 @@
 .button button {
   width: 52px;
   height: 52px;
-  border: none;
-  cursor: pointer;
 }
 
 .button :nth-child(1) {
@@ -72,12 +75,25 @@
   padding: 0;
   display: flex;
   flex-direction: row;
+  width: 1050px;
+}
+
+.product img {
+  width: 249px;
+  height: 320px;
+  padding-right: 18px;
 }
 
 .product__list {
   float: left;
 }
 
-.product__list img{
-  width: 60%;
+.product button {
+  width: 45px;
+  height: 45px;
+  background: url(/images/Icon/Cart.png) no-repeat;
+}
+
+.lineBanner {
+  padding: 40px 0;
 }
