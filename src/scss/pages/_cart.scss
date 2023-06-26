@@ -116,8 +116,9 @@ h2 {
   @include font(#333, 16px, 400, 160%);
   // width: 284px;
   dt {
+    // float: left;
     display: inline-block;
-    width: 150px;
+    width: 100px;
     // float: left;
   }
   dt:nth-child(-n + 3) {
@@ -151,11 +152,7 @@ h2 {
     @include font(#333, 12px, 600);
   }
   dd:first-of-type {
-    // color: aqua;
-    font-size: 28.43px;
-    font-family: Pretendard;
-    font-weight: 700;
-    line-height: 140%;
+    @include font(black, 28.4px, 700, 140%);
   }
 }
 

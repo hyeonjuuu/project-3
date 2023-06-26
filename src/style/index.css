@@ -796,7 +796,7 @@ h2 {
 }
 .cartPayment dt {
   display: inline-block;
-  width: 150px;
+  width: 100px;
 }
 .cartPayment dt:nth-child(-n+3) {
   padding-bottom: 1rem;
@@ -832,8 +832,8 @@ h2 {
   line-height: 150%;
 }
 .cartPayment__pay dd:first-of-type {
-  font-size: 28.43px;
-  font-family: Pretendard;
+  color: black;
+  font-size: 1.775rem;
   font-weight: 700;
   line-height: 140%;
 }
