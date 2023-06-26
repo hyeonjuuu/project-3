@@ -453,10 +453,21 @@ iframe {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.customerCenter .customerCenter__number {
+
+.customerCenter__number {
   font-size: 2.36875rem;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-items: center;
+  line-height: 140%;
 }
-.customerCenter .customerCenter__time {
+.customerCenter__number .customerCenter__time {
   font-size: 1rem;
   font-weight: 500;
 }
