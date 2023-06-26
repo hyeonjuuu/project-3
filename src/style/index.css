@@ -315,6 +315,26 @@ table {
   border-spacing: 0;
 }
 
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+
+input[type=checkbox]::-webkit-check-indicator {
+  display: none;
+}
+
+input[type=checkbox]::-moz-check-indicator {
+  display: none;
+}
+
+input[type=checkbox]::-ms-check {
+  display: none;
+}
+
 body,
 body::before,
 body::after,
@@ -357,8 +377,7 @@ iframe {
 /* Accessibility Styles */
 /* // 숨김 제목 및 콘텐츠 --------------------------------------------------------------- / */
 /* // 숨김 콘텐츠 -------------------------------------------------------------------- / */
-.a11yHidden,
-legend {
+.a11yHidden {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -442,16 +461,9 @@ legend {
   font-weight: 500;
 }
 
-.main {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.mainBanner {
+.MainBanner {
+  width: 1920px;
+  height: 370px;
   position: relative;
 }
 

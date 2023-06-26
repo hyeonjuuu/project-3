@@ -113,6 +113,15 @@
   border-radius: rem(4px);
   border: 1px solid #5f0080;
   font-size: rem(16px);
+  cursor: pointer;
+}
+
+@mixin buttonNone {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 // 공통 input
