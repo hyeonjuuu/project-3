@@ -461,105 +461,73 @@ iframe {
   font-weight: 500;
 }
 
-.karlyCart {
-  width: 1050px;
-  height: 709px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h2 {
-  text-align: center;
-  font-size: 1.33125rem;
-  height: 32px;
-  line-height: 150%;
-  margin-top: 5rem;
-  margin-bottom: 3.125rem;
-}
-
-.cart {
-  background: yellow;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-between;
-  align-items: stretch;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 1.5rem;
-}
-.cart__left {
-  width: 46.375rem;
-  background: yellowgreen;
-}
-.cart__right {
-  width: 17.75rem;
-  background: violet;
-}
-
-.cartSelectAll {
-  height: 56px;
-  width: inherit;
-  line-height: 150%;
-  background-image: url(./../../images/Input/Check3.png);
-  background-color: palegoldenrod;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: 0px -1.875rem;
-  padding-left: 1.5rem;
-}
-
-.cartButton {
-  appearance: none;
-  border: 0;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-#toggle {
-  display: none; /* 체크박스 숨김 */
-}
-
-.c-label {
-  cursor: pointer;
-}
-
-.content {
-  display: none; /* 초기에는 숨겨진 상태 */
-}
-
-#toggle:checked ~ .content {
-  display: block; /* 체크된 경우 .content가 표시됨 */
-}
-
 .MainBanner {
   width: 1920px;
   height: 370px;
   position: relative;
 }
 
+.product__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px;
+}
+
+.mainBanner span {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: rgba(64, 64, 64, 0.3);
+  right: 30px;
+  bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 150%;
+  color: #fff;
+}
+
 .button {
   position: absolute;
+  width: 62%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .button button {
   width: 52px;
   height: 52px;
-  background: inherit;
   border: none;
-  box-shadow: none;
-  border-radius: 0;
-  padding: 0;
-  overflow: visible;
   cursor: pointer;
 }
 
 .button :nth-child(1) {
-  background: url(/src/images/Icon/Arrow.png);
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  float: left;
 }
 
 .button :nth-child(2) {
-  background: url(/src/images/Icon/Arrow.png);
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  transform: rotate(180deg);
+  float: right;
+}
+
+.product {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.product__list {
+  float: left;
+}
+
+.product__list img {
+  width: 60%;
 }
 
 .login {
