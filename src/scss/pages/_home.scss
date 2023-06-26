@@ -20,13 +20,6 @@ button {
   position: relative;
 }
 
-.product__title {
-  font-size: rem(28px);
-  font-weight: 600;
-  text-align: center;
-  padding: 30px 0 70px 0px;
-}
-
 // 메인배너 슬라이드 넘버
 .mainBanner span {
   position: absolute;
@@ -70,6 +63,10 @@ button {
 
 
 // 상품 리스트
+.todayProduct{
+  margin-bottom: 60px;
+}
+
 .product {
   margin: 0;
   padding: 0;
@@ -81,19 +78,82 @@ button {
 .product img {
   width: 249px;
   height: 320px;
-  padding-right: 18px;
+  margin-right: 18px;
+}
+
+.product__list .imgg img {
+  margin: 0;
+}
+
+div.imgg button {
+  right: 16px;
 }
 
 .product__list {
-  float: left;
+  position: relative;
 }
 
 .product button {
+  position: absolute;
   width: 45px;
   height: 45px;
   background: url(/images/Icon/Cart.png) no-repeat;
+  display: block;
+  top: 258px;
+  right: 34px;
 }
 
+// 상품 오른쪽 슬라이드 버튼
+
+.product .btn-arrow-right {
+  background: url(/images/Icon/arrow3.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 125px;
+  right: -25px;
+  border-radius: 25px;
+  box-shadow: 1px 0px 4px rgba(1,0,1,0.2);
+}
+
+
+// 상품 텍스트
+.product__title {
+  font-size: rem(28px);
+  font-weight: 600;
+  text-align: center;
+  padding: 50px 0 80px 0px;
+}
+
+.product dt {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.product dl {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.product dd {
+  line-height: 150%;
+}
+
+.product strong {
+  color: #FA622F;
+}
+
+.txt-underline {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #898989;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+// 라인 배너
 .lineBanner {
-  padding: 40px 0;
+  margin-bottom: 40px;
 }
