@@ -3,6 +3,7 @@
 
 .topBar{
     background: $primary-color;
+    // background: yellow;
     height : rem(50px);
 
     
@@ -55,11 +56,30 @@
     }
 }
 
+.headerBox{
+    width : 1050px;
+    height : 105px;
+    // background: yellow;
+    margin-left : auto;
+    margin-right : auto;
+    padding-bottom : 20px;
+    position: relative;
+}
+.headerBox__middle{
+    width : 1050px;
+    height: 42px;
+    // background: green;
+    // margin-top : 32px;
+    // margin-bottom : 20px;
+    display : flex;
+    flex-flow : row nowrap;
+    justify-content :space-between;
+}
 .logo{
     display : flex;
     flex-flow : row nowrap;
     align-items : center;
-    width : 287px;
+    width : 267px;
 
     &__image{
         width : 82px;
@@ -74,5 +94,276 @@
     }
     &__beauty{
         font-size : 21.3px;
+    }
+}
+
+
+
+.imoji{
+    display : flex;
+    flex-flow : row nowrap;
+
+    &__location{
+        padding-right : 20px;
+    }
+    &__shopping{
+        padding-left : 20px;
+    }
+}
+
+
+
+.searchForm{
+    width : 360px;
+    // height: 36px;
+
+    @include autoMargin;
+    // margin-bottom : 200px;
+    position : absolute;
+    top : 30px;
+    // bottom : 12px;
+    left : 330px;
+
+    z-index : 1;
+
+    display : flex;
+    flex-flow : row nowrap;
+
+}
+.formInput{
+    position : relative;
+}
+.button__fillSecondary{
+
+    position : absolute;
+    background: url("./../../images/Icon/Search.png") no-repeat;
+    width : 36px;
+    height : 36px;
+    border : none;
+
+    top : 3px;
+    right : 15px;
+}
+
+input[type=search]{
+    width : 360px;
+    height: 36px;
+    @include paddingX(12px);
+    @include paddingY(20px);
+    border-radius: 5px;
+    border-color : $primary-color;
+    outline : none;
+}
+
+
+.nav{
+    // background: pink;
+    width : 1050px;
+    padding-top : 16px;
+    padding-bottom : 16px;
+    height: 72px;
+
+    @include autoMargin;
+
+    display : flex;
+    flex-flow : row nowrap;
+    justify-content:space-between;
+    align-items: center;
+
+    
+}
+
+.category{
+    // background: salmon;
+    width : 84px;
+    height: 24px;
+    // width : 247px;
+    // height: 920px;
+    // z-index: -1;
+    // position:absolute;
+    // left : 250px;
+
+    background: yellowgreen;
+    display : flex;
+    flex-flow : row nowrap;
+    align-items: center;
+
+    &__image{
+        padding-right : 12px;
+    }
+    &__word{
+        font-weight: 600;
+    }
+}
+
+
+.categoryHover{
+    
+    width : 247px;
+    height: 880px;
+    background: $white;
+    display : flex;
+    flex-flow : column;
+    gap : 8px;
+    font-size : 16px;
+    font-weight: 600;
+    line-height: 150%;
+    padding-left : 12px;
+    padding-right : 8px;
+
+    
+    position : absolute;
+    top : 220px;
+    left : -250px;
+    z-index : 2;
+}
+.categoryHover span{
+    padding : 32px;
+}
+
+// 빈공간에 적용안됨. 전체상자 적용되도록
+// hover -> unhover 해도 계속 열려있음 이거 어떻게?
+.category:hover ~ .categoryHover{
+    // background: yellow;
+    
+    left : 234.5px;
+
+    // width : 84px;
+    // height: 24px;
+
+    // position :relative;
+}
+
+
+.menu__icon{
+    background: url(./../../images/Icon/MenuIcon.png) no-repeat;
+    background-size: 26px;
+    border-bottom : 1px solid gray;
+
+}
+.present{
+    background-position: 0px -1px;
+}
+.vegetable{
+    background-position: 0px -197px;
+}
+.fruit{
+    background-position: 0px -348.2px;
+}
+.fish{
+    background-position: 0px -456px;
+}
+.meat{
+    background-position: 0px -65px;
+}
+.soup{
+    background-position: 0px -153px;
+}
+.salad{
+    background-position: 0px -305px;
+}
+.noodle{
+    background-position: 0px -217px;
+}
+.water{
+    background-position: 0px -110.5px;
+}
+.snack{
+    background-position: 0px -262px;
+}
+.bread{
+    background-position: 0px -45.5px;
+}
+.healthFood{
+    background-position: 0px -435px;
+}
+.wine{
+    background-position: 0px -392px;
+}
+.koreanAlcohol{
+    background-position: 0px -24.5px;
+}
+.living{
+    background-position: 0px -86px;
+}
+.skinCare{
+    background-position: 0px -130px;
+}
+.hair{
+    background-position: 0px -370px;
+}
+.kitchen{
+    background-position: 0px -175px;
+}
+.homeApplience{
+    background-position: 0px -240px;
+}
+.pet{
+    background-position: 0px -283px;
+}
+.baby{
+    background-position: 0px -325px;
+}
+.travel{
+    background-position: 0px -414px;
+}
+
+.navCenter{
+    // z-index: -2;
+
+    width : 600px;
+    height: 40px;
+    @include paddingY(8px);
+    // background: salmon;
+    display : flex;
+    flex-flow : row nowrap;
+    
+
+    &__new{
+        width : 150px;
+        height : 24px;
+        // background: red;
+    }
+    &__best{
+        width : 150px;
+        height : 24px;
+        // background: orange;
+    }
+    &__hotdeal{
+        width : 150px;
+        height : 24px;
+        // background: yellow;
+    }
+    &__special{
+        width : 150px;
+        height : 24px;
+        // background: green;
+    }
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+
+.morningDelivery{
+    font-size: 12px;
+    line-height: 160%;
+    // background: skyblue;
+    width : 95px;
+    height: 27px;
+    // @include paddingX(4px);
+    @include paddingY(4px);
+    border-radius: 16px;
+    border : 1px solid #A3A3a3;
+    padding : 0;
+
+    display : flex;
+    flex-flow : row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &__first{
+        color : $primary-color;
     }
 }

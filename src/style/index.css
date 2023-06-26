@@ -355,7 +355,10 @@ a {
 
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+<<<<<<< HEAD
+=======
   background-color: #fff;
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
 }
 
 /* 유연한 미디어 */
@@ -426,11 +429,28 @@ iframe {
   font-weight: 600;
 }
 
+.headerBox {
+  width: 1050px;
+  height: 105px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.headerBox__middle {
+  width: 1050px;
+  height: 42px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
 .logo {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  width: 287px;
+  width: 267px;
 }
 .logo__image {
   width: 82px;
@@ -446,30 +466,255 @@ iframe {
   font-size: 21.3px;
 }
 
-.footer {
-  font-family: pretendard, sans-serif;
-  border-top: 1px solid #E1E1E1;
+<<<<<<< HEAD
+.imoji {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.imoji__location {
+  padding-right: 20px;
+}
+.imoji__shopping {
+  padding-left: 20px;
 }
 
-.footerTop {
-  max-width: 65.625rem;
+.searchForm {
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-column-gap: 1rem;
-  grid-row-gap: 0rem;
-  margin-top: 1.75rem;
-  margin-bottom: 2rem;
-  line-height: 160%;
-}
-.footerTop span[aria-hidden] {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  position: absolute;
+  top: 30px;
+  left: 330px;
+  z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.customerCenter__title {
+.formInput {
+  position: relative;
+}
+
+.button__fillSecondary {
+  position: absolute;
+  background: url("./../../images/Icon/Search.png") no-repeat;
+  width: 36px;
+  height: 36px;
+  border: none;
+  top: 3px;
+  right: 15px;
+}
+
+input[type=search] {
+  width: 360px;
+  height: 36px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-radius: 5px;
+  border-color: #5f0080;
+  outline: none;
+}
+
+.nav {
+  width: 1050px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  width: 84px;
+  height: 24px;
+  background: yellowgreen;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.category__image {
+  padding-right: 12px;
+}
+.category__word {
+  font-weight: 600;
+}
+
+.categoryHover {
+  width: 247px;
+  height: 880px;
+  background: #ffffff;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  padding-left: 12px;
+  padding-right: 8px;
+  position: absolute;
+  top: 220px;
+  left: -250px;
+  z-index: 2;
+}
+
+.categoryHover span {
+  padding: 32px;
+}
+
+.category:hover ~ .categoryHover {
+  left: 234.5px;
+}
+
+.menu__icon {
+  background: url(./../../images/Icon/MenuIcon.png) no-repeat;
+  background-size: 26px;
+  border-bottom: 1px solid gray;
+}
+
+.present {
+  background-position: 0px -1px;
+}
+
+.vegetable {
+  background-position: 0px -197px;
+}
+
+.fruit {
+  background-position: 0px -348.2px;
+}
+
+.fish {
+  background-position: 0px -456px;
+}
+
+.meat {
+  background-position: 0px -65px;
+}
+
+.soup {
+  background-position: 0px -153px;
+}
+
+.salad {
+  background-position: 0px -305px;
+}
+
+.noodle {
+  background-position: 0px -217px;
+}
+
+.water {
+  background-position: 0px -110.5px;
+}
+
+.snack {
+  background-position: 0px -262px;
+}
+
+.bread {
+  background-position: 0px -45.5px;
+}
+
+.healthFood {
+  background-position: 0px -435px;
+}
+
+.wine {
+  background-position: 0px -392px;
+}
+
+.koreanAlcohol {
+  background-position: 0px -24.5px;
+}
+
+.living {
+  background-position: 0px -86px;
+}
+
+.skinCare {
+  background-position: 0px -130px;
+}
+
+.hair {
+  background-position: 0px -370px;
+}
+
+.kitchen {
+  background-position: 0px -175px;
+}
+
+.homeApplience {
+  background-position: 0px -240px;
+}
+
+.pet {
+  background-position: 0px -283px;
+}
+
+.baby {
+  background-position: 0px -325px;
+}
+
+.travel {
+  background-position: 0px -414px;
+}
+
+.navCenter {
+  width: 600px;
+  height: 40px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+}
+.navCenter__new {
+  width: 150px;
+  height: 24px;
+}
+.navCenter__best {
+  width: 150px;
+  height: 24px;
+}
+.navCenter__hotdeal {
+  width: 150px;
+  height: 24px;
+}
+.navCenter__special {
+  width: 150px;
+  height: 24px;
+}
+
+.morningDelivery {
+  font-size: 12px;
+  line-height: 160%;
+  width: 95px;
+  height: 27px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 16px;
+  border: 1px solid #A3A3a3;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.morningDelivery__first {
+  color: #5f0080;
+}
+
+=======
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
+.customerCenter .customerCenter__title {
   font-size: 1.33125rem;
   font-weight: bold;
   color: #101010;
@@ -570,226 +815,9 @@ iframe {
   font-weight: 500;
 }
 
-.karlyCompany {
-  font-size: 0.75rem;
-  line-height: 160%;
-}
-
-.karly__address {
-  display: inline;
-}
-
-.company__highlight {
-  color: #5f0080;
-}
-
-.SNS {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-[class*=SNS__] {
-  width: 1.875rem;
-  height: 1.875rem;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-right: 1.25rem;
-}
-
-.SNS__naver_b {
-  background-image: url(./../images/Icon/Blog.png);
-}
-
-.SNS__fb {
-  background-image: url(./../images/Icon/Facebook.png);
-}
-
-.SNS__ig {
-  background-image: url(./../images/Icon/Instagram.png);
-}
-
-.SNS__naver_p {
-  background-image: url(./../images/Icon/NaverPost.png);
-}
-
-.SNS__youtube {
-  background-image: url(./../images/Icon/Youtube.png);
-}
-
-.karlyCertify {
-  border-top: 1px solid #E1E1E1;
-  max-width: 65.625rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  font-size: 0.625rem;
-}
-.karlyCertify img {
-  width: 2.125rem;
-  height: 2.125rem;
-}
-.karlyCertify .karlyCertify__toss img {
-  width: 6.375rem;
-  height: 2rem;
-}
-.karlyCertify [class*=__] {
-  display: flex;
-}
-.karlyCertify [class*=__about] {
-  color: #333333;
-  line-height: 160%;
-  margin-left: 0.5rem;
-}
-
-[class*=karlyCertify__] {
-  margin-left: 1.229375rem;
-}
-
-.karlyCertify__isms {
-  margin-left: 0;
-}
-
-.karlyCart {
-  width: 1050px;
-  height: 709px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: -0.03125rem;
-}
-
-h2 {
-  text-align: center;
-  font-size: 1.33125rem;
-  height: 32px;
-  line-height: 150%;
-  margin-top: 5rem;
-  margin-bottom: 3.125rem;
-}
-
-.cart {
-  background: yellow;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-between;
-  align-items: stretch;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 1.5rem;
-}
-.cart__left {
-  width: 46.375rem;
-  background: yellowgreen;
-}
-.cart__right {
-  width: 17.75rem;
-  background: cornsilk;
-}
-
-.cartSelectAll {
-  height: 56px;
-  width: inherit;
-  line-height: 150%;
-  background-image: url(./../../images/Input/Check3.png);
-  background-color: palegoldenrod;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: 0px -1.875rem;
-  padding-left: 1.5rem;
-}
-
-.cartButton {
-  appearance: none;
-  border: 0;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.cartForm {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  background: pink;
-}
-.cartForm__h {
-  padding-left: 3.125rem;
-  background: wheat url(./../../images/icon/Food.png) no-repeat;
-}
-
-#toggle {
-  display: none; /* 체크박스 숨김 */
-}
-
-.c-label {
-  cursor: pointer;
-}
-
-.content {
-  display: none; /* 초기에는 숨겨진 상태 */
-  background: red;
-}
-
-#toggle:checked ~ .content {
-  display: block; /* 체크된 경우 .content가 표시됨 */
-}
-
-.cartAddress {
-  border: 1px solid #e1e1e1;
-  padding: 1.25rem;
-}
-.cartAddress h3 {
-  height: 2.25rem;
-  line-height: 2.25rem;
-  background-image: url(./../../images/Icon/Location.png);
-  background-repeat: no-repeat;
-  background-size: 36px;
-  padding-left: 2.5rem;
-  margin-bottom: 0.75rem;
-}
-.cartAddress address {
-  margin-bottom: 0.75rem;
-  line-height: 1.5rem;
-}
-.cartAddress span {
-  display: block;
-  margin-bottom: 0.75rem;
-  color: #5f0080;
-  font-size: 0.75rem;
-}
-.cartAddress button {
-  background-color: aqua;
-  width: 15.25rem;
-  height: 2.75rem;
-  background: #ffffff;
-  color: #5f0080;
-  text-align: center;
-  border-radius: 0.25rem;
-  border: 1px solid #5f0080;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-.main {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.mainBanner {
+.MainBanner {
+  width: 1920px;
+  height: 370px;
   position: relative;
 }
 
@@ -829,6 +857,21 @@ button {
 }
 
 .button :nth-child(1) {
+<<<<<<< HEAD
+  background-image: url(./../../images/Icon/Arrow.png);
+}
+
+.button :nth-child(2) {
+<<<<<<< HEAD
+  background-image: url(./../../images/Icon/Arrow.png);
+  transform: rotate(180deg);
+}
+
+.login {
+  background: pink;
+=======
+  background: url(/src/images/Icon/Arrow.png);
+=======
   background: url(/images/Icon/Arrow.png) no-repeat;
   float: left;
 }
@@ -857,17 +900,12 @@ button {
   float: left;
 }
 
-.product button {
-  width: 45px;
-  height: 45px;
-  background: url(/images/Icon/Cart.png) no-repeat;
-}
-
-.lineBanner {
-  padding: 40px 0;
+.product__list img {
+  width: 60%;
 }
 
 .login {
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
   font-size: 1.33125rem;
   color: black;
   text-align: center;
@@ -878,11 +916,20 @@ button {
   margin-top: 2.75rem;
 }
 .loginForm__container {
+<<<<<<< HEAD
+  background: tan;
+=======
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
   width: 340px;
   margin-left: auto;
   margin-right: auto;
 }
 
+<<<<<<< HEAD
+.userId__input {
+  width: 21.25rem;
+  height: 3.125rem;
+=======
 .userId__input,
 .userPassword__input {
   width: 21.25rem;
@@ -925,7 +972,6 @@ button {
   border-radius: 0.25rem;
   border: 1px solid #5f0080;
   font-size: 1rem;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
