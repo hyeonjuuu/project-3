@@ -1191,10 +1191,12 @@ div.imgg button {
 }
 
 h2 {
-  text-align: center;
+  color: black;
   font-size: 1.33125rem;
-  height: 32px;
+  font-weight: 600;
   line-height: 150%;
+  text-align: center;
+  height: 32px;
   margin-top: 5rem;
   margin-bottom: 3.125rem;
 }
@@ -1210,25 +1212,29 @@ h2 {
 }
 .cart__left {
   width: 46.375rem;
-  background: yellowgreen;
 }
 .cart__right {
   width: 17.75rem;
 }
 
 .cartSelectAll {
-  height: 56px;
-  width: inherit;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 150%;
   background-image: url(./../../images/Input/Check3.png);
-  background-color: palegoldenrod;
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0px -1.875rem;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
-.cartButton {
+.cartSelectAll .cartButton {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
   appearance: none;
   border: 0;
   padding: 0;
@@ -1237,18 +1243,30 @@ h2 {
 }
 
 .cartForm {
+  background: pink;
+}
+.cartForm__frozen {
+  background-color: ghostwhite;
+}
+.cartForm__frozen, .cartForm__water, .cartForm__sun {
+  padding-right: 0.25rem;
+  height: 3.875rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
-  background: pink;
-}
-.cartForm__container {
-  line-height: 62px;
 }
 .cartForm__h {
+  display: inline-block;
   padding-left: 2.625rem;
-  background: wheat url(./../../images/icon/food_frozen.png) no-repeat;
+  background: url(./../../images/icon/food_frozen.png) no-repeat;
+  background-position: 0 center;
   background-size: 30px;
 }
 
