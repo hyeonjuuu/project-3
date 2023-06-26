@@ -19,7 +19,7 @@ h2 {
 }
 
 .cart {
-  background: yellow;
+  // background: yellow;
   @include flexbox($justify: flex-between);
   @include autoMargin;
   gap: rem(1050-742-284px);
@@ -30,7 +30,7 @@ h2 {
   }
   &__right {
     width: rem(284px);
-    background: cornsilk;
+    // background: cornsilk;
   }
 }
 
@@ -112,7 +112,10 @@ h2 {
 
 // dt에 150px을 줘서 왼쪽으로 가게 크기를 설정했음
 .cartPayment {
-  padding: rem(20px);
+  height: rem(277px);
+  border: 1px solid #e1e1e1;
+  background: #f9f9f9;
+  padding: $spacing-md;
   @include font(#333, 16px, 400, 160%);
   // width: 284px;
   dt {
@@ -133,13 +136,15 @@ h2 {
     // display: inline-block;
   }
   &__pay {
-    border-top: 1px dashed red;
     padding-top: rem(24px);
+    border-top: 1px solid #e1e1e1;
+    // background: tan;
   }
 }
 .cartPayment__pay {
   span {
     @include font(white, 12px, 600);
+    margin-top: rem(11px);
     display: inline-block;
     border-radius: 1px;
     padding: 0px 8px;
