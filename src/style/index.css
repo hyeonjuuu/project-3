@@ -622,11 +622,9 @@ iframe {
 
 .badgeWrapper {
   position: absolute;
-  top: 516px;
-  right: 20px;
-  bottom: 0px;
-  z-index: 1;
-  margin-top: 93px;
+  height: 90vmax;
+  top: 733px;
+  right: 0;
 }
 
 .badge {
@@ -640,7 +638,8 @@ iframe {
   height: 210px;
   box-sizing: content-box;
   position: sticky;
-  top: 500px;
+  top: 50%;
+  transform: translateY(-50%);
   margin-right: 2.4375rem;
   background: #ffffff;
 }

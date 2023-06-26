@@ -222,20 +222,11 @@
 
 // 최근 본 상품
 .badgeWrapper {
-  // position: fixed;
-  // right: 0%;
-  // z-index: 1;
-  // bottom: 50%;
-
   position: absolute;
-  top: 516px;
-  right: 20px;
-  bottom: 0px;
-  z-index: 1;
-  margin-top: 93px;
-  
+  height: 90vmax;
+  top: 733px;
+  right: 0;
 }
-
 .badge {
   @include flexbox(column, center, center, nowrap);
   @include padding(8px);
@@ -244,9 +235,12 @@
   height: 210px;
   box-sizing: content-box;
   position: sticky;
-  top: 500px;
+  top: 50%;
+  transform: translateY(-50%);
   margin-right: rem(39px);
   background: $white;
+  
+
   
   [class*="item"] {
     @include bgImages;
