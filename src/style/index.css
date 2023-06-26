@@ -315,6 +315,26 @@ table {
   border-spacing: 0;
 }
 
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+
+input[type=checkbox]::-webkit-check-indicator {
+  display: none;
+}
+
+input[type=checkbox]::-moz-check-indicator {
+  display: none;
+}
+
+input[type=checkbox]::-ms-check {
+  display: none;
+}
+
 body,
 body::before,
 body::after,
@@ -335,6 +355,10 @@ a {
 
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+<<<<<<< HEAD
+=======
+  background-color: #fff;
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
 }
 
 /* 유연한 미디어 */
@@ -356,8 +380,7 @@ iframe {
 /* Accessibility Styles */
 /* // 숨김 제목 및 콘텐츠 --------------------------------------------------------------- / */
 /* // 숨김 콘텐츠 -------------------------------------------------------------------- / */
-.a11yHidden,
-legend {
+.a11yHidden {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -443,6 +466,7 @@ legend {
   font-size: 21.3px;
 }
 
+<<<<<<< HEAD
 .imoji {
   display: flex;
   flex-flow: row nowrap;
@@ -688,6 +712,8 @@ input[type=search] {
   color: #5f0080;
 }
 
+=======
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
 .customerCenter .customerCenter__title {
   font-size: 1.33125rem;
   font-weight: bold;
@@ -703,6 +729,80 @@ input[type=search] {
   font-weight: 500;
 }
 
+<<<<<<< HEAD
+=======
+.karlyCart {
+  width: 1050px;
+  height: 709px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.33125rem;
+  height: 32px;
+  line-height: 150%;
+  margin-top: 5rem;
+  margin-bottom: 3.125rem;
+}
+
+.cart {
+  background: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-between;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1.5rem;
+}
+.cart__left {
+  width: 46.375rem;
+  background: yellowgreen;
+}
+.cart__right {
+  width: 17.75rem;
+  background: violet;
+}
+
+.cartSelectAll {
+  height: 56px;
+  width: inherit;
+  line-height: 150%;
+  background-image: url(./../../images/Input/Check3.png);
+  background-color: palegoldenrod;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0px -1.875rem;
+  padding-left: 1.5rem;
+}
+
+.cartButton {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+#toggle {
+  display: none; /* 체크박스 숨김 */
+}
+
+.c-label {
+  cursor: pointer;
+}
+
+.content {
+  display: none; /* 초기에는 숨겨진 상태 */
+}
+
+#toggle:checked ~ .content {
+  display: block; /* 체크된 경우 .content가 표시됨 */
+}
+
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
 .MainBanner {
   width: 1920px;
   height: 370px;
@@ -730,12 +830,19 @@ input[type=search] {
 }
 
 .button :nth-child(2) {
+<<<<<<< HEAD
   background-image: url(./../../images/Icon/Arrow.png);
   transform: rotate(180deg);
 }
 
 .login {
   background: pink;
+=======
+  background: url(/src/images/Icon/Arrow.png);
+}
+
+.login {
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
   font-size: 1.33125rem;
   color: black;
   text-align: center;
@@ -746,15 +853,62 @@ input[type=search] {
   margin-top: 2.75rem;
 }
 .loginForm__container {
+<<<<<<< HEAD
   background: tan;
+=======
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
   width: 340px;
   margin-left: auto;
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 .userId__input {
   width: 21.25rem;
   height: 3.125rem;
+=======
+.userId__input,
+.userPassword__input {
+  width: 21.25rem;
+  height: 3.125rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding-left: 20px;
+  border-color: #a6a6a6;
+  border-width: 1px;
+  margin-bottom: 0.75rem;
+}
+
+.userForgot {
+  height: 19px;
+  font-size: 12px;
+  text-align: right;
+  line-height: 150%;
+}
+
+.buttonLogin {
+  width: 21.25rem;
+  height: 3.375rem;
+  background: #5f0080;
+  color: white;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 1px solid #5f0080;
+  font-size: 1rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.buttonJoin {
+  width: 21.25rem;
+  height: 3.375rem;
+  background: white;
+  color: #5f0080;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 1px solid #5f0080;
+  font-size: 1rem;
+>>>>>>> 2c7f3c482bdd3ec2cde5a8d5044c2d09f94ecd74
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,119 @@
+@use './../utils' as *;
+@use './../components' as *;
+
+.karlyCart {
+  width: 1050px;
+  height: 709px;
+  @include autoMargin;
+  //자간조절
+  letter-spacing: rem(-0.5px);
+}
+
+h2 {
+  text-align: center;
+  font-size: rem(21.3px);
+  height: 32px;
+  line-height: 150%;
+  margin-top: rem(80px);
+  margin-bottom: rem(50px);
+}
+
+.cart {
+  background: yellow;
+  @include flexbox($justify: flex-between);
+  @include autoMargin;
+  gap: rem(1050-742-284px);
+
+  &__left {
+    width: rem(742px);
+    background: yellowgreen;
+  }
+  &__right {
+    width: rem(284px);
+    background: cornsilk;
+  }
+}
+
+.cartSelectAll {
+  // padding-top: auto;
+  // padding-bottom: auto;
+  height: 56px;
+  width: inherit;
+  line-height: 150%;
+  background-image: url(./../../images/Input/Check3.png);
+  background-color: palegoldenrod;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0px rem(-30px);
+  padding-left: rem(24px);
+}
+.cartButton {
+  @include buttonNone;
+}
+
+// 펼치기
+.cartForm {
+  // height: rem(62px);
+  @include flexbox($justify: space-between);
+  background: pink;
+  &__container {
+    // line-height: 62px;
+  }
+  &__h {
+    padding-left: rem(50px);
+    background: wheat url(./../../images/icon/Food.png) no-repeat;
+  }
+}
+
+#toggle {
+  display: none; /* 체크박스 숨김 */
+}
+.c-label {
+  cursor: pointer;
+}
+.content {
+  display: none; /* 초기에는 숨겨진 상태 */
+  background: red;
+}
+
+#toggle:checked ~ .content {
+  display: block; /* 체크된 경우 .content가 표시됨 */
+}
+
+// 오른쪽 영역
+.cartAddress {
+  border: 1px solid #e1e1e1;
+  padding: rem(20px);
+  h3 {
+    height: rem(36px);
+    line-height: rem(36px);
+    background-image: url(./../../images/Icon/Location.png);
+    background-repeat: no-repeat;
+    background-size: 36px;
+    padding-left: rem(40px);
+    margin-bottom: rem(12px);
+  }
+  address {
+    margin-bottom: rem(12px);
+    line-height: rem(24px);
+  }
+  span {
+    display: block;
+    margin-bottom: rem(12px);
+    color: $primary-color;
+    font-size: rem(12px);
+  }
+  button {
+    background-color: aqua;
+    @include button(244px, 44px, $white, $primary-color);
+  }
+}
+// height: 56px;
+// width: inherit;
+// line-height: 150%;
+// background-image: url(./../../images/Input/Check3.png);
+// background-color: palegoldenrod;
+// background-size: 24px;
+// background-repeat: no-repeat;
+// background-position: 0px rem(-30px);
+// padding-left: rem(24px);
