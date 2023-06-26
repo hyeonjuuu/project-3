@@ -1,19 +1,189 @@
 @use './../utils' as *;
+@use "./../base/" as *;
+
+// 푸터 전체
+.footer {
+  font-family: pretendard, sans-serif;
+  border-top: 1px solid #E1E1E1;
+}
+
+// 고객센터 + 칼리소개
+.footerTop {
+  @include containerMax;
+  @include gridbox(2, 1fr, 0, 16px);
+  margin-top: rem(28px);
+  margin-bottom: rem(32px);
+  line-height: 160%;
+  
+  span[aria-hidden] {
+    @include marginX(4px);
+  }
+}
 
 
-.customerCenter {
-  .customerCenter__title {
-    font-size: rem(21.3px);
-    font-weight: bold;
-    color: $black;
-    @include marginY(16px);
-  }
-  .customerCenter__number {
-    font-size: rem(37.9px);
-  }
+// 고객행복센터
+.customerCenter__title {
+  font-size: rem(21.3px);
+  font-weight: bold;
+  color: $black;
+  @include marginY(16px);
+}
+
+.customerCenter__number {
+  font-size: rem(37.9px);
+  font-weight: 700;
+  color: $base-text;
+  @include marginY(16px);
+  @include flexbox;
+  align-items: center;
+  line-height: 140%;
+  
   .customerCenter__time {
     font-size: rem(16px);
-    font-weight: 500;
+    font-weight: 600;
+    @include marginX(8px);
+    color: $base-text;
   }
+}
 
+// 고객행복센터 > 문의 3종
+.customerCenter__kakao,
+.customerCenter__ask,
+.customerCenter__order{
+  @include flexbox;
+}
+
+
+.customerCenter__kakao,
+.customerCenter__ask,
+.customerCenter__order {
+  @include marginY(16px);
+}
+
+[class*="link"] {
+  border: 1px solid #c4c4c4;
+  @include padding(4px);
+  width: rem(140px);
+  height: rem(40px);
+  text-align: center;
+  align-self: center;
+  line-height: 180%;
+}
+
+[class*="Info"] {
+  margin-left: rem(16px);
+  // line-height: 160%;
+}
+
+// 비회원 문의
+.nonMember {
+  @include flexbox;
+  flex-wrap: wrap;
+  margin-top: rem(16px);
+  width: rem(223px);
+  bottom: 0;
+  color: $base-text;
+  font-size: rem(12px);
+  font-weight: 400;
+  line-height: 160%;
+
+  [class*="mail"] {
+    color: $purple;
+    padding-left: rem(4px);
+  }
+}
+
+// 칼리 info
+.karlyInfo {
+  @include marginY(16px);
+  margin-bottom: rem(28px);
+}
+
+.infoMenu,
+.karlyCompany,
+.SNS {
+  margin-bottom: rem(28px);
+}
+
+
+.infoMenu {
+  @include flexbox;
+  gap: rem(13.6px);
+  line-height: 160%;
+  color: $base-text;
+  font-weight: 500;
+}
+
+.karlyCompany {
+  font-size: rem(12px);
+  line-height: 160%;
+}
+
+.karly__address {
+  display: inline;
+}
+.company__highlight {
+  color: $purple;
+}
+
+// SNS
+.SNS {
+  @include flexbox;
+}
+
+[class*="SNS__"] {
+  width: rem(30px);
+  height: rem(30px);
+  @include bgImages;
+  margin-right: rem(20px);
+}
+
+.SNS__naver_b {
+  background-image: url(./../images/Icon/Blog.png);
+}
+.SNS__fb {
+  background-image: url(./../images/Icon/Facebook.png);
+}
+.SNS__ig {
+  background-image: url(./../images/Icon/Instagram.png);
+}
+.SNS__naver_p {
+  background-image: url(./../images/Icon/NaverPost.png);
+}
+.SNS__youtube {
+  background-image: url(./../images/Icon/Youtube.png);
+}
+
+// 인증범위
+.karlyCertify {
+  border-top: 1px solid #E1E1E1;
+  @include containerMax;
+  @include flexbox;
+  font-size: rem(10px);
+  
+  img {
+    width: rem(34px);
+    height: rem(34px);
+  }
+  
+  .karlyCertify__toss img {
+    width: rem(102px);
+    height: rem(32px);
+  }
+  [class*="__"] {
+    display: flex;
+  }
+  [class*="__about"] {
+    color: $base-text;
+    line-height: 160%;
+    margin-left: rem(8px);
+  }
+}
+
+[class*="karlyCertify__"] {
+  margin-left: rem(19.67px);
+}
+
+.karlyCertify__isms {
+  margin-left: 0;
 }
