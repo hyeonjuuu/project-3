@@ -48,6 +48,7 @@
     // background: yellow;
     height : 31px;
     padding : 10px;
+    padding-bottom : 35px;
 
     font-size : 12px;
 
@@ -73,9 +74,6 @@
 .headerBox__middle{
     width : 1050px;
     height: 42px;
-    // background: green;
-    // margin-top : 32px;
-    // margin-bottom : 20px;
     display : flex;
     flex-flow : row nowrap;
     justify-content :space-between;
@@ -120,15 +118,11 @@
 
 .searchForm{
     width : 360px;
-    // height: 36px;
-
     @include autoMargin;
-    // margin-bottom : 200px;
-    position : absolute;
-    top : 30px;
-    // bottom : 12px;
-    left : 330px;
-
+    // position : absolute;
+    // top : 30px;
+    // left : 330px;
+    padding-right : 150px;
     z-index : 1;
 
     display : flex;
@@ -147,10 +141,6 @@
     width : 36px;
     height : 36px;
     border : none;
-
-    // position : absolute;
-    // top : 3px;
-    // right : 15px;
 
     margin-left : 40%;
     margin-right : auto;    
@@ -191,7 +181,7 @@ input[type=search]{
     width : 84px;
     height: 24px;
 
-    background: yellowgreen;
+    // background: yellowgreen;
     display : flex;
     flex-flow : row nowrap;
     align-items: center;
@@ -213,17 +203,11 @@ input[type=search]{
 
     display : flex;
     flex-flow : column;
-    // gap : 15.9px;
-    // padding-top : 10px;
-    // align-content : stretch;
-    // flex-grow : 1;
     justify-content: space-evenly;
 
     font-size : 16px;
     font-weight: 600;
     line-height: 150%;
-    // padding-left : 12px;
-    // padding-right : 8px;
 
     
     position : absolute;
