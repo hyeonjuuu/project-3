@@ -461,9 +461,137 @@ iframe {
   font-weight: 500;
 }
 
-.MainBanner {
-  width: 1920px;
-  height: 370px;
+.karlyCart {
+  width: 1050px;
+  height: 709px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.03125rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.33125rem;
+  height: 32px;
+  line-height: 150%;
+  margin-top: 5rem;
+  margin-bottom: 3.125rem;
+}
+
+.cart {
+  background: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-between;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1.5rem;
+}
+.cart__left {
+  width: 46.375rem;
+  background: yellowgreen;
+}
+.cart__right {
+  width: 17.75rem;
+  background: cornsilk;
+}
+
+.cartSelectAll {
+  height: 56px;
+  width: inherit;
+  line-height: 150%;
+  background-image: url(./../../images/Input/Check3.png);
+  background-color: palegoldenrod;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0px -1.875rem;
+  padding-left: 1.5rem;
+}
+
+.cartButton {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.cartForm {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background: pink;
+}
+.cartForm__h {
+  padding-left: 3.125rem;
+  background: wheat url(./../../images/icon/Food.png) no-repeat;
+}
+
+#toggle {
+  display: none; /* 체크박스 숨김 */
+}
+
+.c-label {
+  cursor: pointer;
+}
+
+.content {
+  display: none; /* 초기에는 숨겨진 상태 */
+  background: red;
+}
+
+#toggle:checked ~ .content {
+  display: block; /* 체크된 경우 .content가 표시됨 */
+}
+
+.cartAddress {
+  border: 1px solid #e1e1e1;
+  padding: 1.25rem;
+}
+.cartAddress h3 {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  background-image: url(./../../images/Icon/Location.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  padding-left: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.cartAddress address {
+  margin-bottom: 0.75rem;
+  line-height: 1.5rem;
+}
+.cartAddress span {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #5f0080;
+  font-size: 0.75rem;
+}
+.cartAddress button {
+  background-color: aqua;
+  width: 15.25rem;
+  height: 2.75rem;
+  background: #ffffff;
+  color: #5f0080;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 1px solid #5f0080;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBanner {
   position: relative;
 }
 
@@ -471,7 +599,7 @@ iframe {
   font-size: 1.75rem;
   font-weight: 600;
   text-align: center;
-  padding: 30px;
+  padding: 30px 0 70px 0px;
 }
 
 .mainBanner span {
@@ -574,6 +702,7 @@ iframe {
   border-radius: 0.25rem;
   border: 1px solid #5f0080;
   font-size: 1rem;
+  cursor: pointer;
   margin-top: 1.75rem;
   margin-bottom: 0.75rem;
 }
@@ -587,6 +716,7 @@ iframe {
   border-radius: 0.25rem;
   border: 1px solid #5f0080;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
