@@ -490,14 +490,13 @@ iframe {
   position: relative;
 }
 
-.button__fillSecondary {
-  position: absolute;
+.formInput .button__fillSecondary {
   background: url("./../../images/Icon/Search.png") no-repeat;
   width: 36px;
   height: 36px;
   border: none;
-  top: 3px;
-  right: 15px;
+  margin-left: 40%;
+  margin-right: auto;
 }
 
 input[type=search] {
@@ -508,7 +507,7 @@ input[type=search] {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   border-radius: 5px;
-  border-color: #5f0080;
+  border: 1px #5f0080 solid;
   outline: none;
 }
 
@@ -526,6 +525,7 @@ input[type=search] {
 }
 
 .category {
+  position: relative;
   width: 84px;
   height: 24px;
   background: yellowgreen;
@@ -546,30 +546,40 @@ input[type=search] {
   background: #ffffff;
   display: flex;
   flex-flow: column;
-  gap: 8px;
+  justify-content: space-evenly;
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
-  padding-left: 12px;
-  padding-right: 8px;
   position: absolute;
-  top: 220px;
-  left: -250px;
-  z-index: 2;
+  top: -17px;
+  z-index: 1;
+  visibility: hidden;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.categoryHover span {
-  padding: 32px;
+.category:hover > .categoryHover {
+  top: -17px;
+  visibility: visible;
 }
 
-.category:hover ~ .categoryHover {
-  left: 234.5px;
+.menu__div:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.menu__div {
+  padding: 7.5px;
+  border-bottom: 1px solid rgb(222, 222, 222);
 }
 
 .menu__icon {
   background: url(./../../images/Icon/MenuIcon.png) no-repeat;
   background-size: 26px;
-  border-bottom: 1px solid gray;
+  padding-right: 40px;
+}
+
+.menu__word {
+  padding-left: 30px;
 }
 
 .present {
@@ -1035,6 +1045,22 @@ h2 {
   border: 1px solid #5f0080;
   font-size: 1rem;
   cursor: pointer;
+<<<<<<< HEAD
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBanner {
+  position: relative;
+=======
+>>>>>>> 5eeb0ba5c57dbbacd40f9920d9ad927c0f55d08a
 }
 
 button {
@@ -1124,6 +1150,10 @@ div.imgg button {
   position: relative;
 }
 
+<<<<<<< HEAD
+.product__list img {
+  width: 60%;
+=======
 .product button {
   position: absolute;
   width: 45px;
@@ -1182,6 +1212,7 @@ div.imgg button {
 
 .lineBanner {
   margin-bottom: 40px;
+>>>>>>> 5eeb0ba5c57dbbacd40f9920d9ad927c0f55d08a
 }
 
 .login {
