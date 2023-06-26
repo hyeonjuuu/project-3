@@ -33,7 +33,7 @@
                 <img src="./../images/Icon/Arrow2.png" alt="냉장식품 펼치기" class="foodImg" />
               </label>
               <div class="content">
-                <fieldset>
+                <!-- <fieldset>
                   <legend class="a11yHidden">냉장 식품 펼치기</legend>
                   <ul>
                     <li>[풀무원] 탱탱쫄면 (4개입)</li>
@@ -43,7 +43,7 @@
                     <li>[풀무원] 탱탱쫄면 (4개입)</li>
                     <li>[풀무원] 탱탱쫄면 (4개입)</li>
                   </ul>
-                </fieldset>
+                </fieldset> -->
               </div>
             </div>
           </form>
@@ -68,24 +68,25 @@
           <dl class="cartPayment">
             <dt>상품금액</dt>
             <dd>40,680 원</dd>
-
             <dt>상품할인금액</dt>
             <dd>-4,651 원</dd>
-
             <dt>배송비</dt>
             <dd>+3,000 원</dd>
 
-            <dt>결제예정금액</dt>
-            <dd>40,680 원</dd>
-
-            <dd><span>적립</span>최대 36원 적립 일반 0.1%</dd>
+            <div class="cartPayment__pay">
+              <dt>결제예정금액</dt>
+              <dd>40,680 원</dd>
+              <dd><span>적립</span> 최대 36원 적립 일반 0.1%</dd>
+            </div>
           </dl>
-          <button type="submit" class="cartOrder">주문하기</button>
-          <p>쿠폰/적립금은 주문서에서 사용 가능합니다</p>
-          <p>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</p>
-          <p>[마이컬리 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</p>
-          <p>쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종 산정됩니다.</p>
-          <p>상품별로 적립금 지급 기준이 다를 수 있습니다. (상품 상세 페이지에서 확인 가능합니다)</p>
+          <div class="cartOrder">
+            <button type="submit" class="cartOrder__button">주문하기</button>
+            <p>쿠폰/적립금은 주문서에서 사용 가능합니다</p>
+            <p>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</p>
+            <p>[마이컬리 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</p>
+            <p>쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종 산정됩니다.</p>
+            <p>상품별로 적립금 지급 기준이 다를 수 있습니다. (상품 상세 페이지에서 확인 가능합니다)</p>
+          </div>
         </div>
       </div>
     </section>
