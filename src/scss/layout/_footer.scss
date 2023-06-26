@@ -158,13 +158,7 @@
 .karlyCertify {
   border-top: 1px solid #E1E1E1;
   @include containerMax;
-  padding-top: 24px;
-  padding-bottom: 32px;
-  display: grid;
-
-  grid-template-rows: auto;
-  grid-template-columns: repeat(4, 1fr);
-  flex: none;
+  @include flexbox;
   font-size: rem(10px);
   
   img {

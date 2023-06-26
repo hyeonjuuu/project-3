@@ -605,12 +605,10 @@ legend {
   max-width: 65.625rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 24px;
-  padding-bottom: 32px;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(4, 1fr);
-  flex: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   font-size: 0.625rem;
 }
 .karlyCertify img {
