@@ -479,8 +479,10 @@ legend {
 
 .button {
   position: absolute;
-  top: 160px;
-  margin: 0 3%;
+  width: 62%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .button button {
@@ -492,11 +494,13 @@ legend {
 
 .button :nth-child(1) {
   background: url(/images/Icon/Arrow.png) no-repeat;
+  float: left;
 }
 
 .button :nth-child(2) {
   background: url(/images/Icon/Arrow.png) no-repeat;
   transform: rotate(180deg);
+  float: right;
 }
 
 .product {
