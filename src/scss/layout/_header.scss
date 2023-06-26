@@ -1,6 +1,11 @@
 /* // header.scss */
 @use './../utils' as *;
 
+// body{
+//     background: $white;
+//     z-index : 1;
+// }
+
 .topBar{
     background: $primary-color;
     // background: yellow;
@@ -129,20 +134,26 @@
     display : flex;
     flex-flow : row nowrap;
 
+    
+
 }
 .formInput{
     position : relative;
 }
-.button__fillSecondary{
+.formInput .button__fillSecondary{
 
-    position : absolute;
+    
     background: url("./../../images/Icon/Search.png") no-repeat;
     width : 36px;
     height : 36px;
     border : none;
 
-    top : 3px;
-    right : 15px;
+    // position : absolute;
+    // top : 3px;
+    // right : 15px;
+
+    margin-left : 40%;
+    margin-right : auto;    
 }
 
 input[type=search]{
@@ -151,13 +162,15 @@ input[type=search]{
     @include paddingX(12px);
     @include paddingY(20px);
     border-radius: 5px;
-    border-color : $primary-color;
+    // border-color : $primary-color;
+    border : 1px $primary-color solid;
     outline : none;
+
+    
 }
 
 
 .nav{
-    // background: pink;
     width : 1050px;
     padding-top : 16px;
     padding-bottom : 16px;
@@ -174,14 +187,9 @@ input[type=search]{
 }
 
 .category{
-    // background: salmon;
+    position : relative;
     width : 84px;
     height: 24px;
-    // width : 247px;
-    // height: 920px;
-    // z-index: -1;
-    // position:absolute;
-    // left : 250px;
 
     background: yellowgreen;
     display : flex;
@@ -202,45 +210,65 @@ input[type=search]{
     width : 247px;
     height: 880px;
     background: $white;
+
     display : flex;
     flex-flow : column;
-    gap : 8px;
+    // gap : 15.9px;
+    // padding-top : 10px;
+    // align-content : stretch;
+    // flex-grow : 1;
+    justify-content: space-evenly;
+
     font-size : 16px;
     font-weight: 600;
     line-height: 150%;
-    padding-left : 12px;
-    padding-right : 8px;
+    // padding-left : 12px;
+    // padding-right : 8px;
 
     
     position : absolute;
-    top : 220px;
-    left : -250px;
-    z-index : 2;
+    top : -17px;
+    // left : -250px;
+    z-index : 1;
+    visibility: hidden;
+    @include marginY(40px);
 }
-.categoryHover span{
-    padding : 32px;
-}
+
+
 
 // 빈공간에 적용안됨. 전체상자 적용되도록
 // hover -> unhover 해도 계속 열려있음 이거 어떻게?
-.category:hover ~ .categoryHover{
+.category:hover > .categoryHover{
     // background: yellow;
     
-    left : 234.5px;
+    top : -17px;
+    visibility :visible;
 
-    // width : 84px;
-    // height: 24px;
-
-    // position :relative;
 }
 
+.menu__div:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+.menu__div{
+    padding : 7.5px;
+    // padding-left : 2px;
+    border-bottom : 1px solid rgb(222, 222, 222);
+}
 
 .menu__icon{
     background: url(./../../images/Icon/MenuIcon.png) no-repeat;
     background-size: 26px;
-    border-bottom : 1px solid gray;
+    padding-right : 40px;
 
 }
+
+.menu__word{
+    // padding : 20px;
+    padding-left : 30px;
+    
+}
+
 .present{
     background-position: 0px -1px;
 }
