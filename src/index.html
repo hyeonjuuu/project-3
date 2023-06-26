@@ -27,7 +27,7 @@
         <li class="memberSystem__first">
           <a href="">회원가입　</a>
         </li>
-        <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="">　로그인　</a></li>
+        <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="./views/login.html">　로그인　</a></li>
         <li class="memberSystem__third"><span class="divider" aria-hidden="true">ㅣ</span><span>　고객센터▼</span></li>
       </ul>
       
@@ -47,6 +47,19 @@
         </ul>
 
         
+        <fieldset class="searchForm">
+          <legend class="a11yHidden">검색 폼</legend>
+          <div class="searchForm__group">
+            <div class="formInput">
+              <label for="search" class="a11yHidden formInput__label">검색어</label>
+              <input type="search" id="search" name="search" required
+                class="formInput__input" placeholder="검색어를 입력하세요." />
+              <button type="submit" class="button button__fillSecondary"></button>
+            </div>
+            
+          </div>
+        </fieldset>
+
 
         <!-- 헤더부분 우측중앙 이모티콘 3개 -->
         <!-- 1. 우측중앙 배치 / 2. 장바구니 이모티콘에 링크 부여  -->
@@ -54,7 +67,7 @@
           <li class="imoji__location"><img src="./images/Icon/Location.png" alt="" /></li>
           <li class="iomji__heart"><img src="./images/Icon/Heart.png" alt="" /></li>
           <li class="imoji__shopping">
-            <a href="">
+            <a href="./views/cart.html">
               <img src="./images/Icon/Cart-1.png" alt="" />
             </a>
           </li>
@@ -62,18 +75,7 @@
       </div>
       
       <!--  -->
-      <fieldset class="searchForm">
-        <legend>검색 폼</legend>
-        <div class="searchForm__group">
-          <div class="formInput">
-            <label for="search" class="a11yHidden formInput__label">검색어</label>
-            <input type="search" id="search" name="search" required
-              class="formInput__input" placeholder="검색어를 입력하세요." />
-            <button type="submit" class="button button__fillSecondary"></button>
-          </div>
-          
-        </div>
-      </fieldset>
+      
 
     </div>
 
@@ -89,104 +91,121 @@
     <div class="category">
       <img src="./images/Icon/Hamburger.png" alt="" class="category__image"/>
       <span class="category__word">카테고리</span> 
-
-      
+      <div class="categoryHover">
+        <div class="menu__div">
+          <div class="menu__icon present">
+            <span class="menu__word">선물하기</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon vegetable">
+            <span class="menu__word">채소</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon fruit">
+            <span class="menu__word">과일ㆍ견과ㆍ쌀</span>
+         </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon fish">
+            <span class="menu__word">수산ㆍ해산ㆍ건어물</span>
+           </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon meat">
+            <span class="menu__word">정육ㆍ계란</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon soup">
+            <span class="menu__word">국ㆍ반찬ㆍ메인요리</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon salad">
+            <span class="menu__word">샐러드ㆍ간편식</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon noodle">
+            <span class="menu__word">면ㆍ양념ㆍ오일</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon water">
+            <span class="menu__word">생수ㆍ음료ㆍ우유ㆍ커피</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon snack">
+            <span class="menu__word">간식ㆍ과자ㆍ떡</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon bread">
+            <span class="menu__word" >베이커리ㆍ치즈ㆍ델리</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon healthFood">
+            <span class="menu__word">건강식품</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon wine">
+            <span class="menu__word">와인</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon koreanAlcohol">
+            <span class="menu__word">전통주</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon living">
+            <span class="menu__word">생활용품ㆍ리빙ㆍ캠핑</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon skinCare">
+            <span class="menu__word">스킨케어ㆍ메이크업</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon hair">
+            <span class="menu__word">헤어ㆍ바디ㆍ구강</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon kitchen">
+            <span class="menu__word">주방용품</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon homeApplience">
+            <span class="menu__word">가전제품</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon pet">
+            <span class="menu__word">반려동물</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon baby">
+            <span class="menu__word">베이비ㆍ키즈ㆍ완구</span>
+          </div>
+        </div>
+        <div class="menu__div">
+          <div class="menu__icon travel">
+            <span class="menu__word">여행ㆍ티켓</span>
+          </div>
+        </div>
+        
+      </div> 
     </div>
 <!-- 웹카페 transfer한거처럼 위치 설정을 해서 뜨는거처럼?111 -->
-<div class="categoryHover">
-  <div class="menu__icon present">
-    <img src="" alt="" />
-    <span>선물하기</span>
-  </div>
-  <div class="menu__icon vegetable">
-    <img src="" alt="" />
-    <span>채소</span>
-  </div>
-  <div class="menu__icon fruit">
-    <img src="" alt="" />
-    <span>과일ㆍ견과ㆍ쌀</span>
- </div>
-  <div class="menu__icon fish">
-    <img src="" alt="" />
-   <span>수산ㆍ해산ㆍ건어물</span>
-  </div>
-  <div class="menu__icon meat">
-    <img src="" alt="" />
-    <span>정육ㆍ계란</span>
-  </div>
-  <div class="menu__icon soup">
-    <img src="" alt="" />
-    <span>국ㆍ반찬ㆍ메인요리</span>
-  </div>
-  <div class="menu__icon salad">
-    <img src="" alt="" />
-    <span>샐러드ㆍ간편식</span>
-  </div>
-  <div class="menu__icon noodle">
-    <img src="" alt="" />
-    <span>면ㆍ양념ㆍ오일</span>
-  </div>
-  <div class="menu__icon water">
-    <img src="" alt="" />
-    <span>생수ㆍ음료ㆍ우유ㆍ커피</span>
-  </div>
-  <div class="menu__icon snack">
-    <img src="" alt="" />
-    <span>간식ㆍ과자ㆍ떡</span>
-  </div>
-  <div class="menu__icon bread">
-    <img src="" alt="" />
-    <span>베이커리ㆍ치즈ㆍ델리</span>
-  </div>
-  <div class="menu__icon healthFood">
-    <img src="" alt="" />
-    <span>건강식품</span>
-  </div>
-  <div class="menu__icon wine">
-    <img src="" alt="" />
-    <span>와인</span>
-  </div>
-  <div class="menu__icon koreanAlcohol">
-    <img src="" alt="" />
-    <span>전통주</span>
-  </div>
-  <div class="menu__icon living">
-    <img src="" alt="" />
-    <span>생활용품ㆍ리빙ㆍ캠핑</span>
-  </div>
-  <div class="menu__icon skinCare">
-    <img src="" alt="" />
-    <span>스킨케어ㆍ메이크업</span>
-  </div>
-  <div class="menu__icon hair">
-    <img src="" alt="" />
-    <span>헤어ㆍ바디ㆍ구강</span>
-  </div>
-  <div class="menu__icon kitchen">
-    <img src="" alt="" />
-    <span>주방용품</span>
-  </div>
-  <div class="menu__icon homeApplience">
-    <img src="" alt="" />
-    <span>가전제품</span>
-  </div>
-  <div class="menu__icon pet">
-    <img src="" alt="" />
-    <span>반려동물</span>
-  </div>
-  <div class="menu__icon baby">
-    <img src="" alt="" />
-    <span>베이비ㆍ키즈ㆍ완구</span>
-  </div>
-  <div class="menu__icon travel">
-    <img src="" alt="" />
-    <span>여행ㆍ티켓</span>
-  </div>
-</div>
-    <div>
-      
-    </div>
-
     
 
     <!-- 네비게이션 중앙 바 -->
@@ -231,7 +250,7 @@
         <li class="product__list">
           <div class="product__list img">
             <img src="/images/product01.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
@@ -241,7 +260,7 @@
         <li class="product__list">
           <div class="product__list img">
             <img src="/images/product02.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
@@ -251,7 +270,7 @@
         <li class="product__list">
           <div class="product__list img">
             <img src="/images/product03.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>유기농 밀키퀸 현미 4kg</dt>
@@ -259,18 +278,16 @@
           </dl>
         </li>
         <li class="product__list">
-          <div class="product__list img">
+          <div class="product__list imgg">
             <img src="/images/product04.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>[프로쉬] 베이비 세탁세</dt>
-            <dl>
-              <dt>24%</dt>
-              <dd>18,900 원</dd>
-            </dl>
-            <dd>24,900 원</dd>
+            <dd><strong>24%</strong>18,900 원</dd>
+            <dd class="txt-underline">24900원</dd>
           </dl>
+          <button class="btn-arrow-right"></button>
         </li>
       </ul>
     </section>
@@ -279,13 +296,13 @@
       <img src="/images/line-banner 1.png" alt="" />
     </section>
 
-    <!-- <section class="todayRecommend">
+    <section class="todayProduct">
       <h2 class="product__title">놓치면 후회할 가격</h2>
       <ul class="product">
         <li class="product__list">
           <div class="product__list img">
             <img src="/images/product01.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
@@ -295,7 +312,7 @@
         <li class="product__list">
           <div class="product__list img">
             <img src="/images/product02.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
@@ -305,7 +322,7 @@
         <li class="product__list">
           <div class="product__list img">
             <img src="/images/product03.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>유기농 밀키퀸 현미 4kg</dt>
@@ -313,21 +330,19 @@
           </dl>
         </li>
         <li class="product__list">
-          <div class="product__list img">
+          <div class="product__list imgg">
             <img src="/images/product04.png" alt="" />
-            <button>장바구니 버튼</button>
+            <button></button>
           </div>
           <dl class="product__list text">
             <dt>[프로쉬] 베이비 세탁세</dt>
-            <dl>
-              <dt>24%</dt>
-              <dd>18,900 원</dd>
-            </dl>
-            <dd>24,900 원</dd>
+            <dd><strong>24%</strong>18,900 원</dd>
+            <dd class="txt-underline">24900원</dd>
           </dl>
+          <button class="btn-arrow-right"></button>
         </li>
       </ul>
-    </section> -->
+    </section>
 
   </main>
   
