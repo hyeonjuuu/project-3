@@ -103,27 +103,37 @@
   grid-row-gap: rem($row-gap);
 }
 
-//ratio 믹스인
-@mixin ratio($w, $h) {
-  aspect-ratio: $w / $h;
+//공통 버튼
+@mixin button($w: 340px, $h: 54px, $bgColor: #5f0080, $color: white) {
+  width: rem($w);
+  height: rem($h);
+  background: $bgColor;
+  color: $color;
+  text-align: center;
+  border-radius: rem(4px);
+  border: 1px solid #5f0080;
+  font-size: rem(16px);
+  cursor: pointer;
 }
 
-// 반응형 콘텐츠
-@mixin respons($width: max-width, $height: auto) {
-  //값이아니라 속성이름을 변수에 담았어
-  #{$width}: 100%;
-  height: $height;
+@mixin buttonNone {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
-@mixin textOver {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+// 공통 input
 
-@mixin fit($posX: 50%, $posY: 50%, $fit: cover) {
-  object-fit: $fit;
-  object-position: $posX $posY;
+@mixin input($w: 340px, $h: 50px) {
+  width: rem($w);
+  height: rem($h);
+  font-size: rem(16px);
+  border-radius: rem(4px);
+  padding-left: 20px;
+  border-color: #a6a6a6;
+  border-width: 1px;
 }
 
 @mixin bgImages {
