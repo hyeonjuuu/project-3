@@ -416,6 +416,7 @@ iframe {
 .memberSystem {
   height: 31px;
   padding: 10px;
+  padding-bottom: 35px;
   font-size: 12px;
   display: flex;
   flex-flow: row nowrap;
@@ -478,9 +479,7 @@ iframe {
   width: 360px;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  top: 30px;
-  left: 330px;
+  padding-right: 150px;
   z-index: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -528,7 +527,6 @@ input[type=search] {
   position: relative;
   width: 84px;
   height: 24px;
-  background: yellowgreen;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -926,6 +924,153 @@ input[type=search] {
   margin-left: 0;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBanner {
+  position: relative;
+}
+
+.mainBanner span {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: rgba(64, 64, 64, 0.3);
+  right: 30px;
+  bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 150%;
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  width: 62%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button button {
+  width: 52px;
+  height: 52px;
+}
+
+.button :nth-child(1) {
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  float: left;
+}
+
+.button :nth-child(2) {
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  transform: rotate(180deg);
+  float: right;
+}
+
+.todayProduct {
+  margin-bottom: 60px;
+}
+
+.product {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 1050px;
+}
+
+.product img {
+  width: 249px;
+  height: 320px;
+  margin-right: 18px;
+}
+
+.product__list .imgg img {
+  margin: 0;
+}
+
+div.imgg button {
+  right: 16px;
+}
+
+.product__list {
+  position: relative;
+}
+
+.product button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: url(/images/Icon/Cart.png) no-repeat;
+  display: block;
+  top: 258px;
+  right: 34px;
+}
+
+.product .btn-arrow-right {
+  background: url(/images/Icon/arrow3.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 125px;
+  right: -25px;
+  border-radius: 25px;
+  box-shadow: 1px 0px 4px rgba(1, 0, 1, 0.2);
+}
+
+.product__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 50px 0 80px 0px;
+}
+
+.product dt {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.product dl {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.product dd {
+  line-height: 150%;
+}
+
+.product strong {
+  color: #FA622F;
+}
+
+.txt-underline {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #898989;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.lineBanner {
+  margin-bottom: 40px;
+}
+
 .karlyCart {
   width: 1050px;
   height: 709px;
@@ -1045,174 +1190,6 @@ h2 {
   border: 1px solid #5f0080;
   font-size: 1rem;
   cursor: pointer;
-<<<<<<< HEAD
-}
-
-.main {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.mainBanner {
-  position: relative;
-=======
->>>>>>> 5eeb0ba5c57dbbacd40f9920d9ad927c0f55d08a
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-.main {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.mainBanner {
-  position: relative;
-}
-
-.mainBanner span {
-  position: absolute;
-  width: 50px;
-  height: 20px;
-  padding: 0 12px;
-  border-radius: 12px;
-  background: rgba(64, 64, 64, 0.3);
-  right: 30px;
-  bottom: 30px;
-  font-size: 14px;
-  text-align: center;
-  line-height: 150%;
-  color: #fff;
-}
-
-.button {
-  position: absolute;
-  width: 62%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.button button {
-  width: 52px;
-  height: 52px;
-}
-
-.button :nth-child(1) {
-  background: url(/images/Icon/Arrow.png) no-repeat;
-  float: left;
-}
-
-.button :nth-child(2) {
-  background: url(/images/Icon/Arrow.png) no-repeat;
-  transform: rotate(180deg);
-  float: right;
-}
-
-.todayProduct {
-  margin-bottom: 60px;
-}
-
-.product {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  width: 1050px;
-}
-
-.product img {
-  width: 249px;
-  height: 320px;
-  margin-right: 18px;
-}
-
-.product__list .imgg img {
-  margin: 0;
-}
-
-div.imgg button {
-  right: 16px;
-}
-
-.product__list {
-  position: relative;
-}
-
-<<<<<<< HEAD
-.product__list img {
-  width: 60%;
-=======
-.product button {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  background: url(/images/Icon/Cart.png) no-repeat;
-  display: block;
-  top: 258px;
-  right: 34px;
-}
-
-.product .btn-arrow-right {
-  background: url(/images/Icon/arrow3.svg) no-repeat;
-  width: 50px;
-  height: 50px;
-  top: 125px;
-  right: -25px;
-  border-radius: 25px;
-  box-shadow: 1px 0px 4px rgba(1, 0, 1, 0.2);
-}
-
-.product__title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 50px 0 80px 0px;
-}
-
-.product dt {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
-.product dl {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
-.product dd {
-  line-height: 150%;
-}
-
-.product strong {
-  color: #FA622F;
-}
-
-.txt-underline {
-  margin-top: 8px;
-  font-size: 12px;
-  color: #898989;
-  font-weight: 400;
-  text-decoration: line-through;
-}
-
-.lineBanner {
-  margin-bottom: 40px;
->>>>>>> 5eeb0ba5c57dbbacd40f9920d9ad927c0f55d08a
 }
 
 .login {
