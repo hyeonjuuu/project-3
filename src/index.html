@@ -19,6 +19,8 @@
         
       </div>
 
+
+    <div class="headerBox">
       <!-- 상단 우측 회원가입 | 로그인 | 고객센터 창 -->
       <!-- 1. 우측 상단 배치 / 2. a11yhidden속성 설정 및 글자 색깔 크기 설정 / 3. 링크 간단하게 연결 -->
       <ul class="ulType memberSystem">
@@ -28,32 +30,54 @@
         <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="">　로그인　</a></li>
         <li class="memberSystem__third"><span class="divider" aria-hidden="true">ㅣ</span><span>　고객센터▼</span></li>
       </ul>
+      
+      <div class="headerBox__middle">
+        <!-- 헤더부분 좌측 중앙  -->
+        <!-- 1. 좌측 중앙 배치 / 2. 로고 넣기 / 3. 중앙선 a11yhiddne속성 부여 / 4. 글자 속성 변경-->
+        <ul class="ulType logo">
+          <li class="logo__image">
+            <img src="./images/Icon/Group.png" alt="" />
+          </li>
+          <li class="logo__market">
+            <span>마켓칼리</span>
+          </li>
+          <li class="logo__beauty">
+            <span class="divider" aria-hidden="true">ㅣ</span><span>뷰티칼리</span>
+          </li>
+        </ul>
 
-      <!-- 헤더부분 좌측 중앙  -->
-      <!-- 1. 좌측 중앙 배치 / 2. 로고 넣기 / 3. 중앙선 a11yhiddne속성 부여 / 4. 글자 속성 변경-->
-      <ul class="ulType logo">
-        <li class="logo__image">
-          <img src="./images/Icon/Group.png" alt="" />
-        </li>
-        <li class="logo__market">
-          <span>마켓칼리</span>
-        </li>
-        <li class="logo__beauty">
-          <span class="divider" aria-hidden="true">ㅣ</span><span>뷰티칼리</span>
-        </li>
-      </ul>
+        
 
-    <!-- 헤더부분 우측중앙 이모티콘 3개 -->
-    <!-- 1. 우측중앙 배치 / 2. 장바구니 이모티콘에 링크 부여  -->
-    <ul class="ulType imoji">
-      <li class="imoji__location"><img src="" alt="" /></li>
-      <li class="iomji__heart"><img src="" alt="" /></li>
-      <li class="imoju__shopping">
-        <a href="">
-          <img src="" alt="" />
-        </a>
-      </li>
-    </ul>
+        <!-- 헤더부분 우측중앙 이모티콘 3개 -->
+        <!-- 1. 우측중앙 배치 / 2. 장바구니 이모티콘에 링크 부여  -->
+        <ul class="ulType imoji">
+          <li class="imoji__location"><img src="./images/Icon/Location.png" alt="" /></li>
+          <li class="iomji__heart"><img src="./images/Icon/Heart.png" alt="" /></li>
+          <li class="imoji__shopping">
+            <a href="">
+              <img src="./images/Icon/Cart-1.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!--  -->
+      <fieldset class="searchForm">
+        <legend>검색 폼</legend>
+        <div class="searchForm__group">
+          <div class="formInput">
+            <label for="search" class="a11yHidden formInput__label">검색어</label>
+            <input type="search" id="search" name="search" required
+              class="formInput__input" placeholder="검색어를 입력하세요." />
+            <button type="submit" class="button button__fillSecondary"></button>
+          </div>
+          
+        </div>
+      </fieldset>
+
+    </div>
+
+      
   </header>
 
   <!-- 네비게이션 부분 -->
@@ -63,116 +87,127 @@
     <!-- 1. 좌측 배치 / 2. hover시 카테고리 뜨도록 / 3. 카테고리 내부 품목 hover 시 색깔 바뀌게
       4(선택). 시안에서는 hover->카테고리->unhover->안사라짐 인데 구현해야되나? -->
     <div class="category">
-      <img src="" alt="" class="category__image"/>
-      <span class="category__word">카테고리</span>
-    </div>
-    <div></div>
-  </div>
+      <img src="./images/Icon/Hamburger.png" alt="" class="category__image"/>
+      <span class="category__word">카테고리</span> 
 
-    <!-- 웹카페 transfer한거처럼 위치 설정을 해서 뜨는거처럼?111 -->
-    <div class="categoryHover">
-      <div class="present">
-        <img src="" alt="" />
-        <span>선물하기</span>
-      </div>
-      <div class="vegetable">
-        <img src="" alt="" />
-        <span>채소</span>
-      </div>
-      <div class="fruit">
-        <img src="" alt="" />
-        <span>과일ㆍ견과ㆍ쌀</span>
-      </div>
-      <div class="fish">
-        <img src="" alt="" />
-        <span>수산ㆍ해산ㆍ건어물</span>
-      </div>
-      <div class="meat">
-        <img src="" alt="" />
-        <span>정육ㆍ계란</span>
-      </div>
-      <div class="soup">
-        <img src="" alt="" />
-        <span>국ㆍ반찬ㆍ메인요리</span>
-      </div>
-      <div class="salad">
-        <img src="" alt="" />
-        <span>샐러드ㆍ간편식</span>
-      </div>
-      <div class="noodle">
-        <img src="" alt="" />
-        <span>면ㆍ양념ㆍ오일</span>
-      </div>
-      <div class="water">
-        <img src="" alt="" />
-        <span>생수ㆍ음료ㆍ우유ㆍ커피</span>
-      </div>
-      <div class="snack">
-        <img src="" alt="" />
-        <span>간식ㆍ과자ㆍ떡</span>
-      </div>
-      <div class="bread">
-        <img src="" alt="" />
-        <span>베이커리ㆍ치즈ㆍ델리</span>
-      </div>
-      <div class="healthFood">
-        <img src="" alt="" />
-        <span>건강식품</span>
-      </div>
-      <div class="wine">
-        <img src="" alt="" />
-        <span>와인</span>
-      </div>
-      <div class="koreanAlcohol">
-        <img src="" alt="" />
-        <span>전통주</span>
-      </div>
-      <div class="living">
-        <img src="" alt="" />
-        <span>생활용품ㆍ리빙ㆍ캠핑</span>
-      </div>
-      <div class="skinCare">
-        <img src="" alt="" />
-        <span>스킨케어ㆍ메이크업</span>
-      </div>
-      <div class="hair">
-        <img src="" alt="" />
-        <span>헤어ㆍ바디ㆍ구강</span>
-      </div>
-      <div class="kitchen">
-        <img src="" alt="" />
-        <span>주방용품</span>
-      </div>
-      <div class="homeApplience">
-        <img src="" alt="" />
-        <span>가전제품</span>
-      </div>
-      <div class="pet">
-        <img src="" alt="" />
-        <span>반려동물</span>
-      </div>
-      <div class="baby">
-        <img src="" alt="" />
-        <span>베이비ㆍ키즈ㆍ완구</span>
-      </div>
-      <div class="travel">
-        <img src="" alt="" />
-        <span>여행ㆍ티켓</span>
-      </div>
+      
     </div>
+<!-- 웹카페 transfer한거처럼 위치 설정을 해서 뜨는거처럼?111 -->
+<div class="categoryHover">
+  <div class="menu__icon present">
+    <img src="" alt="" />
+    <span>선물하기</span>
+  </div>
+  <div class="menu__icon vegetable">
+    <img src="" alt="" />
+    <span>채소</span>
+  </div>
+  <div class="menu__icon fruit">
+    <img src="" alt="" />
+    <span>과일ㆍ견과ㆍ쌀</span>
+ </div>
+  <div class="menu__icon fish">
+    <img src="" alt="" />
+   <span>수산ㆍ해산ㆍ건어물</span>
+  </div>
+  <div class="menu__icon meat">
+    <img src="" alt="" />
+    <span>정육ㆍ계란</span>
+  </div>
+  <div class="menu__icon soup">
+    <img src="" alt="" />
+    <span>국ㆍ반찬ㆍ메인요리</span>
+  </div>
+  <div class="menu__icon salad">
+    <img src="" alt="" />
+    <span>샐러드ㆍ간편식</span>
+  </div>
+  <div class="menu__icon noodle">
+    <img src="" alt="" />
+    <span>면ㆍ양념ㆍ오일</span>
+  </div>
+  <div class="menu__icon water">
+    <img src="" alt="" />
+    <span>생수ㆍ음료ㆍ우유ㆍ커피</span>
+  </div>
+  <div class="menu__icon snack">
+    <img src="" alt="" />
+    <span>간식ㆍ과자ㆍ떡</span>
+  </div>
+  <div class="menu__icon bread">
+    <img src="" alt="" />
+    <span>베이커리ㆍ치즈ㆍ델리</span>
+  </div>
+  <div class="menu__icon healthFood">
+    <img src="" alt="" />
+    <span>건강식품</span>
+  </div>
+  <div class="menu__icon wine">
+    <img src="" alt="" />
+    <span>와인</span>
+  </div>
+  <div class="menu__icon koreanAlcohol">
+    <img src="" alt="" />
+    <span>전통주</span>
+  </div>
+  <div class="menu__icon living">
+    <img src="" alt="" />
+    <span>생활용품ㆍ리빙ㆍ캠핑</span>
+  </div>
+  <div class="menu__icon skinCare">
+    <img src="" alt="" />
+    <span>스킨케어ㆍ메이크업</span>
+  </div>
+  <div class="menu__icon hair">
+    <img src="" alt="" />
+    <span>헤어ㆍ바디ㆍ구강</span>
+  </div>
+  <div class="menu__icon kitchen">
+    <img src="" alt="" />
+    <span>주방용품</span>
+  </div>
+  <div class="menu__icon homeApplience">
+    <img src="" alt="" />
+    <span>가전제품</span>
+  </div>
+  <div class="menu__icon pet">
+    <img src="" alt="" />
+    <span>반려동물</span>
+  </div>
+  <div class="menu__icon baby">
+    <img src="" alt="" />
+    <span>베이비ㆍ키즈ㆍ완구</span>
+  </div>
+  <div class="menu__icon travel">
+    <img src="" alt="" />
+    <span>여행ㆍ티켓</span>
+  </div>
+</div>
+    <div>
+      
+    </div>
+
+    
 
     <!-- 네비게이션 중앙 바 -->
     <!-- 1. 중앙 배치 / 2. 글자 속성 / 3. 링크 설정 -->
-    <div class="category">
-      <a href="" class="new">신상품</a>
-      <a href="" class="best">베스트</a>
-      <a href="" class="hotdeal">알뜰쇼핑</a>
-      <a href="" class="special">특가/혜택</a>
+    <div class="navCenter">
+      <a href="" class="navCenter__new">신상품</a>
+      <a href="" class="navCenter__best">베스트</a>
+      <a href="" class="navCenter__hotdeal">알뜰쇼핑</a>
+      <a href="" class="navCenter__special">특가/혜택</a>
     </div>
 
     <!-- 네비게이션 우측 박스 -->
     <!-- 1. 우측 배치 / 2. 글자 및 박스 속성 설정  -->
-    <div class="morningDelivery">샛별ㆍ낮 배송안내</div>
+    <div class="morningDelivery">
+    
+      <span class="morningDelivery__first">샛별ㆍ낮&nbsp;</span>
+      <span class="morningDelivery__second">배송안내</span>
+
+    </div>
+
+    
   </nav>
 
   <!-- MAIN -->
