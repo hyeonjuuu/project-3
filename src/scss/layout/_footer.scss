@@ -7,9 +7,14 @@
   border-top: 1px solid #E1E1E1;
 }
 
+.footerTop,
+.karlyInfo,
+.karlyCertify {
+  @include containerMax;
+}
+
 // 고객센터 + 칼리소개
 .footerTop {
-  @include containerMax;
   @include gridbox(2, 1fr, 0, 16px);
   margin-top: rem(28px);
   margin-bottom: rem(32px);
@@ -99,6 +104,7 @@
 .karlyInfo {
   @include marginY(16px);
   margin-bottom: rem(28px);
+  line-height: 160%;
 }
 
 .infoMenu,
@@ -111,7 +117,6 @@
 .infoMenu {
   @include flexbox;
   gap: rem(13.6px);
-  line-height: 160%;
   color: $base-text;
   font-weight: 500;
 }
@@ -159,9 +164,11 @@
 // 인증범위
 .karlyCertify {
   border-top: 1px solid #E1E1E1;
-  @include containerMax;
   @include flexbox;
   font-size: rem(10px);
+  padding-top: rem(28px);
+  padding-bottom: rem(32px);
+  line-height: 160%;
   
   img {
     width: rem(34px);
@@ -177,7 +184,6 @@
   }
   [class*="__about"] {
     color: $base-text;
-    line-height: 160%;
     margin-left: rem(8px);
   }
 }
@@ -188,4 +194,78 @@
 
 .karlyCertify__isms {
   margin-left: 0;
+  flex-shrink: 1.6;
+}
+
+.karlyCertify__wooriBank {
+  flex-shrink: 1.2;
+}
+
+// karly copyright
+.karlyCopyright { 
+  padding-top: rem(20px);
+  padding-bottom: rem(32px);
+  background: #f9f9f9;
+  color: $gray;
+  text-align: center;
+  font-size: rem(10px);
+  line-height: 160%;
+  margin: 0;
+  max-width: 100%;
+}
+
+.karlyCopyright__corp {
+  margin-top: rem(8px);
+}
+
+// 최근 본 상품
+.badgeWrapper {
+  position: fixed;
+  right: 0%;
+  z-index: 1;
+  bottom: 50%;
+}
+
+.badge {
+  @include flexbox($direction: column, $justify: center, $items: center, $wrap: nowrap);
+  @include padding(8px);
+  border: 1px solid #c4c4c4;
+  width: 58px;
+  height: 207px;
+  box-sizing: content-box;
+  position: sticky;
+  top: 50%;
+  margin-right: rem(39px);
+
+  [class*="item"] {
+    @include bgImages;
+    width: rem(40px);
+    height: rem(52px);
+  }
+}
+
+
+
+.arrowup {
+  @include bgImages;
+  background-image: url(./../images/Icon/badge_arrowup.png);
+  width: rem(18px);
+  height: rem(18px);
+  
+}
+
+
+.badge__title {
+  font-size: rem(12px);
+  font-weight: 700;
+  @include marginY(8px);
+}
+
+
+
+.lateProduct__item1 {
+  background-image: url(./../images/footer_list1.png);
+  width: 100%;
+  height: 100%;
+  
 }
