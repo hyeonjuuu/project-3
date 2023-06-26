@@ -34,20 +34,20 @@
   bottom: 30px;
   font-size: 14px;
   text-align: center;
+  line-height: 150%;
   color: #fff;
 }
 
 // 메인배너 화살표 버튼
 .button {
   position: absolute;
-  width: 1800px;
   top: 160px;
   margin: 0 3%;
 }
 
 .button button {
+  width: 52px;
   height: 52px;
-  display: block;
   border: none;
   cursor: pointer;
 }

@@ -462,6 +462,43 @@ legend {
   padding: 30px;
 }
 
+.mainBanner span {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: rgba(64, 64, 64, 0.3);
+  right: 30px;
+  bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 150%;
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  top: 160px;
+  margin: 0 3%;
+}
+
+.button button {
+  width: 52px;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+}
+
+.button :nth-child(1) {
+  background: url(/images/Icon/Arrow.png) no-repeat;
+}
+
+.button :nth-child(2) {
+  background: url(/images/Icon/Arrow.png) no-repeat;
+  transform: rotate(180deg);
+}
+
 .product {
   margin: 0;
   padding: 0;
@@ -475,44 +512,6 @@ legend {
 
 .product__list img {
   width: 60%;
-}
-
-.button {
-  position: absolute;
-  top: 160px;
-  margin: 0 3%;
-}
-
-.button button {
-  width: 1800px;
-  height: 52px;
-  border: none;
-  cursor: pointer;
-  display: block;
-}
-
-.button :nth-child(1) {
-  background: url(/images/Icon/Arrow.png) no-repeat;
-}
-
-.button :nth-child(2) {
-  background: url(/images/Icon/Arrow.png) no-repeat;
-  transform: rotate(180deg);
-}
-
-.mainBanner span {
-  position: absolute;
-  width: 50px;
-  height: 20px;
-  padding: 0 12px;
-  border-radius: 12px;
-  background: rgba(64, 64, 64, 0.3);
-  right: 30px;
-  bottom: 30px;
-  font-size: 14px;
-  line-height: 150%;
-  text-align: center;
-  color: #fff;
 }
 
 .login {
