@@ -2,6 +2,9 @@
 @use "./../base/" as *;
 @use "./../components/" as *;
 
+.nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
 // 제품 리스트 전체
 .productList {
   font-family: pretendard, sans-serif;

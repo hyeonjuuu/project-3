@@ -7,6 +7,201 @@
   <link rel="stylesheet" href="./../style/index.css" />
 </head>
 <body>
+  <header class="header">
+    <h1 class="a11yHidden">Karly</h1>
+    <div class="topBar">
+      <div class="topBar__div">
+        <span class="topBar__word">지금 가입하고 인기상품 100원에 받아가세요!</span>
+        <span class="topBar__X"><img src="./../images/Icon/Cancel.png" alt="" /></span>
+      </div>
+    </div>
+
+  <div class="headerBox">
+    <ul class="ulType memberSystem">
+      <li class="memberSystem__first">
+        <a href="">회원가입　</a>
+      </li>
+      <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="./views/login.html">　로그인　</a></li>
+      <li class="memberSystem__third"><span class="divider" aria-hidden="true">ㅣ</span><span>　고객센터▼</span></li>
+    </ul>
+    
+    <div class="headerBox__middle">
+      <ul class="ulType logo">
+        <li class="logo__image">
+          <img src="./../images/Icon/Group.png" alt="" />
+        </li>
+        <li class="logo__market">
+          <span>마켓칼리</span>
+        </li>
+        <li class="logo__beauty">
+          <span class="divider" aria-hidden="true">ㅣ</span><span>뷰티칼리</span>
+        </li>
+      </ul>
+      <fieldset class="searchForm">
+        <legend class="a11yHidden">검색 폼</legend>
+        <div class="searchForm__group">
+          <div class="formInput">
+            <label for="search" class="a11yHidden formInput__label">검색어</label>
+            <input type="search" id="search" name="search" required
+              class="formInput__input" placeholder="검색어를 입력하세요." />
+            <button type="submit" class="button button__fillSecondary"></button>
+          </div>
+        </div>
+      </fieldset>
+      <ul class="ulType imoji">
+        <li class="imoji__location"><img src="./../images/Icon/Location.png" alt="" /></li>
+        <li class="iomji__heart"><img src="./../images/Icon/Heart.png" alt="" /></li>
+        <li class="imoji__shopping">
+          <a href="./views/cart.html">
+            <img src="./../images/Icon/Cart-1.png" alt="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="category">
+    <img src="./../images/Icon/Hamburger.png" alt="" class="category__image"/>
+    <span class="category__word">카테고리</span> 
+    <div class="categoryHover">
+      <div class="menu__div">
+        <div class="menu__icon present">
+          <span class="menu__word">선물하기</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon vegetable">
+          <span class="menu__word">채소</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon fruit">
+          <span class="menu__word">과일ㆍ견과ㆍ쌀</span>
+       </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon fish">
+          <span class="menu__word">수산ㆍ해산ㆍ건어물</span>
+         </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon meat">
+          <span class="menu__word">정육ㆍ계란</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon soup">
+          <span class="menu__word">국ㆍ반찬ㆍ메인요리</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon salad">
+          <span class="menu__word">샐러드ㆍ간편식</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon noodle">
+          <span class="menu__word">면ㆍ양념ㆍ오일</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon water">
+          <span class="menu__word">생수ㆍ음료ㆍ우유ㆍ커피</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon snack">
+          <span class="menu__word">간식ㆍ과자ㆍ떡</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon bread">
+          <span class="menu__word" >베이커리ㆍ치즈ㆍ델리</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon healthFood">
+          <span class="menu__word">건강식품</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon wine">
+          <span class="menu__word">와인</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon koreanAlcohol">
+          <span class="menu__word">전통주</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon living">
+          <span class="menu__word">생활용품ㆍ리빙ㆍ캠핑</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon skinCare">
+          <span class="menu__word">스킨케어ㆍ메이크업</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon hair">
+          <span class="menu__word">헤어ㆍ바디ㆍ구강</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon kitchen">
+          <span class="menu__word">주방용품</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon homeApplience">
+          <span class="menu__word">가전제품</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon pet">
+          <span class="menu__word">반려동물</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon baby">
+          <span class="menu__word">베이비ㆍ키즈ㆍ완구</span>
+        </div>
+      </div>
+      <div class="menu__div">
+        <div class="menu__icon travel">
+          <span class="menu__word">여행ㆍ티켓</span>
+        </div>
+      </div>
+      
+    </div> 
+  </div>
+<!-- 웹카페 transfer한거처럼 위치 설정을 해서 뜨는거처럼?111 -->
+  
+
+  <!-- 네비게이션 중앙 바 -->
+  <!-- 1. 중앙 배치 / 2. 글자 속성 / 3. 링크 설정 -->
+  <div class="navCenter">
+    <a href="" class="navCenter__new">신상품</a>
+    <a href="" class="navCenter__best">베스트</a>
+    <a href="" class="navCenter__hotdeal">알뜰쇼핑</a>
+    <a href="" class="navCenter__special">특가/혜택</a>
+  </div>
+
+  <!-- 네비게이션 우측 박스 -->
+  <!-- 1. 우측 배치 / 2. 글자 및 박스 속성 설정  -->
+  <div class="morningDelivery">
+  
+    <span class="morningDelivery__first">샛별ㆍ낮&nbsp;</span>
+    <span class="morningDelivery__second">배송안내</span>
+
+  </div>
+
+  
+</nav>
 
   <main class="productList">
     <h1 class="best">베스트</h1>
@@ -384,6 +579,100 @@
           </section>
         </div>
       </main>
+       <!-- !FOOTER -->
+    <footer class="footer">
+      <!-- 고객센터 + 칼리info -->
+      <div class="footerTop">
+        <!-- 고객행복센터 -->
+        <div class="customerCenter">
+          <h3 class="customerCenter__title">고객행복센터</h3>
+          <strong class="customerCenter__number">1644-1107<span class="customerCenter__time">월~토요일 오전 7시 - 오후 6시</span></strong>
+          <div class="customerCenter__kakao">
+            <a href="" class="kakao__link">카카오톡 문의</a>
+            <ul class="kakaoInfo">
+              <li class="kakao__mon_sat">월~토요일<span aria-hidden="true">|</span>오전 7시 - 오후 6시</li>
+              <li class="kakao__sun_holiday">일/공휴일<span aria-hidden="true">|</span>오전 7시 - 오후 1시</li>
+            </ul>
+          </div>
+          <div class="customerCenter__ask">
+            <a href="" class="ask__link">1:1 문의</a>
+            <ul class="askInfo">
+              <li class="ask__day">365일</li>
+              <li class="ask__answer">고객센터 운영시간에 순차적으로 답변드리겠습니다.</li>
+            </ul>
+          </div>
+          <div class="customerCenter__order">
+            <a href="" class="order__link">대량주문 문의</a>
+            <ul class="orderInfo">
+              <li class="order__mon_fri">월~금요일<span aria-hidden="true">|</span>오전 9시 - 오후 6시</li>
+              <li class="orer__lunch">점심시간<span aria-hidden="true">|</span>낮 12시 - 오후 1시</li>
+            </ul>
+          </div>
+            <dl class="nonMember">
+              <dt class="nonMember__ask">비회원 문의 :</dt>
+              <dd class="nonMember__askmail">help@karlycorp.com</dd>
+              <dt class="nonMember__order">비회원 대량주문 문의 :</dt>
+              <dd class="nonMember__ordermail">help@karlycorp.com</dd>
+            </dl>
+        </div>
+        <!-- 칼리 info -->
+        <div class="karlyInfo">
+          <ul class="infoMenu">
+            <li class="infoMenu__intro">칼리소개</li>
+            <li class="infoMenu__video">칼리소개영상</li>
+            <li class="infoMenu__recruit">인재채용</li>
+            <li class="infoMenu__terms">이용약관</li>
+            <li class="infoMenu__privacy">개인정보처리방침</li>
+            <li class="infoMenu__guide">이용안내</li>
+          </ul>
+          <div class="karlyCompany">
+            <p>법인명 (상호) : 주식회사 컬리<span aria-hidden="true">|</span>사업자등록번호 : 261-81-23567<span aria-hidden="true">|</span><span class="company__highlight">사업자정보 확인</span></p>
+            <p>통신판매업 : 제 2018-서울강남-01646 호<span aria-hidden="true">|</span>개인정보보호책임자 : 이원준</p>
+            <address class="karly__address">주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)</address>
+            <span aria-hidden="true">|</span>대표이사 : 김슬아
+            <p>입점문의 : 입점문의하기<span aria-hidden="true">|</span>제휴문의 : <span class="company__highlight">business@karlycorp.com</span></p>
+            <p>채용문의 : <span class="company__highlight">recruit@karlycorp.com</span></p>
+            <p>팩스 : 070 - 7500 - 6098</p>
+          </div>
+          <ul class="SNS">
+            <li class="SNS__naver_b"><a href="https://blog.naver.com/marketkurly"><img src="./../images/Icon/Blog.png" alt="네이버 블로그" /></a></li>
+            <li class="SNS__fb"><a href="https://www.facebook.com/Marketkurly/"><img src="./../images/Icon/Facebook.png" alt="페이스북" /></a></li>
+            <li class="SNS__ig"><a href="https://www.instagram.com/marketkurly/"><img src="./../images/Icon/Instagram.png" alt="인스타그램" /></a></li>
+            <li class="SNS__naver_p"><a href="https://m.post.naver.com/marketkurly"><img src="./../images/Icon/NaverPost.png" alt="네이버 포스트" /></a></li>
+            <li class="SNS__youtube"><a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg"><img src="./../images/Icon/Youtube.png" alt="유튜브" /></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 인증범위 -->
+      <div class="karlyCertify">
+        <div class="karlyCertify__isms">
+          <img src="./../images/Icon/logo_isms.png" alt="ISMS Icon" class="isms__icon"/>
+          <p class="isms__about">[인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영(심사받지 않은 물리적 인프라 제외) [유효기간] 2022.01.19 ~ 2025.01.18</p>
+        </div>
+        <div class="karlyCertify__privacy">
+          <img src="./../images/Icon/logo_privacy.png" alt="privacy Icon" class="privacy__icon"/>
+          <p class="privacy__about">개인정보보호 우수 웹사이트 개인정보처리시스템 인증 (ePRIVACY PLUS)</p>
+        </div>
+        <div class="karlyCertify__toss">
+          <img src="./../images/Icon/logo_tosspayments.png" alt="toss Icon" class="toss__icon"/>
+          <p class="toss__about">토스페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</p>
+        </div>
+        <div class="karlyCertify__wooriBank">
+          <img src="./../images/Icon/logo_wooriBank.png" alt="wooriBank Icon" class="wooriBank__icon"/>
+          <p class="wooriBank__about">고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+        </div>
+      </div>
+      <!-- karly copyright -->
+      <div class="karlyCopyright">
+        <p class="karlyCopyright__about">
+          마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다. <br />
+          마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+        </p>
+        <p class="karlyCopyright__corp">
+          © KURLY CORP. ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
   
 </body>
 </html>
