@@ -1,6 +1,7 @@
 @use './../utils' as *;
 @use './../components' as *;
 
+//input type="checkbox"
 input[type='checkbox'] {
   display: none;
 }
@@ -24,8 +25,7 @@ input[type='checkbox']:checked + label {
 
 .karlyCart {
   @include containerMax;
-  height: 709px;
-  @include autoMargin;
+  // @include autoMargin;
   //자간조절
   letter-spacing: rem(-0.5px);
 }
@@ -33,14 +33,13 @@ input[type='checkbox']:checked + label {
 h2 {
   @include font(black, 21.3px, 600, 150%);
   text-align: center;
-  height: 32px;
   margin-top: rem(80px);
   margin-bottom: rem(50px);
 }
 
 .cart {
   @include flexbox($justify: flex-between);
-  @include autoMargin;
+  // @include autoMargin;
   gap: rem(1050-742-284px);
 
   &__left {
@@ -55,6 +54,7 @@ h2 {
 
 .cartSelectAll {
   height: 30px;
+
   // background-color: palegoldenrod;
   @include font(#333, 16px, 600);
   // background-image: url(./../../images/Input/Check5.png);
@@ -70,6 +70,7 @@ h2 {
   }
 }
 .cartCheckbox {
+  @include font(#333, 16px, 600, 150%);
   // @include flexbox;
 }
 .cartChoice {
@@ -171,29 +172,6 @@ h2 {
       }
     }
   }
-
-  // }
-  // span:nth-of-type(2) {
-  //   // margin: 0 8px;
-  // }
-  // span:first-of-type {
-  //   background-color: blue;
-  //   // margin: 0 8px;
-  //   width: 345px;
-  // }
-  // span:last-of-type {
-  //   text-align: right;
-  //   // background-color: red;
-  //   // margin: 0 8px;
-  //   width: 127px;
-  // &__water {
-  // padding-right: rem(4px);
-  // width: 724px;
-  // height: rem(62px);
-  // @include paddingY(16px);
-  //
-  // line-height: 62px;
-  // }
 }
 
 // 오른쪽 영역
@@ -231,12 +209,10 @@ h2 {
   background: #f9f9f9;
   padding: $spacing-md;
   @include font(#333, 16px, 400, 160%);
-  // width: 284px;
+
   dt {
-    // float: left;
     display: inline-block;
     width: 100px;
-    // float: left;
   }
   dt:nth-child(-n + 3) {
     padding-bottom: rem(16px);
@@ -247,15 +223,14 @@ h2 {
   dd {
     text-align: center;
     float: right;
-    // display: inline-block;
   }
   &__pay {
     padding-top: rem(24px);
     border-top: 1px solid #e1e1e1;
-    // background: tan;
   }
 }
 .cartPayment__pay {
+  // background: #fa622f;
   span {
     @include font(white, 12px, 600);
     margin-top: rem(11px);
