@@ -6,7 +6,7 @@ input[type='checkbox'] {
   display: none;
 }
 
-input[type='checkbox'] + label {
+input[type='checkbox'] + label.cartCheckbox {
   cursor: pointer;
   background-repeat: no-repeat;
   background-image: url('./../../images/Input/Check4.png');
@@ -15,7 +15,7 @@ input[type='checkbox'] + label {
   background-position: 0 center;
 }
 
-input[type='checkbox']:checked + label {
+input[type='checkbox']:checked + label.cartCheckbox {
   background-repeat: no-repeat;
   background-image: url('./../../images/Input/Check5.png');
   background-size: rem(24px);
@@ -25,6 +25,7 @@ input[type='checkbox']:checked + label {
 
 .karlyCart {
   @include containerMax;
+  margin-bottom: rem(80px);
   //자간조절
   letter-spacing: rem(-0.5px);
 }

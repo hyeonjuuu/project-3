@@ -1,8 +1,8 @@
 @use './../utils' as *;
 @use './../components' as *;
 
-main{
-  padding-bottom : rem(80px);
+main {
+  padding-bottom: rem(80px);
 }
 
 .login {
@@ -43,4 +43,6 @@ main{
 }
 .button___Join {
   @include button($bgColor: white, $color: $primary-color);
+  display: block;
+  line-height: 54px;
 }
