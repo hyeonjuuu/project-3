@@ -38,11 +38,11 @@ h2 {
   @include font(#333, 16px, 600);
   // height: 56px;
   // width: inherit;
-  background-image: url(./../../images/Input/Check3.png);
+  background-image: url(./../../images/Input/Check5.png);
   // background-color: palegoldenrod;
   background-size: 24px;
   background-repeat: no-repeat;
-  background-position: 0px rem(-30px);
+  // background-position: 0px 0;
   // background-position: 0 center;
   // border-bottom: 1px solid $black;
   padding-left: rem(32px);
@@ -55,31 +55,53 @@ h2 {
 }
 
 // 펼치기
-.cartForm {
-  background: pink;
-  &__frozen {
-    background-color: ghostwhite;
+.water {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  // display: inline-block;
+  @include font(black, 16px, 600, 31px);
+  // background: pink;
+  &__continer {
+    // width: inherit;
+    height: 62px;
+    @include flexbox($justify: space-between);
+    align-items: center;
   }
-  &__h {
-    display: inline-block;
-    // height: 62px;
+  h4 {
     padding-left: rem(42px);
-    background: url(./../../images/icon/food_frozen.png) no-repeat;
-    background-position: 0 0;
-    background-size: 30px;
-    // line-height: 150%;
+    background: url(./../../images/icon/food_water.png) no-repeat;
   }
 
-  &__water {
-    // padding-right: rem(4px);
-    // width: 724px;
-    // height: rem(62px);
-    @include font(black, 16px, 600, 0);
-    // @include paddingY(16px);
-    // @include flexbox($justify: space-between);
-    // align-items: center;
-    // line-height: 62px;
+  &__list {
+    background: teal;
+    @include flexbox;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      @include paddingY(20px);
+      // width: 300px;
+      // height: 118px;
+      // background-size: 24px;
+      // background-position: 0px 0;
+      background-image: url(./../../images/Input/Check5.png);
+      background-color: palegoldenrod;
+      background-size: 24px;
+      background-repeat: no-repeat;
+      // background-position: 0px -20px;
+      background-position: 0 center;
+      // border-bottom: 1px solid $black;
+      padding-left: rem(32px);
+    }
   }
+
+  // &__water {
+  // padding-right: rem(4px);
+  // width: 724px;
+  // height: rem(62px);
+  // @include paddingY(16px);
+  //
+  // line-height: 62px;
+  // }
 }
 
 // 오른쪽 영역
