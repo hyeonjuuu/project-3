@@ -1219,7 +1219,9 @@ h2 {
   cursor: pointer;
 }
 
-.water {
+.water,
+.frozen,
+.sun {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   color: black;
@@ -1227,54 +1229,85 @@ h2 {
   font-weight: 600;
   line-height: 31px;
 }
-.water__continer {
-  height: 62px;
+.water__continer,
+.frozen__continer,
+.sun__continer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
+  height: 62px;
   align-items: center;
 }
-.water h4 {
+.water h4,
+.frozen h4,
+.sun h4 {
   padding-left: 2.625rem;
   background: url(./../../images/icon/food_water.png) no-repeat;
 }
-.water__list {
-  background: teal;
-}
-.water__list li {
+.water__list li,
+.frozen__list li,
+.sun__list li {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  justify-content: space-between;
+  gap: 8px;
   align-items: center;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   background-image: url(./../../images/Input/Check5.png);
-  background-color: palegoldenrod;
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0 center;
   padding-left: 2rem;
 }
-.water .btnList__remove {
+.water .btnList__h,
+.frozen .btnList__h,
+.sun .btnList__h {
+  width: 345px;
+}
+.water .btnList__won,
+.frozen .btnList__won,
+.sun .btnList__won {
+  width: 127px;
+  text-align: right;
+}
+.water .btnList__remove,
+.frozen .btnList__remove,
+.sun .btnList__remove {
   background-image: url("./../../images/Icon/Minus.png");
   width: 30px;
   height: 30px;
-  background-color: red;
 }
-.water .btnList__add {
+.water .btnList__add,
+.frozen .btnList__add,
+.sun .btnList__add {
   background-image: url("./../../images/Icon/Plus.png");
   width: 30px;
   height: 30px;
-  background-color: red;
 }
-.water .btnList__cancel {
+.water .btnList__cancel,
+.frozen .btnList__cancel,
+.sun .btnList__cancel {
   background-image: url("./../../images/Icon/cancel.png");
   width: 30px;
   height: 30px;
-  background-color: red;
+}
+.water .btnList .btnGroup,
+.frozen .btnList .btnGroup,
+.sun .btnList .btnGroup {
+  border: 1px solid #c4c4c4;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;
+}
+.water .btnList .btnGroup span,
+.frozen .btnList .btnGroup span,
+.sun .btnList .btnGroup span {
+  height: 30px;
 }
 
 .cartAddress {
