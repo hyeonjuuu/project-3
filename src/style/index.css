@@ -1578,12 +1578,6 @@ input[type=date] {
   text-align: center;
 }
 
-input[type=date]::before {
-  content: attr(data-placeholder);
-  color: #333;
-  font-size: 1rem;
-}
-
 input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
@@ -1592,7 +1586,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 [type=radio] {
   vertical-align: middle;
   appearance: none;
-  border: 1px solid #c4c4c4;
+  border: max(1px, 0.1em) solid #c4c4c4;
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
@@ -1641,11 +1635,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-right: auto;
 }
 
+.btnJoin {
+  width: 21.25rem;
+  height: 3.375rem;
+  background: #5f0080;
+  color: white;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 1px solid #5f0080;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 150%;
+  position: absolute;
+  top: 43.75rem;
+}
+
 .titleWrap {
   height: 5rem;
 }
 
-.joinForm .title {
+.joinTitle {
   margin-top: 5rem;
 }
 
@@ -1654,7 +1664,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 0.75rem;
 }
 
-.joinForm span {
+.join__noti {
+  font-size: 0.75rem;
+  float: right;
+}
+
+.join__span {
   font-size: 0.75rem;
 }
 
@@ -1662,15 +1677,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-right: 1rem;
 }
 
-.joinForm .noti {
-  float: right;
-}
-
 .joinFieldset {
   width: 100%;
   border-top: 0.125rem solid #333;
   border-bottom: 1px solid #333;
-  top: 58px;
+  top: 3.625rem;
+  margin-top: 8px;
 }
 
 .joinFieldset li {
@@ -1699,38 +1711,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .joinFieldset label {
-  width: 131px;
-}
-
-[type=radio] {
-  vertical-align: middle;
-  appearance: none;
-  border: max(1px, 0.1em) solid #c4c4c4;
-  border-radius: 50%;
-  width: 1.25em;
-  height: 1.25em;
-}
-
-[type=radio]:checked {
-  border: 0.4em solid #5f0080;
-}
-
-input[type=date] {
-  content: attr(data-placeholder);
-  color: #898989;
-  font-size: 16px;
-  text-align: center;
-}
-
-input[type=date]::before {
-  content: attr(data-placeholder);
-  color: #333;
-  font-size: 16px;
-}
-
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
+  width: 8.1875rem;
+  font-weight: 600;
 }
 
 .forBlock {
@@ -1743,8 +1725,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .agree {
   width: 139px;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-top: 20px;
   font-size: 16px;
   font-weight: 600;
