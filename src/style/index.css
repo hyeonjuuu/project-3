@@ -1429,7 +1429,7 @@ main {
 }
 
 body input {
-  font-size: 16px;
+  font-size: 1rem;
   color: #898989;
 }
 
@@ -1451,14 +1451,14 @@ input.userID__input,
 input[type=date] {
   content: attr(data-placeholder);
   color: #898989;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
 }
 
 input[type=date]::before {
   content: attr(data-placeholder);
   color: #333;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 input[type=date]::-webkit-inner-spin-button,
@@ -1469,14 +1469,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 [type=radio] {
   vertical-align: middle;
   appearance: none;
-  border: max(1px, 0.1em) solid #c4c4c4;
+  border: 1px solid #c4c4c4;
   border-radius: 50%;
-  width: 1.25em;
-  height: 1.25em;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 [type=radio]:checked {
-  border: 0.4em solid #5f0080;
+  border: 0.45rem solid #5f0080;
 }
 
 .buttonJoin {
@@ -1513,30 +1513,30 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .joinForm {
   position: relative;
-  width: 640px;
+  width: 40rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .titleWrap {
-  height: 80px;
+  height: 5rem;
 }
 
 .joinForm .title {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 .joinForm sup {
   color: orangered;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .joinForm span {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .joinForm p {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .joinForm .noti {
@@ -1545,10 +1545,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .joinFieldset {
   width: 100%;
-  border-top: 2px solid #333;
+  border-top: 0.125rem solid #333;
   border-bottom: 1px solid #333;
   position: absolute;
-  top: 58px;
+  top: 3.625rem;
 }
 
 .joinFieldset li {
@@ -1557,27 +1557,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
-  column-gap: 8px;
-  margin: 25px 8px;
-  height: 44px;
+  column-gap: 0.5rem;
+  margin: 1.5625rem 0.5rem;
+  height: 2.75rem;
 }
 
 .joinFieldset li:nth-child(7) {
-  margin-top: 34px;
+  margin-top: 2.125rem;
 }
 
 .joinFieldset li:nth-child(8) {
-  margin-top: 34px;
+  margin-top: 2.125rem;
 }
 
 .btnAdd {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0.375rem;
 }
 
 .joinFieldset label {
-  width: 131px;
+  width: 8.1875rem;
 }
 
 .joinCheck {
