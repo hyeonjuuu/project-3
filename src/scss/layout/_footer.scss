@@ -146,22 +146,6 @@
   margin-right: rem(20px);
 }
 
-.SNS__naver_b {
-  background-image: url(./../images/Icon/Blog.png);
-}
-.SNS__fb {
-  background-image: url(./../images/Icon/Facebook.png);
-}
-.SNS__ig {
-  background-image: url(./../images/Icon/Instagram.png);
-}
-.SNS__naver_p {
-  background-image: url(./../images/Icon/NaverPost.png);
-}
-.SNS__youtube {
-  background-image: url(./../images/Icon/Youtube.png);
-}
-
 
 // 인증범위
 .karlyCertify {
@@ -223,8 +207,8 @@
 // 최근 본 상품
 .badgeWrapper {
   position: absolute;
-  height: 90vmax;
-  top: 733px;
+  height: calc(100vh + 733px);
+  top: 790px;
   right: 0;
 }
 .badge {
