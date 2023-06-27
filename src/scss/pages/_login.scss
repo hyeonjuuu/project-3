@@ -41,6 +41,6 @@ main{
   margin-top: rem(28px);
   margin-bottom: rem(12px);
 }
-.buttonJoin {
+.button___Join {
   @include button($bgColor: white, $color: $primary-color);
 }
