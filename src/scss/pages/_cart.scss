@@ -25,6 +25,7 @@ input[type='checkbox']:checked + label {
 
 .karlyCart {
   @include containerMax;
+  margin-bottom: rem(80px);
   //자간조절
   letter-spacing: rem(-0.5px);
 }

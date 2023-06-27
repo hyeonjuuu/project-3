@@ -134,8 +134,7 @@
   font-size: rem(16px);
   border-radius: rem(4px);
   padding-left: 20px;
-  border-color: #a6a6a6;
-  border-width: 1px;
+  border: 1px solid #a6a6a6;
 }
 
 @mixin bgImages {
