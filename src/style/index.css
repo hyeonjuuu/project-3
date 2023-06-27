@@ -543,26 +543,6 @@ iframe {
   margin-right: 1.25rem;
 }
 
-.SNS__naver_b {
-  background-image: url(./../images/Icon/Blog.png);
-}
-
-.SNS__fb {
-  background-image: url(./../images/Icon/Facebook.png);
-}
-
-.SNS__ig {
-  background-image: url(./../images/Icon/Instagram.png);
-}
-
-.SNS__naver_p {
-  background-image: url(./../images/Icon/NaverPost.png);
-}
-
-.SNS__youtube {
-  background-image: url(./../images/Icon/Youtube.png);
-}
-
 .karlyCertify {
   border-top: 1px solid #E1E1E1;
   display: flex;
@@ -621,11 +601,9 @@ iframe {
 
 .badgeWrapper {
   position: absolute;
-  top: 516px;
-  right: 20px;
-  bottom: 0px;
-  z-index: 1;
-  margin-top: 93px;
+  height: calc(100vh + 733px);
+  top: 790px;
+  right: 0;
 }
 
 .badge {
@@ -639,7 +617,8 @@ iframe {
   height: 210px;
   box-sizing: content-box;
   position: sticky;
-  top: 500px;
+  top: 50%;
+  transform: translateY(-50%);
   margin-right: 2.4375rem;
   background: #ffffff;
 }
