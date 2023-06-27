@@ -1428,4 +1428,182 @@ main {
   line-height: 150%;
 }
 
+body input {
+  font-size: 16px;
+  color: #898989;
+}
+
+input.userID__input,
+.userPw__input,
+.userEmail__input,
+.userName__input,
+.userTel__input,
+.userTime__input {
+  width: 20.8125rem;
+  height: 2.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding-left: 20px;
+  border-color: #a6a6a6;
+  border-width: 1px;
+}
+
+.buttonJoin {
+  width: 8.9375rem;
+  height: 2.75rem;
+  background: white;
+  color: #5f0080;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 1px solid #5f0080;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.btnAdd__search {
+  width: 20.8125rem;
+  height: 2.75rem;
+  background: white;
+  color: #5f0080;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 1px solid #5f0080;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.btnJoin {
+  width: 21.25rem;
+  height: 3.375rem;
+  background: #5f0080;
+  color: white;
+  text-align: center;
+  border-radius: 0.25rem;
+  border: 1px solid #5f0080;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 150%;
+  position: absolute;
+  top: 700px;
+}
+
+.titleWrap {
+  height: 80px;
+  background-color: beige;
+}
+
+.joinForm {
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+}
+
+.joinForm .title {
+  margin-top: 80px;
+}
+
+.joinForm sup {
+  color: orangered;
+  font-size: 12px;
+}
+
+.joinForm span {
+  font-size: 12px;
+}
+
+.joinForm p {
+  margin-right: 16px;
+}
+
+.joinForm .noti {
+  float: right;
+}
+
+.joinBody {
+  width: 100%;
+}
+
+.joinFieldset {
+  width: 100%;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+  position: absolute;
+  top: 58px;
+}
+
+.joinFieldset li {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+  margin: 25px 8px;
+  height: 44px;
+}
+
+.joinFieldset li:nth-child(7) {
+  margin-top: 34px;
+}
+
+.joinFieldset li:nth-child(8) {
+  margin-top: 34px;
+}
+
+.btnAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.joinFieldset label {
+  width: 131px;
+}
+
+[type=radio] {
+  vertical-align: middle;
+  appearance: none;
+  border: max(1px, 0.1em) solid #c4c4c4;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+}
+
+[type=radio]:checked {
+  border: 0.4em solid #5f0080;
+}
+
+input[type=date] {
+  content: attr(data-placeholder);
+  color: #898989;
+  font-size: 16px;
+  text-align: center;
+}
+
+input[type=date]::before {
+  content: attr(data-placeholder);
+  color: #333;
+  font-size: 16px;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.joinCheck {
+  display: none;
+}
+
+.btnJoin {
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map */
