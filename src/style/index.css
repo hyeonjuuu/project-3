@@ -1167,16 +1167,16 @@ input[type=checkbox] + label {
   cursor: pointer;
   background-repeat: no-repeat;
   background-image: url("./../../images/Input/Check4.png");
-  background-size: 24px;
-  padding: 10px;
+  background-size: 1.5rem;
+  padding: 0.625rem;
   background-position: 0 center;
 }
 
 input[type=checkbox]:checked + label {
   background-repeat: no-repeat;
   background-image: url("./../../images/Input/Check5.png");
-  background-size: 24px;
-  padding: 10px;
+  background-size: 1.5rem;
+  padding: 0.625rem;
   background-position: 0 center;
 }
 
@@ -1212,14 +1212,13 @@ h2 {
 }
 
 .cartSelectAll {
-  height: 30px;
+  height: 1.875rem;
   color: #333;
   font-size: 1rem;
   font-weight: 600;
   line-height: 150%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  display: inline-block;
 }
 .cartSelectAll .cartButton {
   color: #333;
@@ -1260,19 +1259,14 @@ h2 {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
-  height: 62px;
+  height: 3.875rem;
   align-items: center;
 }
 .water button,
 .frozen button,
 .sun button {
-  appearance: none;
-  border: 0;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background: url(./../../images/icon/Arrow-2.png) no-repeat;
   background-position: center;
 }
@@ -1301,71 +1295,62 @@ h2 {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 8px;
-  align-items: center;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  background-image: url(./../../images/Input/Check5.png);
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: 0 center;
+  gap: 0.5rem;
+  align-items: center;
   padding-left: 2rem;
+  background: url(./../../images/Input/Check5.png) no-repeat 0 center/1.5rem;
 }
 .water .sun__continer,
 .frozen .sun__continer,
 .sun .sun__continer {
-  border-bottom: 1px solid black;
+  border-bottom: 0.0625rem solid black;
 }
 .water .btnList__h,
 .frozen .btnList__h,
 .sun .btnList__h {
-  width: 345px;
+  width: 21.5625rem;
 }
 .water .btnList__won,
 .frozen .btnList__won,
 .sun .btnList__won {
-  width: 127px;
+  width: 7.9375rem;
   text-align: right;
 }
 .water .btnList__remove,
 .frozen .btnList__remove,
 .sun .btnList__remove {
   background-image: url("./../../images/Icon/Minus.png");
-  width: 30px;
-  height: 30px;
 }
 .water .btnList__add,
 .frozen .btnList__add,
 .sun .btnList__add {
   background-image: url("./../../images/Icon/Plus.png");
-  width: 30px;
-  height: 30px;
 }
 .water .btnList__cancel,
 .frozen .btnList__cancel,
 .sun .btnList__cancel {
   background-image: url("./../../images/Icon/cancel.png");
-  width: 30px;
-  height: 30px;
 }
 .water .btnList .btnGroup,
 .frozen .btnList .btnGroup,
 .sun .btnList .btnGroup {
-  border: 1px solid #c4c4c4;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 8px;
+  border: 0.0625rem solid #c4c4c4;
+  gap: 0.5rem;
 }
 .water .btnList .btnGroup span,
 .frozen .btnList .btnGroup span,
 .sun .btnList .btnGroup span {
-  height: 30px;
+  height: 1.875rem;
 }
 
 .cartAddress {
-  border: 1px solid #e1e1e1;
+  border: 0.0625rem solid #e1e1e1;
   padding: 1.25rem;
 }
 .cartAddress h3 {
@@ -1373,7 +1358,6 @@ h2 {
   font-size: 1rem;
   font-weight: 600;
   line-height: 2.25rem;
-  height: 2.25rem;
   background-image: url(./../../images/Icon/Location.png);
   background-repeat: no-repeat;
   padding-left: 2.5rem;
@@ -1385,7 +1369,7 @@ h2 {
 }
 .cartAddress span {
   color: black;
-  font-size: 0.75rem;
+  font-size: 0.046875rem;
   font-weight: 600;
   line-height: 150%;
   display: block;
@@ -1408,7 +1392,7 @@ h2 {
 
 .cartPayment {
   height: 17.3125rem;
-  border: 1px solid #e1e1e1;
+  border: 0.0625rem solid #e1e1e1;
   background: #f9f9f9;
   padding: 1.25rem;
   color: #333;
@@ -1418,7 +1402,7 @@ h2 {
 }
 .cartPayment dt {
   display: inline-block;
-  width: 100px;
+  width: 6.25rem;
 }
 .cartPayment dt:nth-child(-n+3) {
   padding-bottom: 1rem;
@@ -1432,7 +1416,7 @@ h2 {
 }
 .cartPayment__pay {
   padding-top: 1.5rem;
-  border-top: 1px solid #e1e1e1;
+  border-top: 0.0625rem solid #e1e1e1;
 }
 
 .cartPayment__pay span {
@@ -1442,10 +1426,9 @@ h2 {
   line-height: 150%;
   margin-top: 0.6875rem;
   display: inline-block;
-  border-radius: 1px;
-  padding: 0px 8px;
+  border-radius: 0.0625rem;
+  padding: 0px 0.5rem;
   background: #fa622f;
-  background-position: 37px 18px;
   margin-right: 0.5rem;
 }
 .cartPayment__pay dd:last-child {
