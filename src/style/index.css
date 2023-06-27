@@ -1241,14 +1241,14 @@ h2 {
 }
 .water__list {
   background: teal;
+}
+.water__list li {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
   justify-content: space-between;
   align-items: center;
-}
-.water__list li {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   background-image: url(./../../images/Input/Check5.png);
@@ -1257,6 +1257,24 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0 center;
   padding-left: 2rem;
+}
+.water .btnList__remove {
+  background-image: url("./../../images/Icon/Minus.png");
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+.water .btnList__add {
+  background-image: url("./../../images/Icon/Plus.png");
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+.water .btnList__cancel {
+  background-image: url("./../../images/Icon/cancel.png");
+  width: 30px;
+  height: 30px;
+  background-color: red;
 }
 
 .cartAddress {

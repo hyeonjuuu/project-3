@@ -74,10 +74,10 @@ h2 {
 
   &__list {
     background: teal;
-    @include flexbox;
-    justify-content: space-between;
-    align-items: center;
     li {
+      @include flexbox;
+      justify-content: space-between;
+      align-items: center;
       @include paddingY(20px);
       // width: 300px;
       // height: 118px;
@@ -91,6 +91,26 @@ h2 {
       background-position: 0 center;
       // border-bottom: 1px solid $black;
       padding-left: rem(32px);
+    }
+  }
+  .btnList {
+    &__remove {
+      background-image: url('./../../images/Icon/Minus.png');
+      width: 30px;
+      height: 30px;
+      background-color: red;
+    }
+    &__add {
+      background-image: url('./../../images/Icon/Plus.png');
+      width: 30px;
+      height: 30px;
+      background-color: red;
+    }
+    &__cancel {
+      background-image: url('./../../images/Icon/cancel.png');
+      width: 30px;
+      height: 30px;
+      background-color: red;
     }
   }
 
