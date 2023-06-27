@@ -13,7 +13,7 @@ input.userID__input,
 .userEmail__input,
 .userName__input,
 .userTel__input,
-.userTime__input {
+.userDate__input {
   @include input($w: 333px, $h: 44px);
 }
 
