@@ -1,6 +1,12 @@
 @use './../utils' as *;
 @use './../components' as *;
 
+//input 기본 텍스트값
+body input{
+  font-size: rem(16px);
+  color: #898989;
+}
+
 input.userID__input,
 .userPw__input,
 .userEmail__input,
@@ -168,22 +174,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-
-
-
-
-
-
-//------------------------------이용 약관 동의-------------------------------------
-// .joinCheck {
-//   display: none;
-// }
-
-// .btnJoin {
-//   left: 50%;
-//   transform: translate(-50%);
-//   display: none;
-// }
 .forBlock{
     display : flex;
     flex-flow : row nowrap;
