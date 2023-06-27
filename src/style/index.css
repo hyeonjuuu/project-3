@@ -1887,6 +1887,11 @@ a[title*="마지막 페이지"] {
   background-position: center;
 }
 
+body input {
+  font-size: 1rem;
+  color: #898989;
+}
+
 input.userID__input,
 .userPw__input,
 .userEmail__input,
