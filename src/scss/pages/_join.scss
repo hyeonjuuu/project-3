@@ -68,7 +68,7 @@ input.userID__input,
   width: 100%;
   border-top: 2px solid #333;
   border-bottom: 1px solid #333;
-//   position: absolute;
+  //   position: absolute;
   top: 58px;
 }
 
@@ -103,7 +103,7 @@ input.userID__input,
 }
 
 //라디오 버튼 커스텀
-[type="radio"] {
+[type='radio'] {
   vertical-align: middle;
   appearance: none;
   border: max(1px, 0.1em) solid #c4c4c4;
@@ -112,35 +112,29 @@ input.userID__input,
   height: 1.25em;
 }
 
-[type="radio"]:checked {
+[type='radio']:checked {
   border: 0.4em solid #5f0080;
 }
 
 //date input 커스텀
-input[type="date"]{
+input[type='date'] {
   content: attr(data-placeholder);
   color: #898989;
   font-size: 16px;
   text-align: center;
 }
 
-input[type="date"]::before{
+input[type='date']::before {
   content: attr(data-placeholder);
   color: #333;
   font-size: 16px;
 }
 
 //date input 달력 아이콘 커스텀
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
   display: none;
 }
-
-
-
-
-
-
 
 //------------------------------이용 약관 동의-------------------------------------
 .forBlock{
@@ -153,54 +147,65 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-right: auto;
 }
 
-.agree{
-    width : 139px;
-    @include paddingX(4px);
-    padding-top : 20px;
-    font-size : 16px;
-    font-weight: 600;
-    line-height: 150%;
+.agree {
+  width: 139px;
+  @include paddingX(4px);
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
 }
 
-.agreement{
-    display : flex;
-    flex-flow : column nowrap;
+.agreement {
+  display: flex;
+  flex-flow: column nowrap;
 
-    padding-top : 20px;
-    padding-bottom : 20px;
-    
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    width : 640px;
-    margin-left : auto;
-    margin-right : auto;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 
+  &__word {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
 
-    &__word{
-        font-size : 16px;
-        font-weight: 600;
-        line-height: 150%;
+    width: 131px;
+    padding-right: 8px;
+  }
+  &__star {
+    color: red;
+  }
+  &__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: baseline;
 
-        width : 131px;
-        padding-right : 8px;
+    @include paddingY(12px);
+    // padding-left : 7px;
+    width: 429px;
+
+    &__inside {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
     }
     &__star{
         color : red;
         // float : right;
     }
-    &__list{
-        display : flex;
-        flex-flow : row nowrap;
-        justify-content :baseline;
+    &__check {
+      width: 28px;
+      height: 28px;
 
         @include paddingY(12px);
         width : 429px;
 
-        &__inside{
-            width : 100%;
-            display : flex;
-            flex-flow : row nowrap;
-            justify-content: space-between;
-        }
+      background-position: -7px -7px;
+      background-repeat: no-repeat;
     }
     &__all{
         font-size : 21.3px;
@@ -251,6 +256,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
+#agreement__check__for {
+  display: none;
+}
+#agreement__check__id {
+  background-image: url('./../../images/Input/Check.png');
+  margin-left: 7px;
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+  background-position: -7px -7px;
+  background-repeat: no-repeat;
 
 label.radio{ 
     background-image: url("./../../images/Input/Check.png");
@@ -275,9 +291,4 @@ label.radio{
 }
 #yong3:checked + label{
     background-position: -7px -38px;
-}
-
-body input{
-  font-size: 16px;
-  color: #898989;
 }
