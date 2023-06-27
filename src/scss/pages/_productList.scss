@@ -65,6 +65,10 @@
   @include flexbox(column, space-between, stretch, nowrap);
 }
 
+.dropdownToggle__category {
+  border-bottom: none;
+}
+
 .filter__category {
   color: $base-text;
   line-height: 150%;
@@ -92,6 +96,14 @@
   width: 24px;
   height: 24px;
   margin-right: 4px;
+}
+
+.dropdown__category__list label img {
+  vertical-align: middle;
+}
+
+.dropdown__category__list label span {
+  vertical-align: middle;
 }
 .viewMore {
   @include gray300_button;
@@ -154,10 +166,6 @@
   margin-right: rem(18px);
 }
 
-// div.imgg button {
-//   right: 16px;
-// }
-
 .bestProductList {
   position: relative;
 }
@@ -170,6 +178,62 @@
   display: block;
   top: 258px;
   right: 34px;
+}
+
+.product__list__info {
+  @include flexbox(column);
+  gap: 8px;
+  margin-top: rem(16px);
+  padding-bottom: rem(24px);
+  color: $base-text;
+
+  span {
+    color: $gray;
+    font-weight: 600;
+    font-size: rem(12px);
+    line-height: 150%;
+  }
+  dt {
+    line-height: 160%;
+  }
+}
+.best__product__price {
+  font-size: rem(21.3px);
+  font-weight: 600;
+  list-style: 150%;
+
+  strong {
+    color: #FA622F;
+    margin-right: rem(8px);
+  }
+}
+.product__discount {
+  font-size: 12px;
+  color: #898989;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.badge__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(8px);
+}
+
+[class*="__badge"] {
+  display: flex;
+  align-items: center;
+  background: #E1E1E1;
+  border-radius: 4px;
+  padding: rem(4px);
+  text-align: center;
+  height: 18px;
+}
+span.karly__badge {
+  color: $purple;
+}
+span.limit__badge {
+  width: auto;
 }
 
 // .product .btn-arrow-right {

@@ -1409,6 +1409,10 @@ h2 {
   align-items: stretch;
 }
 
+.dropdownToggle__category {
+  border-bottom: none;
+}
+
 .filter__category {
   color: #333333;
   line-height: 150%;
@@ -1450,6 +1454,14 @@ h2 {
   width: 24px;
   height: 24px;
   margin-right: 4px;
+}
+
+.dropdown__category__list label img {
+  vertical-align: middle;
+}
+
+.dropdown__category__list label span {
+  vertical-align: middle;
 }
 
 .viewMore {
@@ -1527,6 +1539,67 @@ h2 {
   display: block;
   top: 258px;
   right: 34px;
+}
+
+.product__list__info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: #333333;
+}
+.product__list__info span {
+  color: #898989;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+.product__list__info dt {
+  line-height: 160%;
+}
+
+.best__product__price {
+  font-size: 1.33125rem;
+  font-weight: 600;
+  list-style: 150%;
+}
+.best__product__price strong {
+  color: #FA622F;
+  margin-right: 0.5rem;
+}
+
+.product__discount {
+  font-size: 12px;
+  color: #898989;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.badge__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+[class*=__badge] {
+  display: flex;
+  align-items: center;
+  background: #E1E1E1;
+  border-radius: 4px;
+  padding: 0.25rem;
+  text-align: center;
+  height: 18px;
+}
+
+span.karly__badge {
+  color: #5f0080;
+}
+
+span.limit__badge {
+  width: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
