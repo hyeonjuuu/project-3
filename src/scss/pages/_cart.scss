@@ -1,6 +1,27 @@
 @use './../utils' as *;
 @use './../components' as *;
 
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox'] + label {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url('./../../images/Input/Check4.png');
+  background-size: 24px;
+  padding: 10px;
+  background-position: 0 center;
+}
+
+input[type='checkbox']:checked + label {
+  background-repeat: no-repeat;
+  background-image: url('./../../images/Input/Check5.png');
+  background-size: 24px;
+  padding: 10px;
+  background-position: 0 center;
+}
+
 .karlyCart {
   @include containerMax;
   height: 709px;
@@ -33,18 +54,27 @@ h2 {
 }
 
 .cartSelectAll {
+  height: 30px;
   // background-color: palegoldenrod;
   @include font(#333, 16px, 600);
-  background-image: url(./../../images/Input/Check5.png);
-  background-size: 24px;
-  background-repeat: no-repeat;
-  padding-left: rem(32px);
+  // background-image: url(./../../images/Input/Check5.png);
+  // background-size: 24px;
+  // background-repeat: no-repeat;
+  // padding-left: rem(32px);
   @include marginY(16px);
+  display: inline-block;
 
   .cartButton {
     @include font(#333, 16px, 600);
     @include buttonNone;
   }
+}
+.cartCheckbox {
+  // @include flexbox;
+}
+.cartChoice {
+  padding-left: 20px;
+  // background: yellowgreen;
 }
 
 // 펼치기
