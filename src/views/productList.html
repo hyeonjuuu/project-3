@@ -8,630 +8,342 @@
 </head>
 <body>
 
-  <main>
-    <h1>베스트</h1>
+  <main class="productList">
+    <h1 class="best">베스트</h1>
     <!-- !좌측 영역 -->
-    <section>
     <div class="productContainer">
-        <!-- 필터 -->
-        <div class="toggle__filter">
-          <span>필터</span>
-          <button type="button">초기화</button>
-        </div>
-<!-- 카테고리 -->
-        <div class="toggleCategory">
-          <ul>
-            <div>
-            <a href="">카테고리<span>1</span></a>
-            <button></button>
+        <section class="filterSection">
+          <!-- ^좌측 전체 컨테이너 -->
+        <div class="productFilterContainer">
+            <!-- 필터 -->
+            <div class="filterWrapper">
+              <span class="filter__filter">필터</span>
+              <button type="button" class="filter__reset">초기화</button>
             </div>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">샐러드·간편식<span>65</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">국·반찬·메인요리<span>52</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">정육·계란<span>41</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">과일·견과·쌀<span>30</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">간식·과자·떡<span>18</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생수·음료·우유·커피<span>17</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">수산·해산·건어물<span>16</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">베이커리·치즈·델리<span>13</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">건강식품<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <a href="/">카테고리 더보기</a>
-            </li>
-          </ul>
-        </div>
-<!-- 브랜드 -->
-        <div class="toggleBrand">
-          <ul>
-            <div>
-            <a href="">브랜드</a>
-            <button></button>
-            </div>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">감자밭<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">강남면옥<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">경남제약<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">경복궁<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">고래사<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">고메공방<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">고온어다이어트<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">교토마블<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">그래놀라 하우스<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">그리츠 시그니처 램<span>1</span></label>
-              </span>
-            </li>
-            <li>
-              <a href="/">브랜드 더보기</a>
-            </li>
-          </ul>
-        </div>
+          <!-- 카테고리 -->
+            <div class="categoryWrapper">
+              <div class="dropdownToggle__category">
+                <a href="" class="filter__category">카테고리<span class="filter__number">1</span></a>
+                <button class="dropdown__button"></button>
+              </div>
+              <ul class="dropdown__category">
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__salad"></input>
+                    <label for="list__salad"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />샐러드·간편식<span class="filter__number">65</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__main"></input>
+                    <label for="list__main"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />국·반찬·메인요리<span class="filter__number">52</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__egg"></input>
+                    <label for="list__egg"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />정육·계란<span class="filter__number">41</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__fruit"></input>
+                    <label for="list__fruit"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />과일·견과·쌀<span class="filter__number">30</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__snack"></input>
+                    <label for="list__snack"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />간식·과자·떡<span class="filter__number">18</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__drink"></input>
+                    <label for="list__drink"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />생수·음료·우유·커피<span class="filter__number">17</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__seafood"></input>
+                    <label for="list__seafood"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />수산·해산·건어물<span class="filter__number">16</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__cheese"></input>
+                    <label for="list__cheese"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />베이커리·치즈·델리<span class="filter__number">13</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__health"></input>
+                    <label for="list__health"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />건강식품<span class="filter__number">10</span></label>
+                </li>
+                <li class="dropdown__category__list">
+                  <input type="radio" id="list__living"></input>
+                    <label for="list__living"><img class="check" src="./../images/Icon/filter_unchecked.png" alt="" />생활용품·리빙·캠핑<span class="filter__number">10</span></label>
+                </li>
+                <li class="viewMore">
+                  <a href="/" class="viewMore__button">카테고리 더보기</a>
+                </li>
+                </ul>
+              </div>
+          <!-- 브랜드 -->
+              <div class="brandWrapper">
+                <div class="dropdownToggle__brand">
+                  <a href="" class="filter__brand">브랜드</a>
+                  <button class="dropdown__button"></button>
+                </div>
+          
+          <!-- 가격 -->
+              <div class="priceWrapper">
+                <div class="dropdownToggle__price">
+                  <a href="" class="filter__price">가격</a>
+                  <button class="dropdown__button"></button>
+                </div>
+          <!-- 혜택 -->
+            <!-- <div class="dropdownBenefit">
+              <ul>
+                <div>
+                <a href="">혜택</a>
+                <button></button>
+                </div>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">샐러드·간편식<span>65</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">국·반찬·메인요리<span>52</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">정육·계란<span>41</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">과일·견과·쌀<span>30</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">간식·과자·떡<span>18</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">생수·음료·우유·커피<span>17</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">수산·해산·건어물<span>16</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">베이커리·치즈·델리<span>13</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">건강식품<span>10</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
+                  </span>
+                </li>
+                <li>
+                  <a href="/">카테고리 더보기</a>
+                </li>
+              </ul>
+            </div> -->
+          <!-- 유형 -->
+            <!-- <div class="dropdownType">
+              <ul>
+                <div>
+                <a href="">유형</a>
+                <button></button>
+                </div>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">샐러드·간편식<span>65</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">국·반찬·메인요리<span>52</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">정육·계란<span>41</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">과일·견과·쌀<span>30</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">간식·과자·떡<span>18</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">생수·음료·우유·커피<span>17</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">수산·해산·건어물<span>16</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">베이커리·치즈·델리<span>13</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">건강식품<span>10</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
+                  </span>
+                </li>
+                <li>
+                  <a href="/">카테고리 더보기</a>
+                </li>
+              </ul>
+            </div> -->
+          <!-- 특정 상품 제외 -->
+            <!-- <div class="dropdownExcept">
+              <ul>
+                <div>
+                <a href="">특정상품 제외</a>
+                <button></button>
+                </div>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">샐러드·간편식<span>65</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">국·반찬·메인요리<span>52</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">정육·계란<span>41</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">과일·견과·쌀<span>30</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">간식·과자·떡<span>18</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">생수·음료·우유·커피<span>17</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">수산·해산·건어물<span>16</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">베이커리·치즈·델리<span>13</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">건강식품<span>10</span></label>
+                  </span>
+                </li>
+                <li>
+                  <span><input type="radio" id="salad"></input>
+                    <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
+                  </span>
+                </li>
+                <li>
+                  <a href="/">카테고리 더보기</a>
+                </li>
+              </ul>
+            </div>  -->
+          </div>
+        </section>
+        <!-- !상품영역 -->
+        <section class="productSection">
+          <div class="product__sort">
+            <span class="sort__total">총 284건</span>
+            <ul class="sort__list">
+              <li class="sort__item"><a href="/"><strong>추천순</strong></a></li><span aria-hidden="true">|</span>
+              <li class="sort__item"><a href="/">신상품순</a></li><span aria-hidden="true">|</span>
+              <li class="sort__item"><a href="/">판매량순</a></li><span aria-hidden="true">|</span>
+              <li class="sort__item"><a href="/">혜택순</a></li><span aria-hidden="true">|</span>
+              <li class="sort__item"><a href="/">낮은 가격순</a></li><span aria-hidden="true">|</span>
+              <li class="sort__item"><a href="/">높은 가격순</a></li>
+            </ul>
+          </div>
+          <!-- 제품이미지 -->
+          <div>
+            <ul class="bestProduct">
+              <!-- 풀무원 -->
+              <li class="bestProductList">
+                <!-- 풀무원 이미지 -->
+                <div class="best__list img">
+                  <img class="best__list__img" src="./../images/product01.png" alt="" />
+                  <button></button>
+                </div>
+                <!-- 풀무원 정보 -->
+                <dl class="product__list__info">
+                  <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
+                  <dd>4,980 원</dd>
+                  <dd>튀기지 않아 부담없는 매콤함</dd>
+                  <span>Karly Only</span>
+                  <span>한정수량</span>
+                </dl>
+              </li>
 
-<!-- 가격 -->
-        <div class="togglePrice">
-          <ul>
+              <li class="bestProductList">
+                <div class="best__list img">
+                  <img class="best__list__img" src="./../images/product02.png" alt="" />
+                  <button></button>
+                </div>
+                <dl class="product__list__info">
+                  <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
+                  <dd>32,580 원</dd>
+                  <dd>끈적임 없이 보송한 무기자차 선쿠션</dd>
+                </dl>
+              </li>
+              <li class="bestProductList">
+                <div class="best__list img">
+                  <img class="best__list__img" src="./../images/product04.png" alt="" />
+                  <button></button>
+                </div>
+                <dl class="product__list__info">
+                  <dt>[프로쉬] 베이비 세탁세제</dt>
+                  <dd><strong>24%</strong>18,900 원</dd>
+                  <dd class="txt-underline">24900원</dd>
+                  <dd>성분을 꼼꼼히 따져 골라 더욱 편안한</dd>
+                </dl>
+              </li>
+            </ul>
+            <!-- !페이지 번호 -->
             <div>
-            <a href="">가격</a>
-            <button></button>
+              <a href="/" title="첫 페이지"><span class="a11yHidden">첫 페이지로 이동</span></a>
+              <a href="/" title="이전 페이지"><span class="a11yHidden">이전 페이지로 이동</span></a>
+              <a href="/" title="1 페이지"><span class="a11yHidden">1 페이지로 이동</span></a>
+              <a href="/" title="2 페이지"><span class="a11yHidden">2 페이지로 이동</span></a>
+              <a href="/" title="3 페이지"><span class="a11yHidden">3 페이지로 이동</span></a>
+              <a href="/" title="다음 페이지"><span class="a11yHidden">다음 페이지로 이동</span></a>
+              <a href="/" title="마지막 페이지"><span class="a11yHidden">마지막 페이지로 이동</span></a>
             </div>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">샐러드·간편식<span>65</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">국·반찬·메인요리<span>52</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">정육·계란<span>41</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">과일·견과·쌀<span>30</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">간식·과자·떡<span>18</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생수·음료·우유·커피<span>17</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">수산·해산·건어물<span>16</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">베이커리·치즈·델리<span>13</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">건강식품<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <a href="/">카테고리 더보기</a>
-            </li>
-          </ul>
+          </div>
         </div>
-<!-- 혜택 -->
-        <div class="toggleBenefit">
-          <ul>
-            <div>
-            <a href="">혜택</a>
-            <button></button>
-            </div>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">샐러드·간편식<span>65</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">국·반찬·메인요리<span>52</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">정육·계란<span>41</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">과일·견과·쌀<span>30</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">간식·과자·떡<span>18</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생수·음료·우유·커피<span>17</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">수산·해산·건어물<span>16</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">베이커리·치즈·델리<span>13</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">건강식품<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <a href="/">카테고리 더보기</a>
-            </li>
-          </ul>
-        </div>
-<!-- 유형 -->
-        <div class="toggleType">
-          <ul>
-            <div>
-            <a href="">유형</a>
-            <button></button>
-            </div>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">샐러드·간편식<span>65</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">국·반찬·메인요리<span>52</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">정육·계란<span>41</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">과일·견과·쌀<span>30</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">간식·과자·떡<span>18</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생수·음료·우유·커피<span>17</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">수산·해산·건어물<span>16</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">베이커리·치즈·델리<span>13</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">건강식품<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <a href="/">카테고리 더보기</a>
-            </li>
-          </ul>
-        </div>
-<!-- 특정 상품 제외 -->
-        <div class="toggleExcept">
-          <ul>
-            <div>
-            <a href="">특정상품 제외</a>
-            <button></button>
-            </div>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">샐러드·간편식<span>65</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">국·반찬·메인요리<span>52</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">정육·계란<span>41</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">과일·견과·쌀<span>30</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">간식·과자·떡<span>18</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생수·음료·우유·커피<span>17</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">수산·해산·건어물<span>16</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">베이커리·치즈·델리<span>13</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">건강식품<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <span><input type="radio" id="salad"></input>
-                <label for="salad">생활용품·리빙·캠핑<span>10</span></label>
-              </span>
-            </li>
-            <li>
-              <a href="/">카테고리 더보기</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- !상품영역 -->
-    <section>
-      <div>
-        <span>총 284건</span>
-        <ul>
-          <li>추천순</li>
-          <li>신상품순</li>
-          <li>판매량순</li>
-          <li>혜택순</li>
-          <li>낮은 가격순</li>
-          <li>높은 가격순</li>
-        </ul>
-      </div>
-      <div>
-        <ul class="product">
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product01.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
-              <dd>4,980 원</dd>
-              <dd>튀기지 않아 부담없는 매콤함</dd>
-              <span>Karly Only</span>
-              <span>한정수량</span>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product02.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
-              <dd>32,580 원</dd>
-              <dd>끈적임 없이 보송한 무기자차 선쿠션</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product04.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[프로쉬] 베이비 세탁세제</dt>
-              <dd><strong>24%</strong>18,900 원</dd>
-              <dd class="txt-underline">24900원</dd>
-              <dd>성분을 꼼꼼히 따져 골라 더욱 편안한</dd>
-            </dl>
-          </li>
-        </ul>
-
-        <!-- 2번째 -->
-        <ul class="product">
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product01.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
-              <dd>4,980 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product02.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
-              <dd>32,580 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product03.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>유기농 밀키퀸 현미 4kg</dt>
-              <dd>25,000 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list imgg">
-              <img src="./../images/product04.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[프로쉬] 베이비 세탁세</dt>
-              <dd><strong>24%</strong>18,900 원</dd>
-              <dd class="txt-underline">24900원</dd>
-            </dl>
-          </li>
-        </ul>
-        <ul class="product">
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product01.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
-              <dd>4,980 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product02.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
-              <dd>32,580 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product03.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>유기농 밀키퀸 현미 4kg</dt>
-              <dd>25,000 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list imgg">
-              <img src="./../images/product04.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[프로쉬] 베이비 세탁세</dt>
-              <dd><strong>24%</strong>18,900 원</dd>
-              <dd class="txt-underline">24900원</dd>
-            </dl>
-          </li>
-        </ul>
-        <ul class="product">
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product01.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
-              <dd>4,980 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product02.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
-              <dd>32,580 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product03.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>유기농 밀키퀸 현미 4kg</dt>
-              <dd>25,000 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list imgg">
-              <img src="./../images/product04.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[프로쉬] 베이비 세탁세</dt>
-              <dd><strong>24%</strong>18,900 원</dd>
-              <dd class="txt-underline">24900원</dd>
-            </dl>
-          </li>
-        </ul>
-        <ul class="product">
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product01.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
-              <dd>4,980 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product02.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
-              <dd>32,580 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list img">
-              <img src="./../images/product03.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>유기농 밀키퀸 현미 4kg</dt>
-              <dd>25,000 원</dd>
-            </dl>
-          </li>
-          <li class="product__list">
-            <div class="product__list imgg">
-              <img src="./../images/product04.png" alt="" />
-              <button></button>
-            </div>
-            <dl class="product__list text">
-              <dt>[프로쉬] 베이비 세탁세</dt>
-              <dd><strong>24%</strong>18,900 원</dd>
-              <dd class="txt-underline">24900원</dd>
-            </dl>
-          </li>
-        </ul>
-        <!-- !페이지 번호 -->
-        <div>
-          <a href="/" title="첫 페이지"><span class="a11yHidden">첫 페이지로 이동</span></a>
-          <a href="/" title="이전 페이지"><span class="a11yHidden">이전 페이지로 이동</span></a>
-          <a href="/" title="1 페이지"><span class="a11yHidden">1 페이지로 이동</span></a>
-          <a href="/" title="2 페이지"><span class="a11yHidden">2 페이지로 이동</span></a>
-          <a href="/" title="3 페이지"><span class="a11yHidden">3 페이지로 이동</span></a>
-          <a href="/" title="다음 페이지"><span class="a11yHidden">다음 페이지로 이동</span></a>
-          <a href="/" title="마지막 페이지"><span class="a11yHidden">마지막 페이지로 이동</span></a>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
+      </main>
   
 </body>
 </html>

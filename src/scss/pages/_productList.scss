@@ -1,16 +1,145 @@
 @use './../utils' as *;
 @use "./../base/" as *;
+@use "./../components/" as *;
+
+// 제품 리스트 전체
+.productList {
+  font-family: pretendard, sans-serif;
+  @include containerMax;
+}
+.productContainer {
+  @include flexbox;
+}
+
+.best {
+  color: $black;
+  line-height: 150%;
+  font-weight: 600;
+  font-size: rem(22px);
+  @include marginY(48px);
+  text-align: center;
+}
+
+.productFilterContainer {
+  width: rem(267px);
+  height: rem(906px);
+}
+
+// 공통 toggle
+.filterWrapper,
+[class*="dropdownToggle__"] {
+  width: rem(220px);
+  height: rem(52px);
+  border-bottom: 1px solid $light-gray;
+  font-weight: 600;
+  @include flexbox(row, space-between, stretch, nowrap);
+  align-items: center;
+}
+
+.filter__number {
+  color: $light-gray;
+  line-height: 160%;
+  font-size: rem(12px);
+  padding-left: rem(4px);
+}
+
+// ^필터 div
+.filterWrapper {
+  @include flexbox(row, space-between, stretch, nowrap);
+  align-items: center;
+}
+// ^필터 span
+.filter__filter {
+  color: $base-text;
+  line-height: 150%;
+}
+// ^필터 초기화
+.filter__reset {
+  @include gray300_button;
+  font-size: rem(10px);
+}
 
 
+// #카테고리
+.categoryWrapper {
+  @include flexbox(column, space-between, stretch, nowrap);
+}
+
+.filter__category {
+  color: $base-text;
+  line-height: 150%;
+}
+
+.dropdown__button {
+  @include dropdownButton;
+  @include bgImages;
+}
+
+.dropdown__category {
+  width: rem(220px);
+  height: rem(542px);
+}
+.dropdown__category__list {
+  box-sizing: content-box;
+  width: rem(220px);
+  height: rem(26px);
+  line-height: 160%;
+  padding-top: rem(8px);
+  padding-bottom: rem(16px);
+  @include checkbox;
+}
+.check {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+.viewMore {
+  @include gray300_button;
+  display: block;
+  width: rem(220px);
+  height: rem(30px);
+  text-align: center;
+  padding-top: rem(6px);
+  padding-bottom: rem(18px);
+  font-size: rem(12px);
+}
 
 
+// 드롭다운
 
 
 
 // !product
+.product__sort {
+  @include flexbox;
+  justify-content: space-between;
+  box-sizing: content-box;
+  width: rem(783px);
+  height: rem(24px);
+  padding-bottom: rem(20px);
 
-// ul .product
-.product {
+  .sort__total {
+    font-weight: 600;
+  }
+
+  .sort__list {
+    @include flexbox(row);
+    color: $light-gray;
+  }
+  .sort__item {
+    @include marginX(8px);
+    font-weight: 600;
+  }
+  .sort__item:first-child {
+    color: $base-text;
+  }
+  .sort__item:last-child {
+    margin-right: 0;
+  }
+}
+
+// !제품이미지
+.bestProduct {
   margin: 0;
   padding: 0;
   display: flex;
@@ -19,26 +148,21 @@
 }
 
 
-.product img {
-  background: teal;
-  width: 249px;
-  height: 320px;
-  margin-right: 18px;
+.best__list {
+  width: rem(249px);
+  height: rem(320px);
+  margin-right: rem(18px);
 }
 
-.product__list .imgg img {
-  margin: 0;
-}
+// div.imgg button {
+//   right: 16px;
+// }
 
-div.imgg button {
-  right: 16px;
-}
-
-.product__list {
+.bestProductList {
   position: relative;
 }
 
-.product button {
+.bestProduct button {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -48,40 +172,40 @@ div.imgg button {
   right: 34px;
 }
 
-.product .btn-arrow-right {
-  background: url(/images/Icon/arrow3.svg) no-repeat;
-  width: 50px;
-  height: 50px;
-  top: 125px;
-  right: -25px;
-  border-radius: 25px;
-  box-shadow: 1px 0px 4px rgba(1, 0, 1, 0.2);
-}
+// .product .btn-arrow-right {
+//   background: url(/images/Icon/arrow3.svg) no-repeat;
+//   width: 50px;
+//   height: 50px;
+//   top: 125px;
+//   right: -25px;
+//   border-radius: 25px;
+//   box-shadow: 1px 0px 4px rgba(1, 0, 1, 0.2);
+// }
 
-.product__title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 50px 0 80px 0px;
-}
+// .product__title {
+//   font-size: 1.75rem;
+//   font-weight: 600;
+//   text-align: center;
+//   padding: 50px 0 80px 0px;
+// }
 
-.product dt {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
+// .product dt {
+//   font-size: 16px;
+//   font-weight: 400;
+//   margin-top: 16px;
+//   margin-bottom: 8px;
+// }
 
-.product dl {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
+// .product dl {
+//   font-size: 22px;
+//   font-weight: 600;
+//   margin-bottom: 24px;
+// }
 
-.product dd {
-  line-height: 150%;
-}
+// .product dd {
+//   line-height: 150%;
+// }
 
-.product strong {
-  color: #FA622F;
-}
+// .product strong {
+//   color: #FA622F;
+// }
