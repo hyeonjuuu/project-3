@@ -1,11 +1,16 @@
 @use './../utils' as *;
 @use './../components' as *;
 
+main{
+  padding-bottom : rem(80px);
+}
+
 .login {
   font-size: rem(21.3px);
   color: black;
   text-align: center;
   margin-top: rem(80px);
+  // padding-bottom : 100px;
 }
 
 .loginForm {
