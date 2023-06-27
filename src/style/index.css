@@ -1238,6 +1238,19 @@ h2 {
   height: 62px;
   align-items: center;
 }
+.water button,
+.frozen button,
+.sun button {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: url(./../../images/icon/Arrow-2.png) no-repeat;
+  background-position: center;
+}
 .water .waterH,
 .frozen .waterH,
 .sun .waterH {

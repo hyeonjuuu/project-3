@@ -58,7 +58,18 @@ h2 {
   &__continer {
     @include flexbox($justify: space-between);
     height: 62px;
+    // background-color: palegoldenrod;
     align-items: center;
+  }
+  button {
+    @include buttonNone;
+    width: 30px;
+    height: 30px;
+    // margin-right: 4px;
+    background: url(./../../images/icon/Arrow-2.png) no-repeat;
+    background-position: center;
+    // display: inline;
+    // align-items: center;
   }
   .waterH {
     padding-left: rem(42px);
