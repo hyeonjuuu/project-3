@@ -1783,20 +1783,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .agreement__star {
   color: red;
 }
-.agreement__list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: baseline;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  width: 429px;
-}
-.agreement__list__inside {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
 .agreement__all {
   font-size: 21.3px;
   font-weight: 600;
@@ -1813,13 +1799,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 160%;
   padding-left: 45px;
 }
-.agreement__select {
-  font-size: 16px;
-  line-height: 160%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .agreement__detail {
   font-size: 12px;
   line-height: 160%;
@@ -1832,8 +1811,42 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: right;
   flex-shrink: 0;
 }
+.agreement__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: baseline;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 429px;
+}
+.agreement__list__inside {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.agreement__list__star {
+  color: red;
+}
+.agreement__list__check {
+  width: 28px;
+  height: 28px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 429px;
+  background-position: -7px -7px;
+  background-repeat: no-repeat;
+}
+.agreement__list__select {
+  font-size: 16px;
+  line-height: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 label.radio {
+  height: 30px;
   background-image: url("./../../images/Input/Check.png");
   background-size: 40px;
   margin-left: 7px;
@@ -1842,7 +1855,6 @@ label.radio {
   background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
 #yong0:checked + label {
   background-position: -7px -38px;
 }
@@ -1861,13 +1873,6 @@ label.radio {
 
 #yong3:checked + label {
   background-position: -7px -38px;
-}
-
-=======
->>>>>>> 65b209d7e12163a768ec2b43bb2b1f84ec84e230
-body input {
-  font-size: 16px;
-  color: #898989;
 }
 
 /*# sourceMappingURL=index.css.map */
