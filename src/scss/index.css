@@ -382,7 +382,7 @@ iframe {
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -411,7 +411,6 @@ iframe {
   margin-bottom: 2rem;
   line-height: 160%;
 }
-
 .footerTop span[aria-hidden] {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -438,7 +437,6 @@ iframe {
   align-items: center;
   line-height: 140%;
 }
-
 .customerCenter__number .customerCenter__time {
   font-size: 1rem;
   font-weight: 600;
@@ -491,7 +489,6 @@ iframe {
   font-weight: 400;
   line-height: 160%;
 }
-
 .nonMember [class*=mail] {
   color: #5f0080;
   padding-left: 0.25rem;
@@ -559,21 +556,17 @@ iframe {
   padding-bottom: 2rem;
   line-height: 160%;
 }
-
 .karlyCertify img {
   width: 2.125rem;
   height: 2.125rem;
 }
-
 .karlyCertify .karlyCertify__toss img {
   width: 6.375rem;
   height: 2rem;
 }
-
 .karlyCertify [class*=__] {
   display: flex;
 }
-
 .karlyCertify [class*=__about] {
   color: #333333;
   margin-left: 0.5rem;
@@ -631,7 +624,6 @@ iframe {
   margin-right: 2.4375rem;
   background: #ffffff;
 }
-
 .badge [class*=item] {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -686,7 +678,6 @@ iframe {
   background: #5f0080;
   height: 3.125rem;
 }
-
 .topBar__div {
   height: 2.625rem;
   width: 1050px;
@@ -697,12 +688,10 @@ iframe {
   align-items: center;
   justify-content: center;
 }
-
 .topBar__word {
   margin-top: 4px;
   color: #ffffff;
 }
-
 .topBar__X {
   color: #ffffff;
   position: absolute;
@@ -719,7 +708,6 @@ iframe {
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
-
 .memberSystem__first {
   color: #5f0080;
   font-weight: 600;
@@ -748,19 +736,16 @@ iframe {
   align-items: center;
   width: 267px;
 }
-
 .logo__image {
   width: 82px;
   height: 42px;
 }
-
 .logo__market {
   font-size: 21.3px;
   padding-left: 12px;
   color: #5f0080;
   font-weight: 700;
 }
-
 .logo__beauty {
   font-size: 21.3px;
 }
@@ -769,11 +754,9 @@ iframe {
   display: flex;
   flex-flow: row nowrap;
 }
-
 .imoji__location {
   padding-right: 20px;
 }
-
 .imoji__shopping {
   padding-left: 20px;
 }
@@ -834,11 +817,9 @@ input[type=search] {
   flex-flow: row nowrap;
   align-items: center;
 }
-
 .category__image {
   padding-right: 12px;
 }
-
 .category__word {
   font-weight: 600;
 }
@@ -985,22 +966,18 @@ input[type=search] {
   line-height: 150%;
   font-weight: 600;
 }
-
 .navCenter__new {
   width: 150px;
   height: 24px;
 }
-
 .navCenter__best {
   width: 150px;
   height: 24px;
 }
-
 .navCenter__hotdeal {
   width: 150px;
   height: 24px;
 }
-
 .navCenter__special {
   width: 150px;
   height: 24px;
@@ -1021,7 +998,6 @@ input[type=search] {
   justify-content: center;
   align-items: center;
 }
-
 .morningDelivery__first {
   color: #5f0080;
 }
@@ -1200,12 +1176,10 @@ h2 {
   margin-right: auto;
   gap: 1.5rem;
 }
-
 .cart__left {
   width: 46.375rem;
   background: yellowgreen;
 }
-
 .cart__right {
   width: 17.75rem;
   background: cornsilk;
@@ -1225,8 +1199,8 @@ h2 {
 
 .cartButton {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 0;
   padding: 0;
   background: transparent;
@@ -1240,7 +1214,6 @@ h2 {
   align-items: stretch;
   background: pink;
 }
-
 .cartForm__h {
   padding-left: 3.125rem;
   background: wheat url(./../../images/icon/Food.png) no-repeat;
@@ -1267,7 +1240,6 @@ h2 {
   border: 1px solid #e1e1e1;
   padding: 1.25rem;
 }
-
 .cartAddress h3 {
   height: 2.25rem;
   line-height: 2.25rem;
@@ -1277,19 +1249,16 @@ h2 {
   padding-left: 2.5rem;
   margin-bottom: 0.75rem;
 }
-
 .cartAddress address {
   margin-bottom: 0.75rem;
   line-height: 1.5rem;
 }
-
 .cartAddress span {
   display: block;
   margin-bottom: 0.75rem;
   color: #5f0080;
   font-size: 0.75rem;
 }
-
 .cartAddress button {
   background-color: aqua;
   width: 15.25rem;
@@ -1313,7 +1282,6 @@ h2 {
 .loginForm {
   margin-top: 2.75rem;
 }
-
 .loginForm__container {
   width: 340px;
   margin-left: auto;
@@ -1363,6 +1331,4 @@ h2 {
   border: 1px solid #5f0080;
   font-size: 1rem;
   cursor: pointer;
-} 
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
