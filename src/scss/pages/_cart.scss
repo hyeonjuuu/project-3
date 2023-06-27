@@ -60,41 +60,26 @@ h2 {
   &__frozen {
     background-color: ghostwhite;
   }
-  &__frozen,
-  &__water,
-  &__sun {
-    padding-right: rem(4px);
-    // width: 724px;
-    height: rem(62px);
-    @include font(black, 16px, 600, 0);
-    @include paddingY(16px);
-    @include flexbox($justify: space-between);
-    // align-items: center;
-    // line-height: 62px;
-  }
   &__h {
     display: inline-block;
+    height: 62px;
     padding-left: rem(42px);
     background: url(./../../images/icon/food_frozen.png) no-repeat;
-    background-position: 0 center;
+    background-position: 0 0;
     background-size: 30px;
     // line-height: 150%;
   }
-}
 
-#toggle {
-  display: none; /* 체크박스 숨김 */
-}
-.c-label {
-  cursor: pointer;
-}
-.content {
-  display: none; /* 초기에는 숨겨진 상태 */
-  background: red;
-}
-
-#toggle:checked ~ .content {
-  display: block; /* 체크된 경우 .content가 표시됨 */
+  &__water {
+    // padding-right: rem(4px);
+    // width: 724px;
+    // height: rem(62px);
+    @include font(black, 16px, 600, 0);
+    // @include paddingY(16px);
+    // @include flexbox($justify: space-between);
+    // align-items: center;
+    // line-height: 62px;
+  }
 }
 
 // 오른쪽 영역
