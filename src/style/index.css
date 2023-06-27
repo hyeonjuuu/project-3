@@ -1223,7 +1223,6 @@ h2 {
 .frozen,
 .sun {
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
   color: black;
   font-size: 1rem;
   font-weight: 600;
@@ -1239,11 +1238,23 @@ h2 {
   height: 62px;
   align-items: center;
 }
-.water h4,
-.frozen h4,
-.sun h4 {
+.water .waterH,
+.frozen .waterH,
+.sun .waterH {
   padding-left: 2.625rem;
   background: url(./../../images/icon/food_water.png) no-repeat;
+}
+.water .frozenH,
+.frozen .frozenH,
+.sun .frozenH {
+  padding-left: 2.625rem;
+  background: url(./../../images/icon/food_frozen.png) no-repeat;
+}
+.water .sunH,
+.frozen .sunH,
+.sun .sunH {
+  padding-left: 2.625rem;
+  background: url(./../../images/icon/food_sun.png) no-repeat;
 }
 .water__list li,
 .frozen__list li,
@@ -1261,6 +1272,11 @@ h2 {
   background-repeat: no-repeat;
   background-position: 0 center;
   padding-left: 2rem;
+}
+.water .sun__continer,
+.frozen .sun__continer,
+.sun .sun__continer {
+  border-bottom: 1px solid black;
 }
 .water .btnList__h,
 .frozen .btnList__h,

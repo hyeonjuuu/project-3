@@ -52,7 +52,7 @@ h2 {
 .frozen,
 .sun {
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
+
   @include font(black, 16px, 600, 31px);
 
   &__continer {
@@ -60,11 +60,18 @@ h2 {
     height: 62px;
     align-items: center;
   }
-  h4 {
+  .waterH {
     padding-left: rem(42px);
     background: url(./../../images/icon/food_water.png) no-repeat;
   }
-
+  .frozenH {
+    padding-left: rem(42px);
+    background: url(./../../images/icon/food_frozen.png) no-repeat;
+  }
+  .sunH {
+    padding-left: rem(42px);
+    background: url(./../../images/icon/food_sun.png) no-repeat;
+  }
   &__list {
     li {
       @include flexbox;
@@ -79,6 +86,13 @@ h2 {
     }
   }
 
+  .sun {
+    &__continer {
+      border-bottom: 1px solid black;
+    }
+  }
+
+  // 아래화살표 클릭시 아래로 내려가지는 부분
   .btnList {
     &__h {
       // background-color: red;
