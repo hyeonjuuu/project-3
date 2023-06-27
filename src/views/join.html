@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
-    <title>장바구니 - 칼리</title>
-    <link rel="stylesheet" href="/style/index.css" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./../style/index.css" />
   </head>
   <body>
 
@@ -16,7 +16,7 @@
         <!-- 1. 우측 상단 배치 / 2. a11yhidden속성 설정 및 글자 색깔 크기 설정 / 3. 링크 간단하게 연결 -->
         <ul class="ulType memberSystem">
           <li class="memberSystem__first">
-            <a href="./join.html">회원가입　</a>
+            <a href="">회원가입　</a>
           </li>
           <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="login.html">　로그인　</a></li>
           <li class="memberSystem__third"><span class="divider" aria-hidden="true">ㅣ</span><span>　고객센터▼</span></li>
@@ -54,7 +54,7 @@
             <li class="imoji__location"><img src="./../images/Icon/Location.png" alt="" /></li>
             <li class="iomji__heart"><img src="./../images/Icon/Heart.png" alt="" /></li>
             <li class="imoji__shopping">
-              <a href="./../views/cart.html">
+              <a href="./cart.html">
                 <img src="./../images/Icon/Cart-1.png" alt="" />
               </a>
             </li>
@@ -205,120 +205,167 @@
       </div>
     </nav>
 
-    <!-- 장바구니 -->
-    <section class="karlyCart">
-      <h2>장바구니</h2>
-      <div class="cart">
-        <!-- 왼쪽 영역 -->
-        <div class="cart__left">
-          <div class="cartSelectAll">
-            <label for="cartCheckbox1">
-              <input type="checkbox" id="cartCheckbox1" />
-              전체선택 (3/3)
-            </label>
-            <span aria-hidden="true">ㅣ</span>
-
-            <button type="submit" class="cartButton">선택삭제</button>
-          </div>
-
-          <form action="URL" method="POST" class="cartForm">
-            <div class="cartForm__water">
-              <h4 class="cartForm__h"><span>냉장 식품</span></h4>
-              <fieldset class="cartForm__ul">
-                <legend class="a11yHidden">냉장 식품 펼치기</legend>
-                <button>⌵</button>
-                <ul>
-                  <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                  <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                </ul>
-              </fieldset>
-              <!-- </div> -->
-            </div>
-            <!-- <div class="cartForm__frozen">
-              <h4 class="cartForm__h">냉장 식품</h4>
-              <input type="checkbox" id="toggle" />
-              <label for="toggle" class="foodLabel">
-                <img src="./../images/Icon/Arrow2.png" alt="냉장식품 펼치기" class="foodImg" />
+    <form action="URL" class="joinForm" method="POST">
+      <h2 class="joinTitle">회원가입</h2>
+      <fieldset>
+        <legend class="a11yHidden">회원가입</legend>
+        <ul>
+          <li><label for="아이디">ID<sup>*</sup><input type="text" /></label><button>중복확인</button></li>
+          <li><label for="비밀번호">PW<sup>*</sup><input type="text" /></label></li>
+          <li><label for="비밀번호 확인">비밀번호 확인<sup>*</sup><input type="text" /></label></li>
+          <li><label for="이름"><sup>*</sup><input type="text" /></label></li>
+          <li><label for="이메일"><sup>*</sup><input type="text" /><button>중복확인</button></label></li>
+          <li><label for="휴대폰"><sup>*</sup><input type="text" /><button>인증번호 받기</button></label></li>
+          <li><label for="주소"><sup>*</sup><input type="text" /></label></li>
+          <li><label for="성별"></label></li>
+          <li><label for="생년월일"><input type="text" /></label></li>
+          <li><label for="추가입력 사항"></label></li>
+        </ul>
+      </fieldset>
+      <!-- <div>
+        <ul>
+          <li>
+            <div>
+              <input type="text" />
+              <label for="이용약관동의">
+                <span class="check"></span>전체 동의합니다
               </label>
-              <div class="content">
-                <fieldset>
-                  <legend class="a11yHidden">냉장 식품 펼치기</legend>
-                  <ul>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                  </ul>
-                </fieldset>
-              </div>
-            </div> -->
-            <!-- <div class="cartForm__sun">
-              <h4 class="cartForm__h">냉장 식품</h4>
-              <input type="checkbox" id="toggle" />
-              <label for="toggle" class="foodLabel">
-                <img src="./../images/Icon/Arrow2.png" alt="냉장식품 펼치기" class="foodImg" />
-              </label>
-              <div class="content">
-                <fieldset>
-                  <legend class="a11yHidden">냉장 식품 펼치기</legend>
-                  <ul>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                    <li>[풀무원] 탱탱쫄면 (4개입)</li>
-                  </ul>
-                </fieldset>
-              </div>
-            </div> -->
-          </form>
-
-          <div class="cartSelectAll">
-            <label for="cartCheckbox2">
-              <input type="checkbox" id="cartCheckbox2" />
-              전체선택 (3/3)
-            </label>
-            <span aria-hidden="true">ㅣ</span>
-            <button type="submit" class="cartButton">선택삭제</button>
-          </div>
-        </div>
-        <!-- 오른쪽 영역 -->
-        <div class="cart__right">
-          <div class="cartAddress">
-            <h3>배송지</h3>
-            <address>서울 중랑구 면목로 42길 11 (행운빌딩) 603호</address>
-            <span>샛별배송</span>
-            <button type="submit" class="cartAddress__button">배송지 변경</button>
-          </div>
-          <dl class="cartPayment">
-            <dt>상품금액</dt>
-            <dd>40,680 원</dd>
-            <dt>상품할인금액</dt>
-            <dd>-4,651 원</dd>
-            <dt>배송비</dt>
-            <dd>+3,000 원</dd>
-
-            <div class="cartPayment__pay">
-              <dt>결제예정금액</dt>
-              <dd>40,680 원</dd>
-              <dd><span>적립</span> 최대 36원 적립 일반 0.1%</dd>
+              <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
             </div>
-          </dl>
-          <div class="cartOrder">
-            <button type="submit" class="cartOrder__button">주문하기</button>
-            <p>쿠폰/적립금은 주문서에서 사용 가능합니다</p>
-            <p>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</p>
-            <p>[마이컬리 &gt; 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</p>
-            <p>쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종 산정됩니다.</p>
-            <p>상품별로 적립금 지급 기준이 다를 수 있습니다. (상품 상세 페이지에서 확인 가능합니다)</p>
-          </div>
+              <a href="">약관보기</a>
+            </li>
+            <li>
+              <div>
+                <input type="text" />
+                <label for="이용약관동의">
+                  <span class="check"></span>이용약관 동의 (필수)
+                </label>
+              </div>
+                <button class="arrow"></button>약관보기
+            </li>
+            <li>
+              <div>
+                <input type="text" />
+                <label for="이용약관동의">
+                  <span class="check"></span>개인정보 수집 · 이용 동의 (필수)
+                </label>
+              </div>
+                <button class="arrow"></button>약관보기
+            </li>
+            <li>
+              <div>
+                <input type="text" />
+                <label for="이용약관동의">
+                  <span class="check"></span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)
+                </label>
+              </div>
+                <button class="arrow"></button>약관보기
+            </li>
+            <li>
+              <div>
+                <input type="text" />
+                <label for="이용약관동의">
+                  <span class="check"></span>본인은 만 14세 이상입니다. (필수)
+                </label>
+              </div>
+                <a href=""><button class="arrow"></button>약관보기</a>
+            </li>
+        </ul>
+          <div class="underline"></div>
+          <button>가입하기</button>
+      </div> -->
+
+      <div class="agreement">
+        <div class="agreement__word">
+          이용약관동의
+          
         </div>
+        <ul class="agreement__ul">
+          
+          <li class="agreement__all__list">
+            <sup class="agreement__star">*</sup>
+            <div class="agreement__all__check"></div>
+            <span class="agreement__all">전체 동의합니다.</span>
+          </li>
+          <span class="agreement__notice">선택항목에 동의하지 않는 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
+
+
+          <div class="agreement__list">
+            <input id="2yong" type="checkbox" name="2yong" value="2yong"/>
+            <label for="2yong" class="radio">　　</label>
+
+            <li class="agreement__list__inside">            
+              <span class="agreement__select1 agreement__select">이용약관 동의 (필수)</span>
+              <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+            </li>
+          </div>
+
+
+          <div class="agreement__list">
+            <input id="2yong1" type="checkbox" name="2yong1" value="2yong1"/>
+            <label for="2yong1" class="radio">　　</label>
+
+            <li class="agreement__list__inside"> 
+              <span class="agreement__select2 agreement__select">개인정보 수집·이용 동의 (필수)</span>
+              <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+            </li>
+          </div>
+
+
+          <div class="agreement__list">
+            <input id="2yong2" type="checkbox" name="2yong2" value="2yong2"/>
+            <label for="2yong2" class="radio">　　</label>
+
+            <li class="agreement__list__inside"> 
+              <span class="agreement__select3 agreement__select">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
+              <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+            </li>
+          </div>
+
+
+          <div class="agreement__list">
+            <input id="2yong3" type="checkbox" name="2yong3" value="2yong3"/>
+            <label for="2yong3" class="radio">　　</label>
+
+            <li class="agreement__list__inside"> 
+              <span class="agreement__select4 agreement__select">본인은 만 14세 이상입니다. (필수)</span>
+              <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+            </li>
+            
+          </div>
+
+
+
+          <!-- <li class="agreement__list">            
+            <span class="agreement__select1 agreement__select">이용약관 동의 (필수)</span>
+            <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+          </li> -->
+
+          <!-- <li class="agreement__list ">
+            <div class="agreement__check"></div>
+            <span class="agreement__select2 agreement__select">개인정보 수집·이용 동의 (필수)</span>
+            <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+          </li>
+          <li class="agreement__list">
+            <div class="agreement__check"></div>
+            <span class="agreement__select3 agreement__select">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span>
+            <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+          </li>
+          <li class="agreement__list">
+            <div class="agreement__check"></div>
+            <span class="agreement__select4 agreement__select">본인은 만 14세 이상입니다. (필수)</span>
+            <a href=""><span class="agreement__detail">약관보기 &gt;</span></a>
+          </li> -->
+        </ul>
       </div>
-    </section>
-  
+
+    </form>
+    
+    <!-- <label for="userId" class="a11yHidden">아이디</label>
+    <input type="text" class="userId__input" id="userId" name="userId" placeholder="아이디를 입력해주세요" required " />
+    <label for="userPassword" class="a11yHidden">비밀번호</label>
+    <input type="password" class="userPassword__input" id="userPassword" name="userPassword" placeholder="비밀번호를 입력해주세요" required " /> -->
+
     <footer class="footer">
       <!-- 고객센터 + 칼리info -->
       <div class="footerTop">
@@ -410,7 +457,5 @@
         <p class="karlyCopyright__corp">© KURLY CORP. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
-  
-  
+
   </body>
-</html>

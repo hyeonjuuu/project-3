@@ -114,6 +114,8 @@
   border: 1px solid #5f0080;
   font-size: rem(16px);
   cursor: pointer;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 @mixin buttonNone {
@@ -139,4 +141,13 @@
 @mixin bgImages {
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+// 폰트 믹스인
+
+@mixin font($color: black, $size: 16px, $weight: 400, $height: 150%) {
+  color: $color;
+  font-size: rem($size);
+  font-weight: $weight;
+  line-height: $height;
 }
