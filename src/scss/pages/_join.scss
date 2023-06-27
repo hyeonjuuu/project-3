@@ -1,13 +1,48 @@
 @use './../utils' as *;
 @use './../components' as *;
 
+//input 기본 텍스트값
+body input {
+  font-size: rem(16px);
+  color: #898989;
+}
+
+//input 믹스인 적용
 input.userID__input,
 .userPw__input,
 .userEmail__input,
 .userName__input,
 .userTel__input,
-.userTime__input {
+.userDate__input {
   @include input($w: 333px, $h: 44px);
+}
+
+//date input 커스텀
+input[type="date"] {
+  content: attr(data-placeholder);
+  color: #898989;
+  font-size: rem(16px);
+  text-align: center;
+}
+
+//date input 달력 아이콘 커스텀
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+//라디오 버튼 커스텀
+[type="radio"] {
+  vertical-align: middle;
+  appearance: none;
+  border: max(1px, 0.1em) solid #c4c4c4;
+  border-radius: 50%;
+  width: rem(24px);
+  height: rem(24px);
+}
+
+[type="radio"]:checked {
+  border: 0.45rem solid #5f0080;
 }
 
 //button 믹스인 적용
@@ -19,57 +54,61 @@ input.userID__input,
   @include button($w: 333px, $h: 44px, $bgColor: white, $color: $primary-color);
 }
 
+//main 영역
+.joinBody {
+  width: 100%;
+}
+
+//article 전체 넓이
+.joinForm {
+  position: relative;
+  width: rem(640px);
+  @include autoMargin;
+}
+
 //button 가입하기
 .btnJoin {
   @include button;
   position: absolute;
-  top: 700px;
+  top: rem(700px);
 }
 
+//회원가입 타이틀
 .titleWrap {
-  height: 80px;
-  background-color: beige;
+  height: rem(80px);
 }
 
-.joinForm {
-  position: relative;
-  width: 640px;
-  margin: 0 auto;
-}
-
-.joinForm .title {
-  margin-top: 80px;
+.joinTitle {
+  margin-top: rem(80px);
 }
 
 //*sup 컬러 및 폰트 사이즈 지정
 .joinForm sup {
   color: orangered;
-  font-size: 12px;
+  font-size: rem(12px);
 }
 
-.joinForm span {
-  font-size: 12px;
-}
-
-.joinForm p {
-  margin-right: 16px;
-}
-
-//*필수입력사항, 배송지에 따라 상품 정보가 달라질 수 있습니다.
-.joinForm .noti {
+.join__noti {
+  font-size: rem(12px);
   float: right;
 }
 
-.joinBody {
-  width: 100%;
+.join__span {
+  font-size: rem(12px);
 }
 
+//라디오 버튼 오른쪽 마진
+.joinForm p {
+  margin-right: rem(16px);
+}
+
+//li 정렬
 .joinFieldset {
   width: 100%;
-  border-top: 2px solid #333;
+  border-top: rem(2px) solid #333;
   border-bottom: 1px solid #333;
-  //   position: absolute;
-  top: 58px;
+  top: rem(58px);
+  margin-top: 8px;
 }
 
 .joinFieldset li {
@@ -78,63 +117,32 @@ input.userID__input,
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
-  column-gap: 8px;
-  margin: 25px 8px;
-  height: 44px;
+  column-gap: rem(8px);
+  margin: rem(25px) rem(8px);
+  height: rem(44px);
 }
 
 .joinFieldset li:nth-child(7) {
-  margin-top: 34px;
+  margin-top: rem(34px);
 }
 
 .joinFieldset li:nth-child(8) {
-  margin-top: 34px;
+  margin-top: rem(34px);
 }
 
+//주소 검색 세로 정렬
 .btnAdd {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: rem(6px);
 }
 
 //라벨 넓이 값 지정
 .joinFieldset label {
-  width: 131px;
+  width: rem(131px);
+  font-weight: 600;
 }
 
-//라디오 버튼 커스텀
-[type='radio'] {
-  vertical-align: middle;
-  appearance: none;
-  border: max(1px, 0.1em) solid #c4c4c4;
-  border-radius: 50%;
-  width: 1.25em;
-  height: 1.25em;
-}
-
-[type='radio']:checked {
-  border: 0.4em solid #5f0080;
-}
-
-//date input 커스텀
-input[type='date'] {
-  content: attr(data-placeholder);
-  color: #898989;
-  font-size: 16px;
-  text-align: center;
-}
-
-input[type='date']::before {
-  content: attr(data-placeholder);
-  color: #333;
-  font-size: 16px;
-}
-
-//date input 달력 아이콘 커스텀
-input[type='date']::-webkit-inner-spin-button,
-input[type='date']::-webkit-calendar-picker-indicator {
-  display: none;
-}
 
 //------------------------------이용 약관 동의-------------------------------------
 .forBlock{
