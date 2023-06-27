@@ -1549,11 +1549,6 @@ main {
   line-height: 54px;
 }
 
-<<<<<<< HEAD
-body input {
-  font-size: 1rem;
-  color: #898989;
-=======
 .nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -1890,7 +1885,6 @@ a[title*="마지막 페이지"] {
   background-image: url(./../images/Icon/pageNav_last.png);
   background-size: 9px 7px;
   background-position: center;
->>>>>>> develop
 }
 
 input.userID__input,
