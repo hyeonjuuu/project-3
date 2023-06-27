@@ -2,7 +2,7 @@
 @use './../components' as *;
 
 .karlyCart {
-  width: 1050px;
+  @include containerMax;
   height: 709px;
   @include autoMargin;
   //자간조절
@@ -10,74 +10,76 @@
 }
 
 h2 {
+  @include font(black, 21.3px, 600, 150%);
   text-align: center;
-  font-size: rem(21.3px);
   height: 32px;
-  line-height: 150%;
   margin-top: rem(80px);
   margin-bottom: rem(50px);
 }
 
 .cart {
-  background: yellow;
   @include flexbox($justify: flex-between);
   @include autoMargin;
   gap: rem(1050-742-284px);
 
   &__left {
     width: rem(742px);
-    background: yellowgreen;
+    // background: yellowgreen;
   }
   &__right {
     width: rem(284px);
-    background: cornsilk;
+    // background: cornsilk;
   }
 }
 
 .cartSelectAll {
   // padding-top: auto;
   // padding-bottom: auto;
-  height: 56px;
-  width: inherit;
-  line-height: 150%;
+  @include font(#333, 16px, 600);
+  // height: 56px;
+  // width: inherit;
   background-image: url(./../../images/Input/Check3.png);
-  background-color: palegoldenrod;
+  // background-color: palegoldenrod;
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: 0px rem(-30px);
-  padding-left: rem(24px);
-}
-.cartButton {
-  @include buttonNone;
+  // background-position: 0 center;
+  // border-bottom: 1px solid $black;
+  padding-left: rem(32px);
+  @include marginY(16px);
+
+  .cartButton {
+    @include font(#333, 16px, 600);
+    @include buttonNone;
+  }
 }
 
 // 펼치기
 .cartForm {
-  // height: rem(62px);
-  @include flexbox($justify: space-between);
   background: pink;
-  &__container {
-    // line-height: 62px;
+  &__frozen {
+    background-color: ghostwhite;
   }
   &__h {
-    padding-left: rem(50px);
-    background: wheat url(./../../images/icon/Food.png) no-repeat;
+    display: inline-block;
+    height: 62px;
+    padding-left: rem(42px);
+    background: url(./../../images/icon/food_frozen.png) no-repeat;
+    background-position: 0 0;
+    background-size: 30px;
+    // line-height: 150%;
   }
-}
 
-#toggle {
-  display: none; /* 체크박스 숨김 */
-}
-.c-label {
-  cursor: pointer;
-}
-.content {
-  display: none; /* 초기에는 숨겨진 상태 */
-  background: red;
-}
-
-#toggle:checked ~ .content {
-  display: block; /* 체크된 경우 .content가 표시됨 */
+  &__water {
+    // padding-right: rem(4px);
+    // width: 724px;
+    // height: rem(62px);
+    @include font(black, 16px, 600, 0);
+    // @include paddingY(16px);
+    // @include flexbox($justify: space-between);
+    // align-items: center;
+    // line-height: 62px;
+  }
 }
 
 // 오른쪽 영역
@@ -85,11 +87,11 @@ h2 {
   border: 1px solid #e1e1e1;
   padding: rem(20px);
   h3 {
+    @include font($weight: 600, $height: rem(36px));
     height: rem(36px);
-    line-height: rem(36px);
+    // line-height: rem(36px);
     background-image: url(./../../images/Icon/Location.png);
     background-repeat: no-repeat;
-    background-size: 36px;
     padding-left: rem(40px);
     margin-bottom: rem(12px);
   }
@@ -98,22 +100,73 @@ h2 {
     line-height: rem(24px);
   }
   span {
+    @include font($weight: 600, $size: 12px);
     display: block;
     margin-bottom: rem(12px);
     color: $primary-color;
-    font-size: rem(12px);
   }
   button {
-    background-color: aqua;
     @include button(244px, 44px, $white, $primary-color);
   }
 }
-// height: 56px;
-// width: inherit;
-// line-height: 150%;
-// background-image: url(./../../images/Input/Check3.png);
-// background-color: palegoldenrod;
-// background-size: 24px;
-// background-repeat: no-repeat;
-// background-position: 0px rem(-30px);
-// padding-left: rem(24px);
+
+// dt에 150px을 줘서 왼쪽으로 가게 크기를 설정했음
+.cartPayment {
+  height: rem(277px);
+  border: 1px solid #e1e1e1;
+  background: #f9f9f9;
+  padding: $spacing-md;
+  @include font(#333, 16px, 400, 160%);
+  // width: 284px;
+  dt {
+    // float: left;
+    display: inline-block;
+    width: 100px;
+    // float: left;
+  }
+  dt:nth-child(-n + 3) {
+    padding-bottom: rem(16px);
+  }
+  dt:nth-of-type(3) {
+    padding-bottom: rem(24px);
+  }
+  dd {
+    text-align: center;
+    float: right;
+    // display: inline-block;
+  }
+  &__pay {
+    padding-top: rem(24px);
+    border-top: 1px solid #e1e1e1;
+    // background: tan;
+  }
+}
+.cartPayment__pay {
+  span {
+    @include font(white, 12px, 600);
+    margin-top: rem(11px);
+    display: inline-block;
+    border-radius: 1px;
+    padding: 0px 8px;
+    background: #fa622f;
+    background-position: 37px 18px;
+    margin-right: rem(8px);
+  }
+
+  dd:last-child {
+    @include font(#333, 12px, 600);
+  }
+  dd:first-of-type {
+    @include font(black, 28.4px, 700, 140%);
+  }
+}
+
+.cartOrder {
+  &__button {
+    @include button(284px, 44px);
+    margin: rem(16px) 0;
+  }
+  p {
+    @include font(#898989, 12px, 600);
+  }
+}
