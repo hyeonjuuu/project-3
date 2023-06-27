@@ -232,7 +232,6 @@ ul,
 li,
 fieldset,
 form,
-label,
 legend,
 table,
 caption,
@@ -1026,7 +1025,7 @@ button {
   padding: 0 12px;
   border-radius: 12px;
   background: rgba(64, 64, 64, 0.3);
-  right: 30px;
+  right: 24%;
   bottom: 30px;
   font-size: 14px;
   text-align: center;
