@@ -152,6 +152,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 //   transform: translate(-50%);
 //   display: none;
 // }
+.forBlock{
+    display : flex;
+    flex-flow : row nowrap;
+    
+    width : 640px;
+
+    margin-left : auto;
+    margin-right: auto;
+
+    // width : 1050px;
+    // border-top : 1px $black solid;
+}
+
+.agree{
+    width : 139px;
+    @include paddingX(4px);
+    padding-top : 20px;
+    font-size : 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
 
 .agreement{
     display : flex;
@@ -159,7 +180,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     padding-top : 20px;
     padding-bottom : 20px;
-    border-top : 1px $black solid;
+    
 
     width : 640px;
     margin-left : auto;
@@ -320,6 +341,6 @@ body input{
 
 //input 믹스인 적용
 
-.forBlock{
-    display : block;
-}
+// .forBlock{
+//     display : block;
+// }

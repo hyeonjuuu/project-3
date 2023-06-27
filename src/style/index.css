@@ -1431,7 +1431,7 @@ main {
   margin-bottom: 0.75rem;
 }
 
-.buttonJoin {
+.button___Join {
   width: 21.25rem;
   height: 3.375rem;
   background: white;
@@ -1607,12 +1607,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
+.forBlock {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agree {
+  width: 139px;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
 .agreement {
   display: flex;
   flex-flow: column nowrap;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px #101010 solid;
   width: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -1736,10 +1753,6 @@ input[type=checkbox]:checked + label {
 body input {
   font-size: 16px;
   color: #898989;
-}
-
-.forBlock {
-  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */
