@@ -12,7 +12,7 @@
     height : rem(50px);
 
     &__div{
-        height : rem(42px);
+        height : 100%;
         width : 1050px;
 
         margin-left : auto;
@@ -26,9 +26,11 @@
     }
 
     &__word{
-        margin-top : 4px;
+        // margin-top : 4px;
         color : $white;
         width : 400px;
+
+        // padding-top : 200px;
     }
 
     &__X{
@@ -39,31 +41,30 @@
     }
 }
 
+.headerBox{
+    display : flex;
+    flex-flow : column nowrap;
+    
+    width : 1050px;
+    height: 105px;
+    padding-bottom : 20px;
+}
 .memberSystem{
-    // background: yellow;
     height : 31px;
-    padding : 10px;
-    padding-bottom : 35px;
+    padding-top : 12px;
+    padding-bottom : 42px;
 
     font-size : 12px;
 
     display : flex;
     flex-flow : row nowrap;
     justify-content: flex-end;
-
-    &__first{
-        color : $primary-color;
-        font-weight: 600;
-    }
 }
 .div__memberSystem{
     display : flex;
     flex-flow : row nowrap;
-
-    width : 198px;
-    height: 31px;
-    padding-top : 12px;
 }
+
 
 .headerBox{
     width : 1050px;
@@ -186,7 +187,8 @@ input[type=search]{
     position : relative;
     width : 84px;
     height: 24px;
-
+    padding-top : 40px;
+    padding-bottom : 40px;
     // background: yellowgreen;
     display : flex;
     flex-flow : row nowrap;
@@ -217,7 +219,7 @@ input[type=search]{
 
     
     position : absolute;
-    top : -17px;
+    top : 40px;
     // left : -250px;
     z-index : 1;
     visibility: hidden;
@@ -231,7 +233,7 @@ input[type=search]{
 .category:hover > .categoryHover{
     // background: yellow;
     
-    top : -17px;
+    top : 40px;
     visibility :visible;
 
 }

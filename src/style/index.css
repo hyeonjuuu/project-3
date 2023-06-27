@@ -689,7 +689,7 @@ iframe {
   height: 3.125rem;
 }
 .topBar__div {
-  height: 2.625rem;
+  height: 100%;
   width: 1050px;
   margin-left: auto;
   margin-right: auto;
@@ -699,7 +699,6 @@ iframe {
   justify-content: center;
 }
 .topBar__word {
-  margin-top: 4px;
   color: #ffffff;
   width: 400px;
 }
@@ -710,26 +709,27 @@ iframe {
   top: 8px;
 }
 
+.headerBox {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 1050px;
+  height: 105px;
+  padding-bottom: 20px;
+}
+
 .memberSystem {
   height: 31px;
-  padding: 10px;
-  padding-bottom: 35px;
+  padding-top: 12px;
+  padding-bottom: 42px;
   font-size: 12px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
 }
-.memberSystem__first {
-  color: #5f0080;
-  font-weight: 600;
-}
 
 .div__memberSystem {
   display: flex;
   flex-flow: row nowrap;
-  width: 198px;
-  height: 31px;
-  padding-top: 12px;
 }
 
 .headerBox {
@@ -833,6 +833,8 @@ input[type=search] {
   position: relative;
   width: 84px;
   height: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -855,7 +857,7 @@ input[type=search] {
   font-weight: 600;
   line-height: 150%;
   position: absolute;
-  top: -17px;
+  top: 40px;
   z-index: 1;
   visibility: hidden;
   margin-top: 2.5rem;
@@ -863,7 +865,7 @@ input[type=search] {
 }
 
 .category:hover > .categoryHover {
-  top: -17px;
+  top: 40px;
   visibility: visible;
 }
 
