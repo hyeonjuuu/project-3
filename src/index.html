@@ -18,7 +18,7 @@
             <span class="topBar__word">지금 가입하고 인기상품 100원에 받아가세요!</span>
           </a>
           
-          <span class="topBar__X"><img src="./images/Icon/Cancel.png" alt="" /></span>
+          <span class="topBar__X" aria-hidden="true"><img src="./images/Icon/Cancel.png" alt="" /></span>
         </div>
         
       </div>
@@ -28,11 +28,15 @@
       <!-- 상단 우측 회원가입 | 로그인 | 고객센터 창 -->
       <!-- 1. 우측 상단 배치 / 2. a11yhidden속성 설정 및 글자 색깔 크기 설정 / 3. 링크 간단하게 연결 -->
       <ul class="ulType memberSystem">
-        <li class="memberSystem__first">
-          <a href="./views/join.html">회원가입　</a>
-        </li>
-        <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="./views/login.html">　로그인　</a></li>
-        <li class="memberSystem__third"><span class="divider" aria-hidden="true">ㅣ</span><span>　고객센터▼</span></li>
+
+        <div class="div__memberSystem">
+          <li class="memberSystem__first">
+            <a href="./views/join.html">회원가입　</a>
+          </li>
+          <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="./views/login.html">　로그인　</a></li>
+          <li class="memberSystem__third"><span class="divider" aria-hidden="true">ㅣ</span><span>　고객센터▼</span></li>
+        </div>
+        
       </ul>
       
       <div class="headerBox__middle">
@@ -40,7 +44,7 @@
         <!-- 1. 좌측 중앙 배치 / 2. 로고 넣기 / 3. 중앙선 a11yhiddne속성 부여 / 4. 글자 속성 변경-->
         <ul class="ulType logo">
           <li class="logo__image">
-            <img src="./images/Icon/Group.png" alt="" />
+            <img src="./images/Icon/Group.png" alt="칼리로고" />
           </li>
           <li class="logo__market">
             <span>마켓칼리</span>
@@ -68,11 +72,11 @@
         <!-- 헤더부분 우측중앙 이모티콘 3개 -->
         <!-- 1. 우측중앙 배치 / 2. 장바구니 이모티콘에 링크 부여  -->
         <ul class="ulType imoji">
-          <li class="imoji__location"><img src="./images/Icon/Location.png" alt="" /></li>
-          <li class="iomji__heart"><img src="./images/Icon/Heart.png" alt="" /></li>
+          <li class="imoji__location"><img src="./images/Icon/Location.png" alt="장소 이모지" /></li>
+          <li class="iomji__heart"><img src="./images/Icon/Heart.png" alt="하트모양 이모지" /></li>
           <li class="imoji__shopping">
             <a href="./views/cart.html">
-              <img src="./images/Icon/Cart-1.png" alt="" />
+              <img src="./images/Icon/Cart-1.png" alt="장바구니 이모지" />
             </a>
           </li>
         </ul>
@@ -93,7 +97,7 @@
     <!-- 1. 좌측 배치 / 2. hover시 카테고리 뜨도록 / 3. 카테고리 내부 품목 hover 시 색깔 바뀌게
       4(선택). 시안에서는 hover->카테고리->unhover->안사라짐 인데 구현해야되나? -->
     <div class="category">
-      <img src="./images/Icon/Hamburger.png" alt="" class="category__image"/>
+      <img src="./images/Icon/Hamburger.png" alt="카테고리 목록" class="category__image"/>
       <span class="category__word">카테고리</span> 
       <div class="categoryHover">
         <div class="menu__div">
@@ -137,7 +141,7 @@
           </div>
         </div>
         <div class="menu__div">
-          <div class="menu__icon water">
+          <div class="menu__icon water__menu">
             <span class="menu__word">생수ㆍ음료ㆍ우유ㆍ커피</span>
           </div>
         </div>
@@ -292,7 +296,24 @@
           <li class="product__list">
             <div class="product__list imgg">
               <img src="/images/product04.png" alt="" />
-              <button></button>
+              <button class="addToCartButton"></button>
+              <div class="modal">
+                <div class="modal__content">
+                  <div class="modal__upperbox">
+                    <span>[프로쉬] 베이비 세탁세</span>
+                    <span>4.980원</span>
+                    <span></span>
+                  </div>
+                  <div class="modal__lowerbox">
+                    <span>합계</span>
+                    <span>4,980원</span>
+                    <span>적립</span>
+                    <span>구매 시 5원 적립</span>
+                  </div>
+                  <button class="cancel">취소</button>
+                  <button class="putin">장바구니 담기</button>
+                </div>
+              </div>
             </div>
             <dl class="product__list text">
               <dt>[프로쉬] 베이비 세탁세</dt>
@@ -300,6 +321,7 @@
               <dd class="txt-underline">24900원</dd>
             </dl>
             <button class="btn-arrow-right"></button>
+            
           </li>
         </a>
       </ul>
