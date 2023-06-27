@@ -9,6 +9,7 @@
 }
 .productContainer {
   @include flexbox;
+  padding-bottom: rem(80px);
 }
 
 .best {
@@ -234,4 +235,53 @@ span.karly__badge {
 }
 span.limit__badge {
   width: auto;
+}
+
+// 페이지네비
+.pageNav {
+  width: rem(783px);
+  height: rem(70px);
+}
+.pageNum {
+  @include flexbox(row, center);
+  padding-top: rem(36px);
+}
+
+a[title*="페이지"] {
+  display: block;
+  @include padding(4px);
+  border: 1px solid #E1E1E1;
+  width: rem(34px);
+  height: rem(34px);
+}
+a[title*="첫 페이지"] {
+  @include bgImages;
+  background-image: url(./../images/Icon/pageNav_first.png);
+  background-size: 9px 7px;
+  background-position: center;
+}
+a[title*="이전 페이지"] {
+  @include bgImages;
+  background-image: url(./../images/Icon/pageNav_pre.png);
+  background-size: 5px 7px;
+  background-position: center;
+}
+.page__number {
+  background-size: 5px 7px;
+  background-position: center;
+  text-align: center;
+  line-height: 150%;
+  color: $base-text;
+}
+a[title*="다음 페이지"] {
+  @include bgImages;
+  background-image: url(./../images/Icon/pageNav_next.png);
+  background-size: 5px 7px;
+  background-position: center;
+}
+a[title*="마지막 페이지"] {
+  @include bgImages;
+  background-image: url(./../images/Icon/pageNav_last.png);
+  background-size: 9px 7px;
+  background-position: center;
 }

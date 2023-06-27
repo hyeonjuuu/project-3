@@ -1342,6 +1342,7 @@ h2 {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
+  padding-bottom: 5rem;
 }
 
 .best {
@@ -1600,6 +1601,67 @@ span.karly__badge {
 
 span.limit__badge {
   width: auto;
+}
+
+.pageNav {
+  width: 48.9375rem;
+  height: 4.375rem;
+}
+
+.pageNum {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 2.25rem;
+}
+
+a[title*=페이지] {
+  display: block;
+  padding: 0.25rem;
+  border: 1px solid #E1E1E1;
+  width: 2.125rem;
+  height: 2.125rem;
+}
+
+a[title*="첫 페이지"] {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(./../images/Icon/pageNav_first.png);
+  background-size: 9px 7px;
+  background-position: center;
+}
+
+a[title*="이전 페이지"] {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(./../images/Icon/pageNav_pre.png);
+  background-size: 5px 7px;
+  background-position: center;
+}
+
+.page__number {
+  background-size: 5px 7px;
+  background-position: center;
+  text-align: center;
+  line-height: 150%;
+  color: #333333;
+}
+
+a[title*="다음 페이지"] {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(./../images/Icon/pageNav_next.png);
+  background-size: 5px 7px;
+  background-position: center;
+}
+
+a[title*="마지막 페이지"] {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(./../images/Icon/pageNav_last.png);
+  background-size: 9px 7px;
+  background-position: center;
 }
 
 /*# sourceMappingURL=index.css.map */
