@@ -1,95 +1,158 @@
 @use './../utils' as *;
 @use './../components' as *;
 
+//input type="checkbox"
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox'] + label.cartCheckbox {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url('./../../images/Input/Check4.png');
+  background-size: rem(24px);
+  padding: rem(10px);
+  background-position: 0 center;
+}
+
+input[type='checkbox']:checked + label.cartCheckbox {
+  background-repeat: no-repeat;
+  background-image: url('./../../images/Input/Check5.png');
+  background-size: rem(24px);
+  padding: rem(10px);
+  background-position: 0 center;
+}
+
 .karlyCart {
-  width: 1050px;
-  height: 709px;
-  @include autoMargin;
+  @include containerMax;
+  margin-bottom: rem(80px);
   //자간조절
   letter-spacing: rem(-0.5px);
 }
 
 h2 {
+  @include font(black, 21.3px, 600, 150%);
   text-align: center;
-  font-size: rem(21.3px);
-  height: 32px;
-  line-height: 150%;
   margin-top: rem(80px);
   margin-bottom: rem(50px);
 }
 
 .cart {
-  background: yellow;
   @include flexbox($justify: flex-between);
-  @include autoMargin;
-  gap: rem(1050-742-284px);
+  gap: rem(24px);
 
   &__left {
     width: rem(742px);
-    background: yellowgreen;
   }
   &__right {
     width: rem(284px);
-    background: cornsilk;
   }
 }
 
 .cartSelectAll {
-  // padding-top: auto;
-  // padding-bottom: auto;
-  height: 56px;
-  width: inherit;
-  line-height: 150%;
-  background-image: url(./../../images/Input/Check3.png);
-  background-color: palegoldenrod;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: 0px rem(-30px);
-  padding-left: rem(24px);
-}
-.cartButton {
-  @include buttonNone;
-}
+  height: rem(30px);
 
-// 펼치기
-.cartForm {
-  // height: rem(62px);
-  @include flexbox($justify: space-between);
-  background: pink;
-  &__container {
-    // line-height: 62px;
-  }
-  &__h {
-    padding-left: rem(50px);
-    background: wheat url(./../../images/icon/Food.png) no-repeat;
+  @include font(#333, 16px, 600);
+  @include marginY(16px);
+
+  .cartButton {
+    @include font(#333, 16px, 600);
+    @include buttonNone;
   }
 }
-
-#toggle {
-  display: none; /* 체크박스 숨김 */
+.cartCheckbox {
+  @include font(#333, 16px, 600, 150%);
 }
-.c-label {
-  cursor: pointer;
-}
-.content {
-  display: none; /* 초기에는 숨겨진 상태 */
-  background: red;
+.cartChoice {
+  padding-left: 20px;
 }
 
-#toggle:checked ~ .content {
-  display: block; /* 체크된 경우 .content가 표시됨 */
+// 펼치기 부분
+.water,
+.frozen,
+.sun {
+  border-top: 1px solid black;
+  @include font(black, 16px, 600, 31px);
+
+  &__continer {
+    @include flexbox($justify: space-between);
+    height: rem(62px);
+    align-items: center;
+  }
+  button {
+    width: rem(30px);
+    height: rem(30px);
+    background: url(./../../images/icon/Arrow-2.png) no-repeat;
+    background-position: center;
+  }
+  .waterH {
+    padding-left: rem(42px);
+    background: url(./../../images/icon/food_water.png) no-repeat;
+  }
+  .frozenH {
+    padding-left: rem(42px);
+    background: url(./../../images/icon/food_frozen.png) no-repeat;
+  }
+  .sunH {
+    padding-left: rem(42px);
+    background: url(./../../images/icon/food_sun.png) no-repeat;
+  }
+  &__list {
+    li {
+      @include flexbox;
+      @include paddingY(20px);
+      gap: rem(8px);
+      align-items: center;
+      padding-left: rem(32px);
+      background: url(./../../images/Input/Check5.png) no-repeat 0 center / rem(24px);
+    }
+  }
+
+  .sun {
+    &__continer {
+      border-bottom: rem(1px) solid black;
+    }
+  }
+
+  // 아래화살표 클릭시 아래로 내려가지는 부분
+  .btnList {
+    &__h {
+      width: rem(345px);
+    }
+    &__won {
+      width: rem(127px);
+      text-align: right;
+    }
+    &__remove {
+      background-image: url('./../../images/Icon/Minus.png');
+    }
+    &__add {
+      background-image: url('./../../images/Icon/Plus.png');
+    }
+    &__cancel {
+      background-image: url('./../../images/Icon/cancel.png');
+    }
+
+    .btnGroup {
+      @include flexbox;
+      border: rem(1px) solid #c4c4c4;
+      gap: rem(8px);
+
+      span {
+        height: rem(30px);
+      }
+    }
+  }
 }
 
 // 오른쪽 영역
 .cartAddress {
-  border: 1px solid #e1e1e1;
+  border: rem(1px) solid #e1e1e1;
   padding: rem(20px);
   h3 {
-    height: rem(36px);
-    line-height: rem(36px);
+    @include font($weight: 600, $height: rem(36px));
     background-image: url(./../../images/Icon/Location.png);
     background-repeat: no-repeat;
-    background-size: 36px;
     padding-left: rem(40px);
     margin-bottom: rem(12px);
   }
@@ -98,22 +161,68 @@ h2 {
     line-height: rem(24px);
   }
   span {
+    @include font($weight: 600, $size: rem(12px));
     display: block;
     margin-bottom: rem(12px);
     color: $primary-color;
-    font-size: rem(12px);
   }
   button {
-    background-color: aqua;
     @include button(244px, 44px, $white, $primary-color);
   }
 }
-// height: 56px;
-// width: inherit;
-// line-height: 150%;
-// background-image: url(./../../images/Input/Check3.png);
-// background-color: palegoldenrod;
-// background-size: 24px;
-// background-repeat: no-repeat;
-// background-position: 0px rem(-30px);
-// padding-left: rem(24px);
+
+// dt에 150px을 줘서 왼쪽으로 가게 크기를 설정했음
+.cartPayment {
+  height: rem(277px);
+  border: rem(1px) solid #e1e1e1;
+  background: #f9f9f9;
+  padding: $spacing-md;
+  @include font(#333, 16px, 400, 160%);
+
+  dt {
+    display: inline-block;
+    width: rem(100px);
+  }
+  dt:nth-child(-n + 3) {
+    padding-bottom: rem(16px);
+  }
+  dt:nth-of-type(3) {
+    padding-bottom: rem(24px);
+  }
+  dd {
+    text-align: center;
+    float: right;
+  }
+  &__pay {
+    padding-top: rem(24px);
+    border-top: rem(1px) solid #e1e1e1;
+  }
+}
+.cartPayment__pay {
+  span {
+    @include font(white, 12px, 600);
+    margin-top: rem(11px);
+    display: inline-block;
+    border-radius: rem(1px);
+    padding: 0px rem(8px);
+    background: #fa622f;
+    margin-right: rem(8px);
+  }
+
+  dd:last-child {
+    @include font(#333, 12px, 600);
+  }
+  dd:first-of-type {
+    @include font(black, 28.4px, 700, 140%);
+  }
+}
+
+.cartOrder {
+  &__button {
+    @include button(284px, 44px);
+    margin: rem(16px) 0;
+  }
+  p {
+    @include font(#898989, 12px, 600);
+  }
+}

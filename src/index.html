@@ -12,8 +12,12 @@
       <h1 class="a11yHidden">Karly</h1>
       <!-- 맨 위 보라색 안내바 1. 보라색 배경 설정 및 크기 / 2. 글자 흰색, 크기 조절 / 3.(가능할까?)X누르면 사라지게 -->
       <div class="topBar">
+        
         <div class="topBar__div">
-          <span class="topBar__word">지금 가입하고 인기상품 100원에 받아가세요!</span>
+          <a href="/">
+            <span class="topBar__word">지금 가입하고 인기상품 100원에 받아가세요!</span>
+          </a>
+          
           <span class="topBar__X"><img src="./images/Icon/Cancel.png" alt="" /></span>
         </div>
         
@@ -25,7 +29,7 @@
       <!-- 1. 우측 상단 배치 / 2. a11yhidden속성 설정 및 글자 색깔 크기 설정 / 3. 링크 간단하게 연결 -->
       <ul class="ulType memberSystem">
         <li class="memberSystem__first">
-          <a href="">회원가입　</a>
+          <a href="./views/join.html">회원가입　</a>
         </li>
         <li class="memberSystem__second"><span class="divider" aria-hidden="true">ㅣ</span><a href="./views/login.html">　로그인　</a></li>
         <li class="memberSystem__third"><span class="divider" aria-hidden="true">ㅣ</span><span>　고객센터▼</span></li>
@@ -205,16 +209,17 @@
         
       </div> 
     </div>
+  
 <!-- 웹카페 transfer한거처럼 위치 설정을 해서 뜨는거처럼?111 -->
     
 
     <!-- 네비게이션 중앙 바 -->
     <!-- 1. 중앙 배치 / 2. 글자 속성 / 3. 링크 설정 -->
     <div class="navCenter">
-      <a href="" class="navCenter__new">신상품</a>
-      <a href="" class="navCenter__best">베스트</a>
-      <a href="" class="navCenter__hotdeal">알뜰쇼핑</a>
-      <a href="" class="navCenter__special">특가/혜택</a>
+      <a href="" class="navCenter__new"><span class="navCenter__new__hover">신상품</span></a>
+      <a href="" class="navCenter__best"><span class="navCenter__best__hover">베스트</span></a>
+      <a href="" class="navCenter__hotdeal"><span class="navCenter__hotdeal__hover">알뜰쇼핑</span></a>
+      <a href="" class="navCenter__special"><span class="navCenter__special__hover">특가/혜택</span></a>
     </div>
 
     <!-- 네비게이션 우측 박스 -->
@@ -247,48 +252,56 @@
     <section class="todayProduct">
       <h2 class="product__title">이 상품 어때요?</h2>
       <ul class="product">
-        <li class="product__list">
-          <div class="product__list img">
-            <img src="/images/product01.png" alt="" />
-            <button></button>
-          </div>
-          <dl class="product__list text">
-            <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
-            <dd>4,980 원</dd>
-          </dl>
-        </li>
-        <li class="product__list">
-          <div class="product__list img">
-            <img src="/images/product02.png" alt="" />
-            <button></button>
-          </div>
-          <dl class="product__list text">
-            <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
-            <dd>32,580 원</dd>
-          </dl>
-        </li>
-        <li class="product__list">
-          <div class="product__list img">
-            <img src="/images/product03.png" alt="" />
-            <button></button>
-          </div>
-          <dl class="product__list text">
-            <dt>유기농 밀키퀸 현미 4kg</dt>
-            <dd>25,000 원</dd>
-          </dl>
-        </li>
-        <li class="product__list">
-          <div class="product__list imgg">
-            <img src="/images/product04.png" alt="" />
-            <button></button>
-          </div>
-          <dl class="product__list text">
-            <dt>[프로쉬] 베이비 세탁세</dt>
-            <dd><strong>24%</strong>18,900 원</dd>
-            <dd class="txt-underline">24900원</dd>
-          </dl>
-          <button class="btn-arrow-right"></button>
-        </li>
+        <a href="/">
+          <li class="product__list">
+            <div class="product__list img">
+              <img src="/images/product01.png" alt="" />
+              <button></button>
+            </div>
+            <dl class="product__list text">
+              <dt>[풀무원] 탱탱쫄면 (4개입)</dt>
+              <dd>4,980 원</dd>
+            </dl>
+          </li>
+        </a>
+        <a href="/">
+          <li class="product__list">
+            <div class="product__list img">
+              <img src="/images/product02.png" alt="" />
+              <button></button>
+            </div>
+            <dl class="product__list text">
+              <dt>[온더바디] 죠르디 시카 자석 선쿠션</dt>
+              <dd>32,580 원</dd>
+            </dl>
+          </li>
+        </a>
+        <a href="/">
+          <li class="product__list">
+            <div class="product__list img">
+              <img src="/images/product03.png" alt="" />
+              <button></button>
+            </div>
+            <dl class="product__list text">
+              <dt>유기농 밀키퀸 현미 4kg</dt>
+              <dd>25,000 원</dd>
+            </dl>
+          </li>
+        </a>
+        <a href="">
+          <li class="product__list">
+            <div class="product__list imgg">
+              <img src="/images/product04.png" alt="" />
+              <button></button>
+            </div>
+            <dl class="product__list text">
+              <dt>[프로쉬] 베이비 세탁세</dt>
+              <dd><strong>24%</strong>18,900 원</dd>
+              <dd class="txt-underline">24900원</dd>
+            </dl>
+            <button class="btn-arrow-right"></button>
+          </li>
+        </a>
       </ul>
     </section>
 
@@ -329,18 +342,20 @@
             <dd>25,000 원</dd>
           </dl>
         </li>
-        <li class="product__list">
-          <div class="product__list imgg">
-            <img src="/images/product04.png" alt="" />
-            <button></button>
-          </div>
-          <dl class="product__list text">
-            <dt>[프로쉬] 베이비 세탁세</dt>
-            <dd><strong>24%</strong>18,900 원</dd>
-            <dd class="txt-underline">24900원</dd>
-          </dl>
-          <button class="btn-arrow-right"></button>
-        </li>
+        <a href="">
+          <li class="product__list">
+            <div class="product__list imgg">
+              <img src="/images/product04.png" alt="" />
+              <button></button>
+            </div>
+            <dl class="product__list text">
+              <dt>[프로쉬] 베이비 세탁세</dt>
+              <dd><strong>24%</strong>18,900 원</dd>
+              <dd class="txt-underline">24900원</dd>
+            </dl>
+            <button class="btn-arrow-right"></button>
+          </li>
+        </a>
       </ul>
     </section>
 

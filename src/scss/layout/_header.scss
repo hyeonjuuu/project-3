@@ -34,6 +34,7 @@
     &__word{
         margin-top : 4px;
         color : $white;
+        width : 400px;
     }
 
     &__X{
@@ -334,22 +335,35 @@ input[type=search]{
     &__new{
         width : 150px;
         height : 24px;
-        // background: red;
+        &__hover:hover{
+            color : $primary-color;
+            border-bottom : 1px $primary-color solid;
+        }
     }
+    
     &__best{
         width : 150px;
         height : 24px;
-        // background: orange;
+        &__hover:hover{
+            color : $primary-color;
+            border-bottom : 1px $primary-color solid;
+        }
     }
     &__hotdeal{
         width : 150px;
         height : 24px;
-        // background: yellow;
+        &__hover:hover{
+            color : $primary-color;
+            border-bottom : 1px $primary-color solid;
+        }
     }
     &__special{
         width : 150px;
         height : 24px;
-        // background: green;
+        &__hover:hover{
+            color : $primary-color;
+            border-bottom : 1px $primary-color solid;
+        }
     }
     text-align: center;
     font-size: 16px;
@@ -379,3 +393,5 @@ input[type=search]{
         color : $primary-color;
     }
 }
+
+
