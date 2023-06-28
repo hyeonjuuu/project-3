@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet preload" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
     <title>로그인 - 칼리</title>
     <link rel="stylesheet" href="/style/index.css" />
   </head>
 
   <body>
     <header>
+
+      <div class="topBar">
+        
+        <div class="topBar__div">
+          <a href="/">
+            <span class="topBar__word">지금 가입하고 인기상품 100원에 받아가세요!</span>
+          </a>
+          
+          <span class="topBar__X" aria-hidden="true"><img src="./images/Icon/Cancel.png" alt="" /></span>
+        </div>
+        
+      </div>
       <div class="headerBox">
         <!-- 상단 우측 회원가입 | 로그인 | 고객센터 창 -->
         <!-- 1. 우측 상단 배치 / 2. a11yhidden속성 설정 및 글자 색깔 크기 설정 / 3. 링크 간단하게 연결 -->
@@ -191,10 +203,10 @@
       <!-- 네비게이션 중앙 바 -->
       <!-- 1. 중앙 배치 / 2. 글자 속성 / 3. 링크 설정 -->
       <div class="navCenter">
-        <a href="" class="navCenter__new">신상품</a>
-        <a href="" class="navCenter__best">베스트</a>
-        <a href="" class="navCenter__hotdeal">알뜰쇼핑</a>
-        <a href="" class="navCenter__special">특가/혜택</a>
+        <a href="./productList.html" class="navCenter__new"><span class="navCenter__new__hover">신상품</span></a>
+        <a href="./productList.html" class="navCenter__best"><span class="navCenter__best__hover">베스트</span></a>
+        <a href="./productList.html" class="navCenter__hotdeal"><span class="navCenter__hotdeal__hover">알뜰쇼핑</span></a>
+        <a href="./productList.html" class="navCenter__special"><span class="navCenter__special__hover">특가/혜택</span></a>
       </div>
 
       <!-- 네비게이션 우측 박스 -->
@@ -223,8 +235,7 @@
               <a href="/">비밀번호 찾기</a>
             </div>
             <button type="submit" class="buttonLogin">로그인</button>
-            <a href="/" class="button___Join">회원가입</a>
-            <!-- <button type="button" class="button___Join"><a href="/">회원가입</a></button> -->
+            <a href="./join.html" class="button___Join">회원가입</a>
           </div>
         </fieldset>
       </form>
@@ -280,7 +291,7 @@
             <p>통신판매업 : 제 2018-서울강남-01646 호<span aria-hidden="true">|</span>개인정보보호책임자 : 이원준</p>
             <address class="karly__address">주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)</address>
             <span aria-hidden="true">|</span>대표이사 : 김슬아
-            <p>입점문의 : 입정문의하기<span aria-hidden="true">|</span>제휴문의 : <span class="company__highlight">business@karlycorp.com</span></p>
+            <p>입점문의 : 입점문의하기<span aria-hidden="true">|</span>제휴문의 : <span class="company__highlight">business@karlycorp.com</span></p>
             <p>채용문의 : <span class="company__highlight">recruit@karlycorp.com</span></p>
             <p>팩스 : 070 - 7500 - 6098</p>
           </div>
